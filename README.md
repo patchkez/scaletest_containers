@@ -17,3 +17,8 @@ docker-compose build marketmaker
 ```
 docker network create komodo_scale
 ```
+
+## Start all containers
+```
+docker-compose up -d
+```
