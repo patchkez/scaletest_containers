@@ -16,7 +16,7 @@ WORKDIR ${KOMODO_HOME}
 
 RUN git clone https://github.com/jl777/komodo && \
     cd komodo && \
-    git checkout ${KOMODO_BRANCH} 
+    git checkout ${KOMODO_BRANCH}
 RUN cd komodo && ./zcutil/fetch-params.sh
 RUN cd komodo && ./zcutil/build.sh -j$(nproc)
 
@@ -38,7 +38,7 @@ COPY --from=kmd_builder  /home/komodo/komodo/src/komodo-cli /bin
 COPY --from=kmd_builder  /home/komodo/.zcash-params /home/komodo/.zcash-params
 
 RUN apt update && \
-    apt install -y libcurl3-gnutls-dev curl libgomp1
+    apt install -y libcurl3-gnutls-dev curl libgomp1 libcurl4-openssl-dev
 
 # confd
 RUN curl -L -o /usr/local/bin/confd https://github.com/kelseyhightower/confd/releases/download/v0.15.0/confd-0.15.0-linux-amd64 && \
@@ -46,6 +46,8 @@ RUN curl -L -o /usr/local/bin/confd https://github.com/kelseyhightower/confd/rel
 
 ADD entrypoint.sh /usr/local/bin
 ADD start-komodod.sh /usr/local/bin
+RUN git clone https://github.com/blackjok3rtt/ScaleTestV2.git
+
 COPY confd/ "${KOMODO_HOME}"/confd
 RUN chown -R komodo:komodo "${KOMODO_HOME}"/confd
 
