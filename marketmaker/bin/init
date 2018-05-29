@@ -1,0 +1,20 @@
+#!/bin/bash
+
+if [ -z "$PASSPHRASE" ]; then
+  echo "No PASSPHRASE environment variable"
+  exit 1
+fi
+
+#if [ -z "$COINS" ]; then
+#  source ~/coins
+#  COINS=$coins
+#fi
+
+if [ -z ${ASSET_NAME} -o -z ${ASSET_RPC_PORT} ];then
+  echo "No ASSET_NAME or RPC_PORT variable passed to container."
+  exit 1
+else
+  export COINS="[{\"coin\":\"${ASSET_NAME}\",\"asset\":\"${ASSET_NAME}\",\"rpcport\":${ASSET_RPC_PORT}}]"
+fi
+
+exec marketmaker "{\"gui\":\"nogui\", \"client\":1, \"docker\":1, \"userhome\":\"/${HOME#"/"}\", \"passphrase\":\"$PASSPHRASE\", \"coins\":$COINS}"

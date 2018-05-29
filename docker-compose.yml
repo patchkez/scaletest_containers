@@ -1,0 +1,100 @@
+# vim: ts=2 sw=2 et
+version: '3.6'
+
+services:
+  txscl220-ac:
+    build:
+      context: ./komodod
+      args:
+        KOMODO_BRANCH: dev
+    # image: dragonriders/kmdplatform_komodod_dev:latest
+    image: kmdplatform_komodod_dev
+    restart: on-failure
+    networks:
+      - komodo_scale
+    # ports:
+    #  - "32200:32200"
+    #  - "32199:32199"
+    volumes:
+      - komodo-data:/home/komodo/.komodo
+        # - shared-data:/home/komodo/.shared:ro
+    environment:
+      - ASSET_RPC_USER=kmdrpcus3R
+      - ASSET_RPC_PASSWORD=RPcp4ZZw0rD
+      - ASSET_RPC_WORKQUEUE=64
+      - ASSET_BIND=127.0.0.1
+      - ASSET_RPC_BIND=0.0.0.0
+      - ASSET_RPC_ALLOWIP=0.0.0.0/0
+      - ASSET_RPC_PORT=32200
+      - ASSET_NAME=TXSCL220
+    command: >
+      bash -c "komodod -pubkey=037332211b0739afa3a854035616a7c94b9f0b179e088cca7fd6d7068be4ff56c7
+      -ac_name=TXSCL220
+      -ac_supply=77000000
+      -ac_cc=1
+      -ac_reward=100000000"
+
+  txscl220-miner:
+    # image: dragonriders/kmdplatform_komodod_dev:latest
+    image: kmdplatform_komodod_dev
+    restart: on-failure
+    networks:
+      - komodo_scale
+        #ports:
+        #- "32201:32200"
+        #- "32198:32199"
+    # volumes:
+      # - komodo-data:/home/komodo/.komodo
+        # - shared-data:/home/komodo/.shared:ro
+    environment:
+      - ASSET_RPC_USER=kmdrpcus3R
+      - ASSET_RPC_PASSWORD=RPcp4ZZw0rD
+      - ASSET_RPC_WORKQUEUE=64
+      - ASSET_BIND=127.0.0.1
+      - ASSET_RPC_BIND=0.0.0.0
+      - ASSET_RPC_ALLOWIP=0.0.0.0/0
+      - ASSET_RPC_PORT=32200
+      - ASSET_NAME=TXSCL220
+    command: >
+      bash -c "komodod -pubkey=037332211b0739afa3a854035616a7c94b9f0b179e088cca7fd6d7068be4ff56c7
+      -ac_name=TXSCL220
+      -ac_supply=77000000
+      -ac_cc=1
+      -ac_reward=100000000
+      -gen
+      -blockprioritysize=0
+      -connect=txscl220-ac"
+
+  marketmaker:
+    build:
+      context: ./marketmaker
+      args:
+        CHECKOUT: dev
+    image: dragonriders/kmdplatform_marketmaker_dev:latest
+    restart: on-failure
+    networks:
+      - komodo_scale
+    ports:
+      - "7783:7783"
+    volumes:
+      - komodo-data:/home/komodo/.komodo
+        # - shared-data:/home/komodo/.shared:ro
+    environment:
+      - PASSPHRASE=test123
+      - ASSET_NAME=TXSCL220
+      - ASSET_RPC_PORT=32300
+
+volumes:
+  komodo-data:
+    driver_opts:
+      type: none
+      device: ${KOMODO_DATA}
+      o: bind
+  shared-data:
+    driver_opts:
+      type: none
+      device: ${SHARED_DATA}
+      o: bind
+
+networks:
+  komodo_scale:
