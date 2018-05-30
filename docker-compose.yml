@@ -8,22 +8,22 @@ services:
       args:
         KOMODO_BRANCH: dev
     # image: dragonriders/kmdplatform_komodod_dev:latest
-    image: kmdplatform_komodod_dev
+    image: testkomodo
     #restart: on-failure
     networks:
       - komodo_scale
     ports:
     #  - "32200:32200"
       - "32199:32199"
-    volumes:
-      - komodo-data:/home/komodo/.komodo
+    #volumes:
+        # - komodo-data:/home/komodo/.komodo
         # - shared-data:/home/komodo/.shared:ro
     environment:
       - ASSET_RPC_USER=kmdrpcus3R
       - ASSET_RPC_PASSWORD=RPcp4ZZw0rD
       - ASSET_RPC_WORKQUEUE=64
-        # - ASSET_BIND=127.0.0.1
-      - ASSET_BIND=0.0.0.0
+      - ASSET_BIND=127.0.0.1
+      # - ASSET_BIND=0.0.0.0
       - ASSET_RPC_BIND=0.0.0.0
       - ASSET_RPC_ALLOWIP=0.0.0.0/0
       - ASSET_RPC_PORT=32200
@@ -34,26 +34,26 @@ services:
       -ac_supply=77000000
       -ac_cc=1
       -ac_reward=100000000
-      '-blocknotify=/home/komodo/ScaleTestV2/blocknotify.sh %s'
+      -blocknotify=/home/komodo/blocknotify.sh
       -connect=txscl220-miner"
 
   txscl220-miner:
     # image: dragonriders/kmdplatform_komodod_dev:latest
-    image: kmdplatform_komodod_dev
+    image: testkomodo
     restart: on-failure
     networks:
       - komodo_scale
-        #ports:
+    #ports:
         #- "32201:32200"
-        - "32199:32199"
-    # volumes:
-      # - komodo-data:/home/komodo/.komodo
+        #- "32199:32199"
+    #volumes:
+        # - komodo-data:/home/komodo/.komodo
         # - shared-data:/home/komodo/.shared:ro
     environment:
       - ASSET_RPC_USER=kmdrpcus3R
       - ASSET_RPC_PASSWORD=RPcp4ZZw0rD
       - ASSET_RPC_WORKQUEUE=64
-      - ASSET_BIND=127.0.0.1
+      - ASSET_BIND=0.0.0.0
       - ASSET_RPC_BIND=0.0.0.0
       - ASSET_RPC_ALLOWIP=0.0.0.0/0
       - ASSET_RPC_PORT=32200
@@ -66,17 +66,17 @@ services:
       -ac_reward=100000000
       -gen"
 
-volumes:
-  komodo-data:
-    driver_opts:
-      type: none
-      device: ${KOMODO_DATA}
-      o: bind
-  shared-data:
-    driver_opts:
-      type: none
-      device: ${SHARED_DATA}
-      o: bind
+#volumes:
+#  komodo-data:
+#    driver_opts:
+#      type: none
+#      device: ${KOMODO_DATA}
+#      o: bind
+#  shared-data:
+#    driver_opts:
+#      type: none
+#      device: ${SHARED_DATA}
+#      o: bind
 
 networks:
   komodo_scale:
