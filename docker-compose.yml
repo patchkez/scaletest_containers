@@ -32,7 +32,9 @@ services:
       -ac_name=TXSCL220
       -ac_supply=77000000
       -ac_cc=1
-      -ac_reward=100000000"
+      -ac_reward=100000000
+      '-blocknotify=/home/komodo/ScaleTestV2/blocknotify.sh %s'"
+
 
   txscl220-miner:
     # image: dragonriders/kmdplatform_komodod_dev:latest
