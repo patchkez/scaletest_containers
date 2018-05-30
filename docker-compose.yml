@@ -9,7 +9,7 @@ services:
         KOMODO_BRANCH: dev
     # image: dragonriders/kmdplatform_komodod_dev:latest
     image: kmdplatform_komodod_dev
-    restart: on-failure
+    #restart: on-failure
     networks:
       - komodo_scale
     ports:
@@ -34,8 +34,8 @@ services:
       -ac_supply=77000000
       -ac_cc=1
       -ac_reward=100000000
-      '-blocknotify=/home/komodo/ScaleTestV2/blocknotify.sh %s'"
-
+      '-blocknotify=/home/komodo/ScaleTestV2/blocknotify.sh %s'
+      -connect=txscl220-miner"
 
   txscl220-miner:
     # image: dragonriders/kmdplatform_komodod_dev:latest
@@ -45,7 +45,7 @@ services:
       - komodo_scale
         #ports:
         #- "32201:32200"
-        #- "32198:32199"
+        - "32199:32199"
     # volumes:
       # - komodo-data:/home/komodo/.komodo
         # - shared-data:/home/komodo/.shared:ro
@@ -64,28 +64,7 @@ services:
       -ac_supply=77000000
       -ac_cc=1
       -ac_reward=100000000
-      -gen
-      -blockprioritysize=0
-      -connect=txscl220-ac"
-
-  marketmaker:
-    build:
-      context: ./marketmaker
-      args:
-        CHECKOUT: dev
-    image: dragonriders/kmdplatform_marketmaker_dev:latest
-    restart: on-failure
-    networks:
-      - komodo_scale
-    ports:
-      - "7783:7783"
-    volumes:
-      - komodo-data:/home/komodo/.komodo
-        # - shared-data:/home/komodo/.shared:ro
-    environment:
-      - PASSPHRASE=test123
-      - ASSET_NAME=TXSCL220
-      - ASSET_RPC_PORT=32300
+      -gen"
 
 volumes:
   komodo-data:
