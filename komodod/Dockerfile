@@ -4,7 +4,7 @@ LABEL maintainer="Emmanux <infra@komodo.rocks>"
 ARG KOMODO_BRANCH
 ENV KOMODO_HOME /home/komodo
 
-ENV BUILD_PACKAGES=" build-essential pkg-config libc6-dev m4 g++-multilib autoconf libtool ncurses-dev unzip git python python-zmq zlib1g-dev wget libcurl4-openssl-dev bsdmainutils automake curl"
+ENV BUILD_PACKAGES="build-essential pkg-config libc6-dev m4 g++-multilib autoconf libtool ncurses-dev unzip git python python-zmq zlib1g-dev wget libcurl4-openssl-dev bsdmainutils automake curl"
 
 RUN apt update && \
     apt install -y $BUILD_PACKAGES
@@ -40,29 +40,19 @@ RUN apt update && \
     apt install -y libcurl4-openssl-dev curl libgomp1 git jq && \
     rm -rf /var/lib/apt/lists/*
 
-# confd
-RUN curl -L -o /usr/local/bin/confd https://github.com/kelseyhightower/confd/releases/download/v0.15.0/confd-0.15.0-linux-amd64 && \
-    chmod +x /usr/local/bin/confd
-
 ADD entrypoint.sh /usr/local/bin
 ADD start-komodod.sh /usr/local/bin
 
-COPY confd/ "${KOMODO_HOME}"/confd
 COPY blocknotify.sh "${KOMODO_HOME}"/blocknotify.sh
 COPY marketmaker "${KOMODO_HOME}"/marketmaker
 COPY TxBlast "${KOMODO_HOME}"/TxBlast
 
-RUN chown -R komodo:komodo "${KOMODO_HOME}"
-
-ENV PATH="~/komodo/src/:${PATH}"
-
 USER komodo
 WORKDIR "${KOMODO_HOME}"
-# RUN mkdir ${KOMODO_HOME}/.komodo && \
-#    mkdir ${KOMODO_HOME}/.bitcoin && \
+RUN mkdir ${KOMODO_HOME}/.komodo
 RUN mkdir ${KOMODO_HOME}/stats && \
     touch ${KOMODO_HOME}/.komodo/komodo.conf && \
-    chown komodo:komodo "${KOMODO_HOME}"/.komodo/komodo.conf
+    chown -R komodo:komodo "${KOMODO_HOME}"
 
 USER komodo
 
