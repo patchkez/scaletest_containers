@@ -10,7 +10,7 @@
 ## Build images
 Build the TxBlaster Image:
 ```
-docker build komodod -t testkomodo
+docker-compose build komodod
 ```
 
 ## Create custom docker network
@@ -23,11 +23,9 @@ docker network create komodo_scale
 docker-compose up -d
 ```
 
-The seed node will launch and listen for connections on its P2P_PORT, once the ac image has connected to the miner image, the miner will start mining blocks.
-> At block 3 the ac image will import the privatekey, and launch marketmaker. 
+The seed node will launch and listen for connections on its P2P_PORT, once the ac container has connected to the miner container, the miner will start mining blocks.
+> At block 3 the ac image will import the privatekey, and launch marketmaker.
 
-> At block 5 the ac chain will send the `amount` to the `address` 
+> At block 5 the ac chain will send the `amount` to the `address`
 
-> At block 8 the TxBlaster loop will be called. Any time the mempool is under 5mb in size marketmaker will send 10,000 TX's. This is currently a single payment transaction. 
-
-
+> At block 8 the TxBlaster loop will be called. Any time the mempool is under 5mb in size marketmaker will send 10,000 TX's. This is currently a single payment transaction.

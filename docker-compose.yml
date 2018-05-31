@@ -3,31 +3,27 @@ version: '3.6'
 
 services:
   txscl220-ac:
-    build:
-      context: ./komodod
-      args:
-        KOMODO_BRANCH: dev
-    # image: dragonriders/kmdplatform_komodod_dev:latest
-    image: testkomodo
-    #restart: on-failure
+    #build:
+    #  context: ./komodod
+    #  args:
+    #    KOMODO_BRANCH: dev
+    image: komodod
     networks:
       - komodo_scale
-    ports:
-    #  - "32200:32200"
-      - "32199:32199"
-    #volumes:
-        # - komodo-data:/home/komodo/.komodo
-        # - shared-data:/home/komodo/.shared:ro
     environment:
       - ASSET_RPC_USER=kmdrpcus3R
       - ASSET_RPC_PASSWORD=RPcp4ZZw0rD
       - ASSET_RPC_WORKQUEUE=64
       - ASSET_BIND=127.0.0.1
-      # - ASSET_BIND=0.0.0.0
       - ASSET_RPC_BIND=0.0.0.0
       - ASSET_RPC_ALLOWIP=0.0.0.0/0
       - ASSET_RPC_PORT=32200
       - ASSET_NAME=TXSCL220
+      - AMOUNT=2000
+      - PASSPHRASE=testpassphraseforsmk702test
+      - ADDRESS=RSNWwEWTTFH13LzWVp4EoPscKNxsT5bazt
+      - PRIVATE_KEY=Ut1Xx8tAePPxJgTkEVAwj3ZhRvBZ7gY5gJ5ob4QAPiCDcyMJEYgH
+      - OUTPUTS=[{\"RKV4MzePkH8H9N6K3RdC1JDDWBLbCE4H5p\":0.0001}]
     command: >
       bash -c "komodod -pubkey=037332211b0739afa3a854035616a7c94b9f0b179e088cca7fd6d7068be4ff56c7
       -ac_name=TXSCL220
@@ -38,17 +34,14 @@ services:
       -connect=txscl220-miner"
 
   txscl220-miner:
-    # image: dragonriders/kmdplatform_komodod_dev:latest
-    image: testkomodo
+    image: komodod
     restart: on-failure
     networks:
       - komodo_scale
-    #ports:
-        #- "32201:32200"
-        #- "32199:32199"
-    #volumes:
-        # - komodo-data:/home/komodo/.komodo
-        # - shared-data:/home/komodo/.shared:ro
+    ports:
+        - "32199:32199"
+    volumes:
+        - komodo-data:/home/komodo/.komodo
     environment:
       - ASSET_RPC_USER=kmdrpcus3R
       - ASSET_RPC_PASSWORD=RPcp4ZZw0rD
@@ -66,17 +59,12 @@ services:
       -ac_reward=100000000
       -gen"
 
-#volumes:
-#  komodo-data:
-#    driver_opts:
-#      type: none
-#      device: ${KOMODO_DATA}
-#      o: bind
-#  shared-data:
-#    driver_opts:
-#      type: none
-#      device: ${SHARED_DATA}
-#      o: bind
+volumes:
+  komodo-data:
+    driver_opts:
+      type: none
+      device: ${KOMODO_DATA}
+      o: bind
 
 networks:
   komodo_scale:

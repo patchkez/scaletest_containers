@@ -1,9 +1,10 @@
 #!/bin/bash
 #Txblaster script
-chain=$ASSET_NAME 		#source from docker env var
-source passphrase	#can stay in container
-source amount		#stay in contanier: make 80% of total supply
-source TXID		#generated inside container at 10th block
+chain=$ASSET_NAME 		    #source from docker env var
+passphrase=$PASSPHRASE    #can stay in container
+amount=$AMOUNT            #stay in contanier: make 80% of total supply
+outputs=$OUTPUTS          #Array of address's and amounts to send
+source TXID               #generated inside container on send funds call
 
 lastutxo=$TXID
 lastutxovout=1
@@ -11,7 +12,7 @@ lastutxovalue=$(awk "BEGIN { print $amount * 100000000 }")
 
 blast ()
 {
-NewUTXO=$(curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"1d8b27b21efabcd96571cd56f91a40fb9aa4cc623d273c63bf9223dc6f8cd81f\",\"broadcast\":1,\"numblast\":10000,\"password\":\"$passphrase\",\"utxotxid\":\"$lastutxo\",\"utxovout\":$lastutxovout,\"utxovalue\":$lastutxovalue,\"txfee\":50000,\"method\":\"txblast\",\"coin\":\"$chain\",\"outputs\":[{\"RKV4MzePkH8H9N6K3RdC1JDDWBLbCE4H5p\":0.0001}]}")
+NewUTXO=$(curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"1d8b27b21efabcd96571cd56f91a40fb9aa4cc623d273c63bf9223dc6f8cd81f\",\"broadcast\":1,\"numblast\":10000,\"password\":\"$passphrase\",\"utxotxid\":\"$lastutxo\",\"utxovout\":$lastutxovout,\"utxovalue\":$lastutxovalue,\"txfee\":50000,\"method\":\"txblast\",\"coin\":\"$chain\",\"outputs\":$outputs}")
 }
 
 #call first blast function
