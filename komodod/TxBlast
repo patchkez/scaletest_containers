@@ -27,13 +27,13 @@ while true
 do
    #check mempool size
    mempoolbytes=$(komodo-cli -ac_name=$chain getmempoolinfo | jq -r .bytes)
-   if [ "$mempoolbytes" -lt "5000000" ]
+   if [ "$mempoolbytes" -lt "8000000" ]
      then
 	 blast
 	 lastutxo=$(echo $NewUTXO | jq -r .lastutxo)
 	 lastutxovout=$(echo $NewUTXO | jq -r .lastutxovout)
 	 lastutxovalue=$(awk "BEGIN { print $(echo $NewUTXO | jq -r .lastutxovalue) * 100000000 }")
       else
-        sleep 90
+        sleep 60
     fi
 done
