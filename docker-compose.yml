@@ -10,6 +10,8 @@ services:
     image: komodod
     networks:
       - komodo_scale
+    volumes:
+      - stats-data:/home/stats
     environment:
       - ASSET_RPC_USER=kmdrpcus3R
       - ASSET_RPC_PASSWORD=RPcp4ZZw0rD
@@ -24,6 +26,8 @@ services:
       - ADDRESS=RSNWwEWTTFH13LzWVp4EoPscKNxsT5bazt
       - PRIVATE_KEY=Ut1Xx8tAePPxJgTkEVAwj3ZhRvBZ7gY5gJ5ob4QAPiCDcyMJEYgH
       - OUTPUTS=[{"RKV4MzePkH8H9N6K3RdC1JDDWBLbCE4H5p":0.0001}]
+      - TXBLASTER=1
+      - STATS=1
     command: >
       bash -c "komodod -pubkey=037332211b0739afa3a854035616a7c94b9f0b179e088cca7fd6d7068be4ff56c7
       -ac_name=TXSCL220
@@ -64,6 +68,11 @@ volumes:
     driver_opts:
       type: none
       device: ${KOMODO_DATA}
+      o: bind
+  stats-data:
+    driver_opts:
+      type: none
+      device: ${STATS_DATA}
       o: bind
 
 networks:

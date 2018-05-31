@@ -1,11 +1,8 @@
 #!/bin/bash
 amount=$AMOUNT          #Amount to send to blast script
-
 passphrase=$PASSPHRASE  #Passphrase to give marketmaker
 address=$ADDRESS        #Address of the above passphrase
-
 privkey=$PRIVATE_KEY    #Private key of miners pubkey
-
 chain=$ASSET_NAME       #Asset chain name
 rpcport=$ASSET_RPC_PORT #rpc port of this assetchain
 
@@ -23,7 +20,15 @@ if [ "$HEIGHT" = "5" ]
     echo "TXID=$TXID" > TXID
 fi
 
-if [ "$HEIGHT" = "8" ]
+if [ "$HEIGHT" = "8" ] && [ "$TXBLASTER" = "1" ]
   then
-   ./TxBlast
+    ./TxBlast
+fi
+
+if [ "$STATS" = "1" ]
+  then
+    block=$(komodo-cli -ac_name=$chain getblock $HEIGHT)
+    testing=$(echo $block | jq '{size, height, time}')
+    totaltx=$(echo $block | jq '.tx | length')
+    echo $(echo $testing | jq --arg totaltx $totaltx --arg chain $chain '. += {"totaltx":$totaltx, "ac":$chain}') >> ~/stats/stats.txt
 fi
