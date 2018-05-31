@@ -15,7 +15,7 @@ extract () {
     #extract returned vlaues from first blast
     lastutxo=$(echo $NewUTXO | jq -r .lastutxo)
     lastutxovout=$(echo $NewUTXO | jq -r .lastutxovout)
-    lastutxovalue=$(( $(echo $NewUTXO | jq -r .lastutxovalue) * 100000000  ))
+    lastutxovalue=$(awk "BEGIN { print $(echo $NewUTXO | jq -r .lastutxovalue) * 100000000 }") #this needs AWK because the returned amount is a float!
 }
 
 while true
