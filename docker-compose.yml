@@ -11,7 +11,7 @@ services:
     networks:
       - komodo_scale
     volumes:
-      - stats-data:/home/stats
+      - stats-data:/home/komodo/stats
     environment:
       - ASSET_RPC_USER=kmdrpcus3R
       - ASSET_RPC_PASSWORD=RPcp4ZZw0rD
