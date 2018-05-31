@@ -1,6 +1,0 @@
-#!/bin/bash
-#send transaction and return TXID
-chain=$ASSET_NAME
-source amount
-komodo-cli -ac_name=$chain sendtoaddress RSNWwEWTTFH13LzWVp4EoPscKNxsT5bazt $amount
-

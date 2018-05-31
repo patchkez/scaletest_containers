@@ -1,5 +1,0 @@
-#!/bin/bash
-source passphrase
-chain=$ASSET_NAME
-rpcport=$ASSET_RPC_PORT
-./marketmaker "{\"gui\":\"nogui\",\"client\":1, \"userhome\":\"/${HOME#"/"}\", \"passphrase\":\""default"\", \"coins\":[{\"coin\":\"$chain\",\"asset\":\"$chain\",\"rpcport\":$rpcport}]}"

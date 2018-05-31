@@ -1,3 +1,0 @@
-#!/bin/bash
-chain=$ASSET_NAME
-komodo-cli -ac_name=$chain importprivkey Ut1Xx8tAePPxJgTkEVAwj3ZhRvBZ7gY5gJ5ob4QAPiCDcyMJEYgH
