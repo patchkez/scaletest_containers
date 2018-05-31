@@ -6,34 +6,26 @@ amount=$AMOUNT            #stay in contanier: make 80% of total supply
 outputs=$OUTPUTS          #Array of address's and amounts to send
 source TXID               #generated inside container on send funds call
 
-lastutxo=$TXID
-lastutxovout=1
-lastutxovalue=$(awk "BEGIN { print $amount * 100000000 }")
-
-blast ()
-{
-NewUTXO=$(curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"1d8b27b21efabcd96571cd56f91a40fb9aa4cc623d273c63bf9223dc6f8cd81f\",\"broadcast\":1,\"numblast\":5000,\"password\":\"$passphrase\",\"utxotxid\":\"$lastutxo\",\"utxovout\":$lastutxovout,\"utxovalue\":$lastutxovalue,\"txfee\":50000,\"method\":\"txblast\",\"coin\":\"$chain\",\"outputs\":$outputs}")
+blast () {
+  NewUTXO=$(curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"1d8b27b21efabcd96571cd56f91a40fb9aa4cc623d273c63bf9223dc6f8cd81f\",\"broadcast\":1,\"numblast\":5000,\"password\":\"$passphrase\",\"utxotxid\":\"${lastutxo:-$TXID}\",\"utxovout\":${lastutxovout:-1},\"utxovalue\":${lastutxovalue:-$(( $amount * 100000000 ))},\"txfee\":50000,\"method\":\"txblast\",\"coin\":\"$chain\",\"outputs\":$outputs}")
 }
 
-#call first blast function
-blast
 
-#extract returned vlaues from first blast
-lastutxo=$(echo $NewUTXO | jq -r .lastutxo)
-lastutxovout=$(echo $NewUTXO | jq -r .lastutxovout)
-lastutxovalue=$(awk "BEGIN { print $(echo $NewUTXO | jq -r .lastutxovalue) * 100000000 }")
+extract () {
+    #extract returned vlaues from first blast
+    lastutxo=$(echo $NewUTXO | jq -r .lastutxo)
+    lastutxovout=$(echo $NewUTXO | jq -r .lastutxovout)
+    lastutxovalue=$(( $(echo $NewUTXO | jq -r .lastutxovalue) * 100000000  ))
+}
 
 while true
 do
    #check mempool size
    mempoolbytes=$(komodo-cli -ac_name=$chain getmempoolinfo | jq -r .bytes)
-   if [ "$mempoolbytes" -lt "8000000" ]
-     then
-	 blast
-	 lastutxo=$(echo $NewUTXO | jq -r .lastutxo)
-	 lastutxovout=$(echo $NewUTXO | jq -r .lastutxovout)
-	 lastutxovalue=$(awk "BEGIN { print $(echo $NewUTXO | jq -r .lastutxovalue) * 100000000 }")
-      else
-        sleep 60
-    fi
+   if [ "$mempoolbytes" -lt "8000000" ]; then
+	     blast
+       extract
+   else
+       sleep 60
+   fi
 done

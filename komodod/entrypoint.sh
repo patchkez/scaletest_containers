@@ -40,6 +40,10 @@ if [ ! -d /home/komodo/.komodo/${ASSET_NAME} ];then
   mkdir -p /home/komodo/.komodo/${ASSET_NAME}
 fi
 
+if [ ! -d /home/komodo/stats/${ASSET_NAME}/stats ];then
+  mkdir -p /home/komodo/stats/${ASSET_NAME}/stats
+fi
+
 confd -confdir ${KOMODO_HOME}/confd -onetime -backend env
 
 exec "$@"
