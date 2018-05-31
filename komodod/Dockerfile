@@ -4,7 +4,7 @@ LABEL maintainer="Emmanux <infra@komodo.rocks>"
 ARG KOMODO_BRANCH
 ENV KOMODO_HOME /home/komodo
 
-ENV BUILD_PACKAGES="build-essential pkg-config libcurl3-gnutls-dev libc6-dev libevent-dev m4 g++-multilib autoconf libtool ncurses-dev unzip git python zlib1g-dev wget bsdmainutils automake libboost-all-dev libssl-dev libprotobuf-dev protobuf-compiler libqt4-dev libqrencode-dev libdb++-dev curl libcurl3-gnutls-dev libgomp1"
+ENV BUILD_PACKAGES=" build-essential pkg-config libc6-dev m4 g++-multilib autoconf libtool ncurses-dev unzip git python python-zmq zlib1g-dev wget libcurl4-openssl-dev bsdmainutils automake curl"
 
 RUN apt update && \
     apt install -y $BUILD_PACKAGES
@@ -26,7 +26,7 @@ RUN apt remove --purge -y $BUILD_PACKAGES $(apt-mark showauto) && \
     rm -rf ${KOMODO_HOME}/depends
 
 RUN apt update && \
-    apt install -y curl libcurl3-gnutls-dev libgomp1
+    apt install -y libgomp1 libcurl4-openssl-dev curl
 
 FROM ubuntu:16.04 as kmd_minimal
 RUN useradd -u 3003 -m komodo
@@ -37,7 +37,7 @@ COPY --from=kmd_builder  /home/komodo/komodo/src/komodo-cli /bin
 COPY --from=kmd_builder  /home/komodo/.zcash-params /home/komodo/.zcash-params
 
 RUN apt update && \
-    apt install -y libcurl4-openssl-dev curl libgomp1 git
+    apt install -y libcurl4-openssl-dev curl libgomp1 git jq
 
 # confd
 RUN curl -L -o /usr/local/bin/confd https://github.com/kelseyhightower/confd/releases/download/v0.15.0/confd-0.15.0-linux-amd64 && \
@@ -62,10 +62,6 @@ RUN mkdir ${KOMODO_HOME}/.komodo && \
     mkdir ${KOMODO_HOME}/stats && \
     touch ${KOMODO_HOME}/.komodo/komodo.conf && \
     chown komodo:komodo "${KOMODO_HOME}"/.komodo/komodo.conf
-
-USER root
-RUN apt update && \
-    apt install -y libcurl4-openssl-dev jq
 
 USER komodo
 
