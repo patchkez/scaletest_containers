@@ -3,11 +3,11 @@ version: '3.6'
 
 services:
   txscl220-ac:
-    #build:
-    #  context: ./komodod
-    #  args:
-    #    KOMODO_BRANCH: dev
-    image: komodod
+    build:
+      context: ./komodod
+      args:
+        KOMODO_BRANCH: dev
+    #image: komodod
     networks:
       - komodo_scale
     volumes:
@@ -38,7 +38,11 @@ services:
       -connect=txscl220-miner"
 
   txscl220-miner:
-    image: komodod
+    build:
+      context: ./komodod
+      args:
+        KOMODO_BRANCH: dev
+    #image: komodod
     restart: on-failure
     networks:
       - komodo_scale
