@@ -30,5 +30,20 @@ if [ "$STATS" = "1" ]
     block=$(komodo-cli -ac_name=$chain getblock $HEIGHT)
     testing=$(echo $block | jq '{size, height, time}')
     totaltx=$(echo $block | jq '.tx | length')
-    echo $(echo $testing | jq --arg totaltx $totaltx --arg chain $chain '. += {"totaltx":$totaltx, "ac":$chain}') >> ~/stats/stats.txt
+    RESULT=$(echo $testing | jq --arg totaltx $totaltx --arg chain $chain '. += {"totaltx":$totaltx, "ac":$chain}')
+    echo $RESULT >> ~/stats/stats.txt
+    curl \
+    --verbose \
+    --request OPTIONS \
+    ${BLOCKNOTIFYURL} \
+    --header 'Origin: http://localhost:8000' \
+    --header 'Access-Control-Request-Headers: Origin, Accept, Content-Type' \
+    --header 'Access-Control-Request-Method: POST'
+    sleep 2
+    curl \
+    --verbose \
+    --header "Origin: http://localhost:8000" \
+    --request POST \
+    --data "${RESULT}" \
+    ${BLOCKNOTIFYURL}
 fi
