@@ -10,7 +10,7 @@
 ## Build images
 Build the TxBlaster Image:
 ```
-docker-compose build komodod
+docker-compose build
 ```
 
 ## Create custom docker network
