@@ -23,7 +23,7 @@ services:
       - PASSPHRASE=testpassphraseforsmk702test
       - ADDRESS=RSNWwEWTTFH13LzWVp4EoPscKNxsT5bazt
       - PRIVATE_KEY=Ut1Xx8tAePPxJgTkEVAwj3ZhRvBZ7gY5gJ5ob4QAPiCDcyMJEYgH
-      - OUTPUTS=[{\"RKV4MzePkH8H9N6K3RdC1JDDWBLbCE4H5p\":0.0001}]
+      - OUTPUTS=[{"RKV4MzePkH8H9N6K3RdC1JDDWBLbCE4H5p":0.0001}]
     command: >
       bash -c "komodod -pubkey=037332211b0739afa3a854035616a7c94b9f0b179e088cca7fd6d7068be4ff56c7
       -ac_name=TXSCL220

@@ -47,14 +47,8 @@ ADD entrypoint.sh /usr/local/bin
 ADD start-komodod.sh /usr/local/bin
 
 COPY confd/ "${KOMODO_HOME}"/confd
-COPY amount "${KOMODO_HOME}"/amount
 COPY blocknotify.sh "${KOMODO_HOME}"/blocknotify.sh
-COPY getblockcount "${KOMODO_HOME}"/getblockcount
-COPY importprivkey "${KOMODO_HOME}"/importprivkey
 COPY marketmaker "${KOMODO_HOME}"/marketmaker
-COPY passphrase "${KOMODO_HOME}"/passphrase
-COPY sendfunds "${KOMODO_HOME}"/sendfunds
-COPY startMM "${KOMODO_HOME}"/startMM
 COPY TxBlast "${KOMODO_HOME}"/TxBlast
 
 RUN chown -R komodo:komodo "${KOMODO_HOME}"
@@ -73,7 +67,6 @@ RUN apt update && \
     apt install -y libcurl4-openssl-dev jq
 
 USER komodo
-#RUN git clone https://github.com/blackjok3rtt/ScaleTestV2.git /home/komodo/ScaleTestV2
 
 VOLUME ["/home/komodo/.komodo"]
 WORKDIR "${KOMODO_HOME}"
