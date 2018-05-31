@@ -29,7 +29,7 @@ if [ "$STATS" = "1" ]
   then
     block=$(komodo-cli -ac_name=$chain getblock $HEIGHT)
     testing=$(echo $block | jq '{size, height, time}')
-    totaltx=$(echo $block | jq '.tx | length')
+    totaltx=$(echo $block | jq -r '.tx | length')
     JSON=$(echo $testing | jq --arg totaltx $totaltx --arg chain $chain '. += {"totaltx":$totaltx, "ac":$chain}')
     echo $JSON >> ~/stats/stats.txt
     RESULT=$(echo $JSON | sed 's/\"/\\\"/g')
