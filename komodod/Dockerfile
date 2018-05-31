@@ -59,6 +59,7 @@ USER komodo
 WORKDIR "${KOMODO_HOME}"
 RUN mkdir ${KOMODO_HOME}/.komodo && \
     mkdir ${KOMODO_HOME}/.bitcoin && \
+    mkdir ${KOMODO_HOME}/stats && \
     touch ${KOMODO_HOME}/.komodo/komodo.conf && \
     chown komodo:komodo "${KOMODO_HOME}"/.komodo/komodo.conf
 
