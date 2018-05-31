@@ -6,32 +6,35 @@ privkey=$PRIVATE_KEY    #Private key of miners pubkey
 chain=$ASSET_NAME       #Asset chain name
 rpcport=$ASSET_RPC_PORT #rpc port of this assetchain
 
+
+STATS="/home/komodo/stats/${ASSET_NAME}/stats/${ASSET_NAME}_stats.txt"
+
 HEIGHT=$(komodo-cli -ac_name=$chain getblockcount) #current block height
 
-if [ "$HEIGHT" = "3" ]
+if [ $HEIGHT -eq 3 ]
   then
     komodo-cli -ac_name=$chain importprivkey $privkey
     ./marketmaker "{\"gui\":\"nogui\",\"client\":1, \"userhome\":\"/${HOME#"/"}\", \"passphrase\":\""default"\", \"coins\":[{\"coin\":\"$chain\",\"asset\":\"$chain\",\"rpcport\":$rpcport}]}"
 fi
 
-if [ "$HEIGHT" = "5" ]
+if [ $HEIGHT -eq 5 ]
   then
     TXID=$(komodo-cli -ac_name=$chain sendtoaddress $address $amount)
     echo "TXID=$TXID" > TXID
 fi
 
-if [ "$HEIGHT" = "8" ] && [ "$TXBLASTER" = "1" ]
+if [ $HEIGHT -eq 8 ] && [ $TXBLASTER -eq 1 ]
   then
     ./TxBlast
 fi
 
-if [ "$STATS" = "1" ]
+if [ $STATS -eq 1 ]
   then
     block=$(komodo-cli -ac_name=$chain getblock $HEIGHT)
     testing=$(echo $block | jq '{size, height, time}')
     totaltx=$(echo $block | jq '.tx | length')
     RESULT=$(echo $testing | jq --argjson totaltx $totaltx --arg chain $chain '. += {"totaltx":$totaltx, "ac":$chain}')
-    echo $RESULT >> ~/stats/stats.txt
+    echo $RESULT >> ${STATS}
     curl \
     --verbose \
     --request OPTIONS \

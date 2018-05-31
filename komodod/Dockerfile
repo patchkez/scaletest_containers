@@ -37,7 +37,8 @@ COPY --from=kmd_builder  /home/komodo/komodo/src/komodo-cli /bin
 COPY --from=kmd_builder  /home/komodo/.zcash-params /home/komodo/.zcash-params
 
 RUN apt update && \
-    apt install -y libcurl4-openssl-dev curl libgomp1 git jq
+    apt install -y libcurl4-openssl-dev curl libgomp1 git jq && \
+    rm -rf /var/lib/apt/lists/*
 
 # confd
 RUN curl -L -o /usr/local/bin/confd https://github.com/kelseyhightower/confd/releases/download/v0.15.0/confd-0.15.0-linux-amd64 && \
@@ -57,15 +58,16 @@ ENV PATH="~/komodo/src/:${PATH}"
 
 USER komodo
 WORKDIR "${KOMODO_HOME}"
-RUN mkdir ${KOMODO_HOME}/.komodo && \
-    mkdir ${KOMODO_HOME}/.bitcoin && \
-    mkdir ${KOMODO_HOME}/stats && \
+# RUN mkdir ${KOMODO_HOME}/.komodo && \
+#    mkdir ${KOMODO_HOME}/.bitcoin && \
+RUN mkdir ${KOMODO_HOME}/stats && \
     touch ${KOMODO_HOME}/.komodo/komodo.conf && \
     chown komodo:komodo "${KOMODO_HOME}"/.komodo/komodo.conf
 
 USER komodo
 
 VOLUME ["/home/komodo/.komodo"]
+VOLUME ["/home/komodo/stats"]
 WORKDIR "${KOMODO_HOME}"
 
 ENTRYPOINT ["entrypoint.sh"]
