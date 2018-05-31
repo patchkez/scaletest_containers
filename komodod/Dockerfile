@@ -37,7 +37,7 @@ COPY --from=kmd_builder  /home/komodo/komodo/src/komodo-cli /bin
 COPY --from=kmd_builder  /home/komodo/.zcash-params /home/komodo/.zcash-params
 
 RUN apt update && \
-    apt install -y libcurl3-gnutls-dev curl libgomp1 git
+    apt install -y libcurl4-openssl-dev curl libgomp1 git
 
 # confd
 RUN curl -L -o /usr/local/bin/confd https://github.com/kelseyhightower/confd/releases/download/v0.15.0/confd-0.15.0-linux-amd64 && \
