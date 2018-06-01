@@ -14,18 +14,29 @@ HEIGHT=$(komodo-cli -ac_name=$chain getblockcount) #current block height
 if [ $HEIGHT -eq 3 ]
   then
     komodo-cli -ac_name=$chain importprivkey $privkey
-    ./marketmaker "{\"gui\":\"nogui\",\"client\":1, \"userhome\":\"/${HOME#"/"}\", \"passphrase\":\""default"\", \"coins\":[{\"coin\":\"$chain\",\"asset\":\"$chain\",\"rpcport\":$rpcport}]}"
+    ./marketmaker "{\"gui\":\"nogui\",\"client\":1, \"userhome\":\"/${HOME#"/"}\", \"passphrase\":\""default"\", \"coins\":[{\"coin\":\"$chain\",\"asset\":\"$chain\",\"rpcport\":$rpcport}]}" &
 fi
 
-if [ $HEIGHT -eq 5 ]
+if [ $HEIGHT -eq 5 ] && [$TXBLASTER -eq 1]
   then
     TXID=$(komodo-cli -ac_name=$chain sendtoaddress $address $amount)
     echo "TXID=$TXID" > TXID
 fi
 
-if [ $HEIGHT -eq 8 ] && [ $TXBLASTER -eq 1 ]
+if [ $HEIGHT -eq 7 ] && [$TXBLASTER -eq 2]
   then
-    ./TxBlast
+    TXID=$(komodo-cli -ac_name=$chain sendtoaddress $address $amount)
+    echo "TXID=$TXID" > TXID
+fi
+
+if [ $HEIGHT -eq 10 ] && [ $TXBLASTER -eq 1 ]
+  then
+    ./TxBlast &
+fi
+
+if [ $HEIGHT -eq 10 ] && [ $TXBLASTER -eq 2 ]
+  then
+    ./TxBlast &
 fi
 
 if [ $STATS -eq 1 ]
