@@ -7,7 +7,7 @@ chain=$ASSET_NAME       #Asset chain name
 rpcport=$ASSET_RPC_PORT #rpc port of this assetchain
 
 
-STATS="/home/komodo/stats/${ASSET_NAME}/stats/${ASSET_NAME}_stats.txt"
+STATS_FILE="/home/komodo/stats/${ASSET_NAME}/stats/${ASSET_NAME}_stats.txt"
 
 HEIGHT=$(komodo-cli -ac_name=$chain getblockcount) #current block height
 
@@ -31,10 +31,13 @@ fi
 if [ $STATS -eq 1 ]
   then
     block=$(komodo-cli -ac_name=$chain getblock $HEIGHT)
-    testing=$(echo $block | jq '{size, height, time}')
+    mempool=$(komodo-cli -ac_name=$chain getmempoolinfo)
+    blockinfo=$(echo $block | jq '{size, height, time}')
     totaltx=$(echo $block | jq '.tx | length')
-    RESULT=$(echo $testing | jq --argjson totaltx $totaltx --arg chain $chain '. += {"totaltx":$totaltx, "ac":$chain}')
-    echo $RESULT >> ${STATS}
+    mempooltx=$(echo $mempool | jq -r .size)
+    mempoolMB=$(( $(echo $mempool | jq -r .bytes) / 1000000 ))
+    RESULT=$(echo $blockinfo | jq --argjson mempooltx $mempooltx --argjson mempoolMB $mempoolMB --argjson totaltx $totaltx --arg chain $chain '. += {"totaltx":$totaltx, "ac":$chain, "mempooltx":$mempooltx, "mempoolMB":$mempoolMB}')
+    echo $RESULT >> ${STATS_FILE}
     curl \
     --verbose \
     --request OPTIONS \

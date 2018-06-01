@@ -28,4 +28,4 @@ The seed node will launch and listen for connections on its P2P_PORT, once the a
 
 > At block 5 the ac chain will send the `amount` to the `address`
 
-> At block 8 the TxBlaster loop will be called. Any time the mempool is under 5mb in size marketmaker will send 10,000 TX's. This is currently a single payment transaction.
+> At block 8 the TxBlaster loop will be called. Any time the mempool is under 8mb in size marketmaker will send 5,000 TX's. 
