@@ -50,9 +50,10 @@ COPY TxBlast "${KOMODO_HOME}"/TxBlast
 USER komodo
 WORKDIR "${KOMODO_HOME}"
 RUN mkdir ${KOMODO_HOME}/.komodo
-RUN mkdir ${KOMODO_HOME}/stats && \
-    touch ${KOMODO_HOME}/.komodo/komodo.conf && \
-    chown -R komodo:komodo "${KOMODO_HOME}"
+RUN mkdir ${KOMODO_HOME}/stats
+
+USER root
+RUN chown -R komodo:komodo "${KOMODO_HOME}"
 
 USER komodo
 
