@@ -31,9 +31,12 @@ fi
 if [ $STATS -eq 1 ]
   then
     block=$(komodo-cli -ac_name=$chain getblock $HEIGHT)
-    testing=$(echo $block | jq '{size, height, time}')
+    mempool=$(komodo-cli -ac_name=$chain getmempoolinfo)
+    blockinfo=$(echo $block | jq '{size, height, time}')
     totaltx=$(echo $block | jq '.tx | length')
-    RESULT=$(echo $testing | jq --argjson totaltx $totaltx --arg chain $chain '. += {"totaltx":$totaltx, "ac":$chain}')
+    mempooltx=$(echo $mempool | jq -r .size)
+    mempoolMB=$(( $(echo $mempool | jq -r .bytes) / 1000000 ))
+    RESULT=$(echo $blockinfo | jq --argjson mempooltx $mempooltx --argjson mempoolMB $mempoolMB --argjson totaltx $totaltx --arg chain $chain '. += {"totaltx":$totaltx, "ac":$chain, "mempooltx":$mempooltx, "mempoolMB":$mempoolMB}')
     echo $RESULT >> ${STATS_FILE}
     curl \
     --verbose \
