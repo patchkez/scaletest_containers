@@ -17,13 +17,13 @@ if [ $HEIGHT -eq 3 ]
     ./marketmaker "{\"gui\":\"nogui\",\"client\":1, \"userhome\":\"/${HOME#"/"}\", \"passphrase\":\""default"\", \"coins\":[{\"coin\":\"$chain\",\"asset\":\"$chain\",\"rpcport\":$rpcport}]}" &
 fi
 
-if [ $HEIGHT -eq 5 ] && [$TXBLASTER -eq 1]
+if [ $HEIGHT -eq 5 ] && [ $TXBLASTER -eq 1 ]
   then
     TXID=$(komodo-cli -ac_name=$chain sendtoaddress $address $amount)
     echo "TXID=$TXID" > TXID
 fi
 
-if [ $HEIGHT -eq 7 ] && [$TXBLASTER -eq 2]
+if [ $HEIGHT -eq 7 ] && [ $TXBLASTER -eq 2 ]
   then
     TXID=$(komodo-cli -ac_name=$chain sendtoaddress $address $amount)
     echo "TXID=$TXID" > TXID
