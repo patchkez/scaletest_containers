@@ -25,7 +25,6 @@ services:
       - PASSPHRASE=testpassphraseforsmk702test
       - ADDRESS=RSNWwEWTTFH13LzWVp4EoPscKNxsT5bazt
       - PRIVATE_KEY=Ut1Xx8tAePPxJgTkEVAwj3ZhRvBZ7gY5gJ5ob4QAPiCDcyMJEYgH
-      - OUTPUTS=[{"RKV4MzePkH8H9N6K3RdC1JDDWBLbCE4H5p":0.0001}]
       - PAYMENTS=1
       - TXBLASTER=1
       - STATS=1
@@ -65,7 +64,6 @@ services:
       - PASSPHRASE=testpassphraseforsmk702test2
       - ADDRESS=RHqp4GyNQHmnFizs8T1A4sJmEuHLCMTRtQ
       - PRIVATE_KEY=Ut1Xx8tAePPxJgTkEVAwj3ZhRvBZ7gY5gJ5ob4QAPiCDcyMJEYgH
-      - OUTPUTS=[{"RKV4MzePkH8H9N6K3RdC1JDDWBLbCE4H5p":0.0001}]
       - TXBLASTER=2
       - PAYMENTS=1
       - STATS=0
