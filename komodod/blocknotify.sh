@@ -29,12 +29,12 @@ if [ $HEIGHT -eq 7 ] && [ $TXBLASTER -eq 2 ]
     echo "TXID=$TXID" > TXID
 fi
 
-if [ $HEIGHT -eq 10 ] && [ $TXBLASTER -eq 1 ]
-  then
-    ./TxBlast &
-fi
+#if [ $HEIGHT -eq 10 ] && [ $TXBLASTER -eq 1 ]
+#  then
+#    ./TxBlast &
+#fi
 
-if [ $HEIGHT -eq 10 ] && [ $TXBLASTER -eq 2 ]
+if [ $HEIGHT == 10 ] && [[ $TXBLASTER == 1 || $TXBLASTER == 2 ]]
   then
     ./TxBlast &
 fi

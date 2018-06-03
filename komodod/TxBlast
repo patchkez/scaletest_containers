@@ -1,15 +1,14 @@
 #!/bin/bash
 #Txblaster script
-chain=$ASSET_NAME 		    #source from docker env var
-passphrase=$PASSPHRASE    #can stay in container
-amount=$AMOUNT            #stay in contanier: make 80% of total supply
+chain=$ASSET_NAME	  #source from docker env var
+passphrase=$PASSPHRASE    #passphrase for blast address
+amount=$AMOUNT            #the amount to send to blast address
 outputs=$OUTPUTS          #Array of address's and amounts to send
 source TXID               #generated inside container on send funds call
 
 blast () {
   NewUTXO=$(curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"1d8b27b21efabcd96571cd56f91a40fb9aa4cc623d273c63bf9223dc6f8cd81f\",\"broadcast\":1,\"numblast\":5000,\"password\":\"$passphrase\",\"utxotxid\":\"${lastutxo:-$TXID}\",\"utxovout\":${lastutxovout:-1},\"utxovalue\":${lastutxovalue:-$(( $amount * 100000000 ))},\"txfee\":50000,\"method\":\"txblast\",\"coin\":\"$chain\",\"outputs\":$outputs}")
 }
-
 
 extract () {
     #extract returned vlaues from first blast
@@ -23,7 +22,7 @@ do
    #check mempool size
    mempoolbytes=$(komodo-cli -ac_name=$chain getmempoolinfo | jq -r .bytes)
    if [ "$mempoolbytes" -lt "8000000" ]; then
-	     blast
+       blast
        extract
    else
        sleep 30
