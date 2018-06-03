@@ -7,7 +7,7 @@ outputs=$OUTPUTS          #Array of address's and amounts to send
 source TXID               #generated inside container on send funds call
 
 blast () {
-  NewUTXO=$(curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"1d8b27b21efabcd96571cd56f91a40fb9aa4cc623d273c63bf9223dc6f8cd81f\",\"broadcast\":1,\"numblast\":5000,\"password\":\"$passphrase\",\"utxotxid\":\"${lastutxo:-$TXID}\",\"utxovout\":${lastutxovout:-1},\"utxovalue\":${lastutxovalue:-$(( $amount * 100000000 ))},\"txfee\":50000,\"method\":\"txblast\",\"coin\":\"$chain\",\"outputs\":$outputs}")
+  NewUTXO=$(curl --url "http://127.0.0.1:7783" --data "{\"userpass\":\"1d8b27b21efabcd96571cd56f91a40fb9aa4cc623d273c63bf9223dc6f8cd81f\",\"broadcast\":1,\"numblast\":5000,\"password\":\"$passphrase\",\"utxotxid\":\"${lastutxo:-$TXID}\",\"utxovout\":${lastutxovout:-1},\"utxovalue\":${lastutxovalue:-$(( $amount * 100000000 ))},\"txfee\":5000,\"method\":\"txblast\",\"coin\":\"$chain\",\"outputs\":$outputs}")
 }
 
 extract () {
