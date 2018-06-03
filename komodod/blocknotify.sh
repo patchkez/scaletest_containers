@@ -41,7 +41,7 @@ if [ $HEIGHT -eq 90 ] && [ $TXBLASTER -eq 1 ]
     echo "TXID=$TXID" > TXID
 fi
 
-if [ $HEIGHT -eq 92 ] && [ $TXBLASTER -eq 2 ]
+if [ $HEIGHT -eq 95 ] && [ $TXBLASTER -eq 2 ]
   then
     TXID=$(komodo-cli -ac_name=$chain sendtoaddress $address $amount)
     echo "TXID=$TXID" > TXID

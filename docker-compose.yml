@@ -25,7 +25,6 @@ services:
       - PASSPHRASE=testpassphraseforsmk702test
       - ADDRESS=RSNWwEWTTFH13LzWVp4EoPscKNxsT5bazt
       - PRIVATE_KEY=Ut1Xx8tAePPxJgTkEVAwj3ZhRvBZ7gY5gJ5ob4QAPiCDcyMJEYgH
-      - PAYMENTS=1
       - TXBLASTER=1
       - STATS=1
       - BLOCKNOTIFYURL=https://njeitldkqc.execute-api.ap-southeast-2.amazonaws.com/v0/blocknotify
