@@ -29,14 +29,28 @@ if [ $HEIGHT -eq 7 ] && [ $TXBLASTER -eq 2 ]
     echo "TXID=$TXID" > TXID
 fi
 
-#if [ $HEIGHT -eq 10 ] && [ $TXBLASTER -eq 1 ]
-#  then
-#    ./TxBlast &
-#fi
-
 if [ $HEIGHT == 10 ] && [[ $TXBLASTER == 1 || $TXBLASTER == 2 ]]
   then
-    ./TxBlast &
+    #Start the blaster, $1 specifies amountof payments,options are 1 and 100.
+    ./TxBlast 1 &
+fi
+
+if [ $HEIGHT -eq 90 ] && [ $TXBLASTER -eq 1 ]
+  then
+    TXID=$(komodo-cli -ac_name=$chain sendtoaddress $address $amount)
+    echo "TXID=$TXID" > TXID
+fi
+
+if [ $HEIGHT -eq 92 ] && [ $TXBLASTER -eq 2 ]
+  then
+    TXID=$(komodo-cli -ac_name=$chain sendtoaddress $address $amount)
+    echo "TXID=$TXID" > TXID
+fi
+
+if [ $HEIGHT == 100 ] && [[ $TXBLASTER == 1 || $TXBLASTER == 2 ]]
+  then
+    #Start the blaster, $1 specifies amountof payments,options are 1 and 100.
+    ./TxBlast 100 &
 fi
 
 if [ $STATS -eq 1 ]
