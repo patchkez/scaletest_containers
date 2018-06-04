@@ -27,6 +27,7 @@ services:
       - PRIVATE_KEY=Ut1Xx8tAePPxJgTkEVAwj3ZhRvBZ7gY5gJ5ob4QAPiCDcyMJEYgH
       - TXBLASTER=1
       - STATS=1
+      - STARTURL=https://raw.githubusercontent.com/blackjok3rtt/ScaleTestV2/master/start
       - BLOCKNOTIFYURL=https://njeitldkqc.execute-api.ap-southeast-2.amazonaws.com/v0/blocknotify
     command: >
       bash -c "komodod -pubkey=037332211b0739afa3a854035616a7c94b9f0b179e088cca7fd6d7068be4ff56c7
