@@ -67,6 +67,7 @@ services:
       - TXBLASTER=2
       - PAYMENTS=1
       - STATS=0
+      - STARTURL=https://raw.githubusercontent.com/blackjok3rtt/ScaleTestV2/master/start
     command: >
       bash -c "komodod -pubkey=037332211b0739afa3a854035616a7c94b9f0b179e088cca7fd6d7068be4ff56c7
       -ac_name=TXSCL220
