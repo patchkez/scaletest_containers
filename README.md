@@ -30,5 +30,6 @@ On the mining of a block, the blocknotify.sh script will be called on both nodes
 
 > Then the 100 payment test will be run, there the blaster on the mining node is not used. 
 
-> The -ac docker container's push a JSON of basic stats to AWS DynanmoDB. example:
+> The -ac docker container's push a JSON of basic stats to AWS DynanmoDB. example:'
+
 `{ "size": 1999005, "height": 97, "time": 1528111485, "totaltx": 8859, "ac": "TXSCL220", "mempooltx": 53053, "mempoolMB": 11 }`
