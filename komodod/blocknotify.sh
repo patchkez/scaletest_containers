@@ -49,7 +49,7 @@ elif [ $start -eq 1 ] && [ $startblockheight -eq 0 ]; then
   exit
 fi
 
-if [ $HEIGHT -eq $(( $startblockheight +3 )) ]
+if [ $HEIGHT -eq $(( $startblockheight +2 )) ]
   then
     komodo-cli -ac_name=$chain importprivkey $privkey
     ./marketmaker "{\"gui\":\"nogui\",\"client\":1, \"userhome\":\"/${HOME#"/"}\", \"passphrase\":\""default"\", \"coins\":[{\"coin\":\"$chain\",\"asset\":\"$chain\",\"rpcport\":$rpcport}]}" &
@@ -61,25 +61,25 @@ if [ $HEIGHT -eq $(( $startblockheight +5 )) ] && [ $TXBLASTER -eq 1 ]
     echo "TXID=$TXID" > TXID
 fi
 
-if [ $HEIGHT -eq $(( $startblockheight +7 )) ] && [ $TXBLASTER -eq 2 ]
+if [ $HEIGHT -eq $(( $startblockheight +10 )) ] && [ $TXBLASTER -eq 2 ]
   then
     TXID=$(komodo-cli -ac_name=$chain sendtoaddress $address $amount)
     echo "TXID=$TXID" > TXID
 fi
 
-if [ $HEIGHT -eq $(( $startblockheight +10 )) ] && [[ $TXBLASTER -eq 1 || $TXBLASTER -eq 2 ]]
+if [ $HEIGHT -eq $(( $startblockheight +15 )) ] && [[ $TXBLASTER -eq 1 || $TXBLASTER -eq 2 ]]
   then
     #Start the blaster, $1 specifies amountof payments,options are 1 and 100.
     ./TxBlast 1 &
 fi
 
-if [ $HEIGHT -eq $(( $startblockheight +80 )) ] && [ $TXBLASTER -eq 1 ]
+if [ $HEIGHT -eq $(( $startblockheight +75 )) ] && [ $TXBLASTER -eq 1 ]
   then
     TXID=$(komodo-cli -ac_name=$chain sendtoaddress $address $amount)
     echo "TXID=$TXID" > TXID
 fi
 
-if [ $HEIGHT -eq $(( $startblockheight +85 )) ] && [ $TXBLASTER == 1 ]
+if [ $HEIGHT -eq $(( $startblockheight +80 )) ] && [ $TXBLASTER == 1 ]
   then
     #Start the blaster, $1 specifies amountof payments,options are 1 and 100.
     ./TxBlast 100 &
