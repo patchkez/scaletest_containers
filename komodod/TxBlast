@@ -13,7 +13,7 @@ outputsarray=(
 source TXID               #generated inside container on send funds call
 
 if [ $payments == 1 ]; then
-  loops=30000
+  loops=10000
   stopheight=$(( $startblockheight +45 ))
   outputs=${outputsarray[0]}
 elif [ $payments == 100 ]; then
