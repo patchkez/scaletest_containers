@@ -43,7 +43,7 @@ if [ $start -eq 0 ] && [ $startblockheight -eq 0 ]; then
   curl $STARTURL -o start
   sleep 1
   exit
-elif [ $start -eq 1 ]; then
+elif [ $start -eq 1 ] && [ $startblockheight -eq 0 ]; then
   echo "startblockheight=$HEIGHT" > startblockheight
   sleep 1
   exit
