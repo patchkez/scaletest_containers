@@ -40,7 +40,7 @@ fi
 
 #fetch the start variable, if we have a start block height then the blaster will start
 if [ $start -eq 0 ] && [ $startblockheight -eq 0 ]; then
-  curl $STARTURL -o star
+  curl $STARTURL -o start
   sleep 1
   exit
 elif [ $start -eq 1 ]; then
