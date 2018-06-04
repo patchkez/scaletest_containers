@@ -5,29 +5,13 @@ address=$ADDRESS        #Address of the above passphrase
 privkey=$PRIVATE_KEY    #Private key of miners pubkey
 chain=$ASSET_NAME       #Asset chain name
 rpcport=$ASSET_RPC_PORT #rpc port of this assetchain
-
-
-STATS_FILE="/home/komodo/stats/${ASSET_NAME}/stats/${ASSET_NAME}_stats.txt"
+source start            #start file, starts as start=0
+source startblockheight #block height start=1 was fetched.starts as 0.
 
 HEIGHT=$(komodo-cli -ac_name=$chain getblockcount) #current block height
+STATS_FILE="/home/komodo/stats/${ASSET_NAME}/stats/${ASSET_NAME}_stats.txt"
 
-if [ $HEIGHT -eq 3 ]
-  then
-    komodo-cli -ac_name=$chain importprivkey $privkey
-    ./marketmaker "{\"gui\":\"nogui\",\"client\":1, \"userhome\":\"/${HOME#"/"}\", \"passphrase\":\""default"\", \"coins\":[{\"coin\":\"$chain\",\"asset\":\"$chain\",\"rpcport\":$rpcport}]}"
-fi
-
-if [ $HEIGHT -eq 5 ]
-  then
-    TXID=$(komodo-cli -ac_name=$chain sendtoaddress $address $amount)
-    echo "TXID=$TXID" > TXID
-fi
-
-if [ $HEIGHT -eq 8 ] && [ $TXBLASTER -eq 1 ]
-  then
-    ./TxBlast
-fi
-
+#do the stats first if this is a stats node
 if [ $STATS -eq 1 ]
   then
     block=$(komodo-cli -ac_name=$chain getblock $HEIGHT)
@@ -52,4 +36,51 @@ if [ $STATS -eq 1 ]
     --request POST \
     --data "${RESULT}" \
     ${BLOCKNOTIFYURL}
+fi
+
+#fetch the start variable, if we have a start block height then the blaster will start
+if [ $start -eq 0 ] && [ $startblockheight -eq 0 ]; then
+ curl $STARTURL -o start
+ sleep 1
+ exit
+elif [ $start -eq 1 ] && [ $startblockheight -eq 0 ]; then
+ echo "startblockheight=$HEIGHT" > startblockheight
+ sleep 1
+ exit
+fi
+
+if [ $HEIGHT -eq $(( $startblockheight +2 )) ]
+  then
+    komodo-cli -ac_name=$chain importprivkey $privkey
+    ./marketmaker "{\"gui\":\"nogui\",\"client\":1, \"userhome\":\"/${HOME#"/"}\", \"passphrase\":\""default"\", \"coins\":[{\"coin\":\"$chain\",\"asset\":\"$chain\",\"rpcport\":$rpcport}], \"netid\":77}" &
+fi
+
+if [ $HEIGHT -eq $(( $startblockheight +5 )) ] && [ $TXBLASTER -eq 1 ]
+  then
+    TXID=$(komodo-cli -ac_name=$chain sendtoaddress $address $amount)
+    echo "TXID=$TXID" > TXID
+fi
+
+if [ $HEIGHT -eq $(( $startblockheight +10 )) ] && [ $TXBLASTER -eq 2 ]
+  then
+    TXID=$(komodo-cli -ac_name=$chain sendtoaddress $address $amount)
+    echo "TXID=$TXID" > TXID
+fi
+
+if [ $HEIGHT -eq $(( $startblockheight +15 )) ] && [[ $TXBLASTER -eq 1 || $TXBLASTER -eq 2 ]]
+  then
+    #Start the blaster, $1 specifies amountof payments,options are 1 and 100.
+    ./TxBlast 1 &
+fi
+
+if [ $HEIGHT -eq $(( $startblockheight +40 )) ] && [ $TXBLASTER -eq 1 ]
+  then
+    TXID=$(komodo-cli -ac_name=$chain sendtoaddress $address $amount)
+    echo "TXID=$TXID" > TXID
+fi
+
+if [ $HEIGHT -eq $(( $startblockheight +45 )) ] && [ $TXBLASTER == 1 ]
+  then
+    #Start the blaster, $1 specifies amountof payments,options are 1 and 100.
+    ./TxBlast 100 &
 fi
