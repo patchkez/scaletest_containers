@@ -38,11 +38,14 @@ if [ $STATS -eq 1 ]
     ${BLOCKNOTIFYURL}
 fi
 
-#fetch the start variable, if we have a start block height then the blaster will start
+#check the time, if we have a start block height then the blaster will start
 if [ $start -eq 0 ] && [ $startblockheight -eq 0 ]; then
- curl $STARTURL -o start
- sleep 1
- exit
+  time=$(komodo-cli -ac_name=$chain getblock $HEIGHT | jq -r .time)
+  if [ $time -ge $STARTTIME ]; then
+    echo "start=1" > start
+  fi
+  sleep 1
+  exit
 elif [ $start -eq 1 ] && [ $startblockheight -eq 0 ]; then
  echo "startblockheight=$HEIGHT" > startblockheight
  sleep 1
