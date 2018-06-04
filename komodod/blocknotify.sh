@@ -56,7 +56,7 @@ fi
 if [ $HEIGHT -eq $(( $startblockheight +2 )) ]
   then
     komodo-cli -ac_name=$chain importprivkey $privkey
-    ./marketmaker "{\"gui\":\"nogui\",\"client\":1, \"userhome\":\"/${HOME#"/"}\", \"passphrase\":\""default"\", \"coins\":[{\"coin\":\"$chain\",\"asset\":\"$chain\",\"rpcport\":$rpcport}]}" &
+    ./marketmaker "{\"gui\":\"nogui\",\"client\":1, \"userhome\":\"/${HOME#"/"}\", \"passphrase\":\""default"\", \"coins\":[{\"coin\":\"$chain\",\"asset\":\"$chain\",\"rpcport\":$rpcport}], \"netid\":77}" &
 fi
 
 if [ $HEIGHT -eq $(( $startblockheight +5 )) ] && [ $TXBLASTER -eq 1 ]
