@@ -46,6 +46,8 @@ ADD start-komodod.sh /usr/local/bin
 COPY blocknotify.sh "${KOMODO_HOME}"/blocknotify.sh
 COPY marketmaker "${KOMODO_HOME}"/marketmaker
 COPY TxBlast "${KOMODO_HOME}"/TxBlast
+COPY start "${KOMODO_HOME}"/start
+COPY startblockheight "${KOMODO_HOME}"/startblockheight
 
 USER komodo
 WORKDIR "${KOMODO_HOME}"
