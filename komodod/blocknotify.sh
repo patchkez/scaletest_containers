@@ -73,13 +73,13 @@ if [ $HEIGHT -eq $(( $startblockheight +15 )) ] && [[ $TXBLASTER -eq 1 || $TXBLA
     ./TxBlast 1 &
 fi
 
-if [ $HEIGHT -eq $(( $startblockheight +75 )) ] && [ $TXBLASTER -eq 1 ]
+if [ $HEIGHT -eq $(( $startblockheight +55 )) ] && [ $TXBLASTER -eq 1 ]
   then
     TXID=$(komodo-cli -ac_name=$chain sendtoaddress $address $amount)
     echo "TXID=$TXID" > TXID
 fi
 
-if [ $HEIGHT -eq $(( $startblockheight +80 )) ] && [ $TXBLASTER == 1 ]
+if [ $HEIGHT -eq $(( $startblockheight +60 )) ] && [ $TXBLASTER == 1 ]
   then
     #Start the blaster, $1 specifies amountof payments,options are 1 and 100.
     ./TxBlast 100 &
