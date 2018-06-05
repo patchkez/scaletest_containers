@@ -4,7 +4,7 @@ chain=$ASSET_NAME	        #source from docker env var
 passphrase=$PASSPHRASE    #passphrase for blast address
 amount=$AMOUNT            #the amount to send to blast address
 payments=$1               #number of payments to make per transaction
-source startblockheight    #read the global var for when the blast was started
+source startblockheight   #read the global var for when the blast was started
 
 outputsarray=(
 '[{"RKV4MzePkH8H9N6K3RdC1JDDWBLbCE4H5p":0.0001}]'
@@ -18,7 +18,7 @@ if [ $payments == 1 ]; then
   outputs=${outputsarray[0]}
 elif [ $payments == 100 ]; then
   loops=5000
-  stopheight=$(( $startblockheight +65 ))
+  stopheight=$(( $startblockheight +100))
   outputs=${outputsarray[1]}
 fi
 
