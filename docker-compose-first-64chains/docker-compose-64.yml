@@ -74,8 +74,8 @@ services:
       bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
       -ac_name=TXSCL000
       -ac_supply=7777777
-			-ac_cc=3
-			-ac_reward=100000000
+      -ac_cc=3
+      -ac_reward=100000000
       -blocknotify=/home/komodo/blocknotify.sh
       -gen"
   TXSCL001-ac:
@@ -150,8 +150,8 @@ services:
       bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
       -ac_name=TXSCL001
       -ac_supply=7777777
-			-ac_cc=3
-			-ac_reward=100000000
+      -ac_cc=3
+      -ac_reward=100000000
       -blocknotify=/home/komodo/blocknotify.sh
       -gen"
   TXSCL002-ac:
@@ -226,8 +226,8 @@ services:
       bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
       -ac_name=TXSCL002
       -ac_supply=7777777
-			-ac_cc=3
-			-ac_reward=100000000
+      -ac_cc=3
+      -ac_reward=100000000
       -blocknotify=/home/komodo/blocknotify.sh
       -gen"
   TXSCL003-ac:
@@ -302,8 +302,8 @@ services:
       bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
       -ac_name=TXSCL003
       -ac_supply=7777777
-			-ac_cc=3
-			-ac_reward=100000000
+      -ac_cc=3
+      -ac_reward=100000000
       -blocknotify=/home/komodo/blocknotify.sh
       -gen"
   TXSCL004-ac:
@@ -378,8 +378,8 @@ services:
       bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
       -ac_name=TXSCL004
       -ac_supply=7777777
-			-ac_cc=3
-			-ac_reward=100000000
+      -ac_cc=3
+      -ac_reward=100000000
       -blocknotify=/home/komodo/blocknotify.sh
       -gen"
   TXSCL005-ac:
@@ -454,8 +454,8 @@ services:
       bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
       -ac_name=TXSCL005
       -ac_supply=7777777
-			-ac_cc=3
-			-ac_reward=100000000
+      -ac_cc=3
+      -ac_reward=100000000
       -blocknotify=/home/komodo/blocknotify.sh
       -gen"
   TXSCL006-ac:
@@ -530,8 +530,8 @@ services:
       bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
       -ac_name=TXSCL006
       -ac_supply=7777777
-			-ac_cc=3
-			-ac_reward=100000000
+      -ac_cc=3
+      -ac_reward=100000000
       -blocknotify=/home/komodo/blocknotify.sh
       -gen"
   TXSCL007-ac:
@@ -606,8 +606,8 @@ services:
       bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
       -ac_name=TXSCL007
       -ac_supply=7777777
-			-ac_cc=3
-			-ac_reward=100000000
+      -ac_cc=3
+      -ac_reward=100000000
       -blocknotify=/home/komodo/blocknotify.sh
       -gen"
   TXSCL008-ac:
@@ -682,8 +682,8 @@ services:
       bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
       -ac_name=TXSCL008
       -ac_supply=7777777
-			-ac_cc=3
-			-ac_reward=100000000
+      -ac_cc=3
+      -ac_reward=100000000
       -blocknotify=/home/komodo/blocknotify.sh
       -gen"
   TXSCL009-ac:
@@ -758,8 +758,8 @@ services:
       bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
       -ac_name=TXSCL009
       -ac_supply=7777777
-			-ac_cc=3
-			-ac_reward=100000000
+      -ac_cc=3
+      -ac_reward=100000000
       -blocknotify=/home/komodo/blocknotify.sh
       -gen"
   TXSCL00a-ac:
@@ -834,8 +834,8 @@ services:
       bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
       -ac_name=TXSCL00a
       -ac_supply=7777777
-			-ac_cc=3
-			-ac_reward=100000000
+      -ac_cc=3
+      -ac_reward=100000000
       -blocknotify=/home/komodo/blocknotify.sh
       -gen"
   TXSCL00b-ac:
@@ -910,8 +910,8 @@ services:
       bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
       -ac_name=TXSCL00b
       -ac_supply=7777777
-			-ac_cc=3
-			-ac_reward=100000000
+      -ac_cc=3
+      -ac_reward=100000000
       -blocknotify=/home/komodo/blocknotify.sh
       -gen"
   TXSCL00c-ac:
@@ -986,8 +986,8 @@ services:
       bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
       -ac_name=TXSCL00c
       -ac_supply=7777777
-			-ac_cc=3
-			-ac_reward=100000000
+      -ac_cc=3
+      -ac_reward=100000000
       -blocknotify=/home/komodo/blocknotify.sh
       -gen"
   TXSCL00d-ac:
@@ -1062,8 +1062,8 @@ services:
       bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
       -ac_name=TXSCL00d
       -ac_supply=7777777
-			-ac_cc=3
-			-ac_reward=100000000
+      -ac_cc=3
+      -ac_reward=100000000
       -blocknotify=/home/komodo/blocknotify.sh
       -gen"
   TXSCL00e-ac:
@@ -1138,8 +1138,8 @@ services:
       bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
       -ac_name=TXSCL00e
       -ac_supply=7777777
-			-ac_cc=3
-			-ac_reward=100000000
+      -ac_cc=3
+      -ac_reward=100000000
       -blocknotify=/home/komodo/blocknotify.sh
       -gen"
   TXSCL00f-ac:
@@ -1214,8 +1214,8 @@ services:
       bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
       -ac_name=TXSCL00f
       -ac_supply=7777777
-			-ac_cc=3
-			-ac_reward=100000000
+      -ac_cc=3
+      -ac_reward=100000000
       -blocknotify=/home/komodo/blocknotify.sh
       -gen"
   TXSCL010-ac:
@@ -1290,8 +1290,8 @@ services:
       bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
       -ac_name=TXSCL010
       -ac_supply=7777777
-			-ac_cc=3
-			-ac_reward=100000000
+      -ac_cc=3
+      -ac_reward=100000000
       -blocknotify=/home/komodo/blocknotify.sh
       -gen"
   TXSCL011-ac:
@@ -1366,8 +1366,8 @@ services:
       bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
       -ac_name=TXSCL011
       -ac_supply=7777777
-			-ac_cc=3
-			-ac_reward=100000000
+      -ac_cc=3
+      -ac_reward=100000000
       -blocknotify=/home/komodo/blocknotify.sh
       -gen"
   TXSCL012-ac:
@@ -1442,8 +1442,8 @@ services:
       bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
       -ac_name=TXSCL012
       -ac_supply=7777777
-			-ac_cc=3
-			-ac_reward=100000000
+      -ac_cc=3
+      -ac_reward=100000000
       -blocknotify=/home/komodo/blocknotify.sh
       -gen"
   TXSCL013-ac:
@@ -1518,8 +1518,8 @@ services:
       bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
       -ac_name=TXSCL013
       -ac_supply=7777777
-			-ac_cc=3
-			-ac_reward=100000000
+      -ac_cc=3
+      -ac_reward=100000000
       -blocknotify=/home/komodo/blocknotify.sh
       -gen"
   TXSCL014-ac:
@@ -1594,8 +1594,8 @@ services:
       bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
       -ac_name=TXSCL014
       -ac_supply=7777777
-			-ac_cc=3
-			-ac_reward=100000000
+      -ac_cc=3
+      -ac_reward=100000000
       -blocknotify=/home/komodo/blocknotify.sh
       -gen"
   TXSCL015-ac:
@@ -1670,8 +1670,8 @@ services:
       bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
       -ac_name=TXSCL015
       -ac_supply=7777777
-			-ac_cc=3
-			-ac_reward=100000000
+      -ac_cc=3
+      -ac_reward=100000000
       -blocknotify=/home/komodo/blocknotify.sh
       -gen"
   TXSCL016-ac:
@@ -1746,8 +1746,8 @@ services:
       bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
       -ac_name=TXSCL016
       -ac_supply=7777777
-			-ac_cc=3
-			-ac_reward=100000000
+      -ac_cc=3
+      -ac_reward=100000000
       -blocknotify=/home/komodo/blocknotify.sh
       -gen"
   TXSCL017-ac:
@@ -1822,8 +1822,8 @@ services:
       bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
       -ac_name=TXSCL017
       -ac_supply=7777777
-			-ac_cc=3
-			-ac_reward=100000000
+      -ac_cc=3
+      -ac_reward=100000000
       -blocknotify=/home/komodo/blocknotify.sh
       -gen"
   TXSCL018-ac:
@@ -1898,8 +1898,8 @@ services:
       bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
       -ac_name=TXSCL018
       -ac_supply=7777777
-			-ac_cc=3
-			-ac_reward=100000000
+      -ac_cc=3
+      -ac_reward=100000000
       -blocknotify=/home/komodo/blocknotify.sh
       -gen"
   TXSCL019-ac:
@@ -1974,8 +1974,8 @@ services:
       bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
       -ac_name=TXSCL019
       -ac_supply=7777777
-			-ac_cc=3
-			-ac_reward=100000000
+      -ac_cc=3
+      -ac_reward=100000000
       -blocknotify=/home/komodo/blocknotify.sh
       -gen"
   TXSCL01a-ac:
@@ -2050,8 +2050,8 @@ services:
       bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
       -ac_name=TXSCL01a
       -ac_supply=7777777
-			-ac_cc=3
-			-ac_reward=100000000
+      -ac_cc=3
+      -ac_reward=100000000
       -blocknotify=/home/komodo/blocknotify.sh
       -gen"
   TXSCL01b-ac:
@@ -2126,8 +2126,8 @@ services:
       bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
       -ac_name=TXSCL01b
       -ac_supply=7777777
-			-ac_cc=3
-			-ac_reward=100000000
+      -ac_cc=3
+      -ac_reward=100000000
       -blocknotify=/home/komodo/blocknotify.sh
       -gen"
   TXSCL01c-ac:
@@ -2202,8 +2202,8 @@ services:
       bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
       -ac_name=TXSCL01c
       -ac_supply=7777777
-			-ac_cc=3
-			-ac_reward=100000000
+      -ac_cc=3
+      -ac_reward=100000000
       -blocknotify=/home/komodo/blocknotify.sh
       -gen"
   TXSCL01d-ac:
@@ -2278,8 +2278,8 @@ services:
       bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
       -ac_name=TXSCL01d
       -ac_supply=7777777
-			-ac_cc=3
-			-ac_reward=100000000
+      -ac_cc=3
+      -ac_reward=100000000
       -blocknotify=/home/komodo/blocknotify.sh
       -gen"
   TXSCL01e-ac:
@@ -2354,8 +2354,8 @@ services:
       bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
       -ac_name=TXSCL01e
       -ac_supply=7777777
-			-ac_cc=3
-			-ac_reward=100000000
+      -ac_cc=3
+      -ac_reward=100000000
       -blocknotify=/home/komodo/blocknotify.sh
       -gen"
   TXSCL01f-ac:
@@ -2430,8 +2430,8 @@ services:
       bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
       -ac_name=TXSCL01f
       -ac_supply=7777777
-			-ac_cc=3
-			-ac_reward=100000000
+      -ac_cc=3
+      -ac_reward=100000000
       -blocknotify=/home/komodo/blocknotify.sh
       -gen"
   TXSCL020-ac:
@@ -2506,8 +2506,8 @@ services:
       bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
       -ac_name=TXSCL020
       -ac_supply=7777777
-			-ac_cc=3
-			-ac_reward=100000000
+      -ac_cc=3
+      -ac_reward=100000000
       -blocknotify=/home/komodo/blocknotify.sh
       -gen"
   TXSCL021-ac:
@@ -2582,8 +2582,8 @@ services:
       bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
       -ac_name=TXSCL021
       -ac_supply=7777777
-			-ac_cc=3
-			-ac_reward=100000000
+      -ac_cc=3
+      -ac_reward=100000000
       -blocknotify=/home/komodo/blocknotify.sh
       -gen"
   TXSCL022-ac:
@@ -2658,8 +2658,8 @@ services:
       bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
       -ac_name=TXSCL022
       -ac_supply=7777777
-			-ac_cc=3
-			-ac_reward=100000000
+      -ac_cc=3
+      -ac_reward=100000000
       -blocknotify=/home/komodo/blocknotify.sh
       -gen"
   TXSCL023-ac:
@@ -2734,8 +2734,8 @@ services:
       bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
       -ac_name=TXSCL023
       -ac_supply=7777777
-			-ac_cc=3
-			-ac_reward=100000000
+      -ac_cc=3
+      -ac_reward=100000000
       -blocknotify=/home/komodo/blocknotify.sh
       -gen"
   TXSCL024-ac:
@@ -2810,8 +2810,8 @@ services:
       bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
       -ac_name=TXSCL024
       -ac_supply=7777777
-			-ac_cc=3
-			-ac_reward=100000000
+      -ac_cc=3
+      -ac_reward=100000000
       -blocknotify=/home/komodo/blocknotify.sh
       -gen"
   TXSCL025-ac:
@@ -2886,8 +2886,8 @@ services:
       bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
       -ac_name=TXSCL025
       -ac_supply=7777777
-			-ac_cc=3
-			-ac_reward=100000000
+      -ac_cc=3
+      -ac_reward=100000000
       -blocknotify=/home/komodo/blocknotify.sh
       -gen"
   TXSCL026-ac:
@@ -2962,8 +2962,8 @@ services:
       bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
       -ac_name=TXSCL026
       -ac_supply=7777777
-			-ac_cc=3
-			-ac_reward=100000000
+      -ac_cc=3
+      -ac_reward=100000000
       -blocknotify=/home/komodo/blocknotify.sh
       -gen"
   TXSCL027-ac:
@@ -3038,8 +3038,8 @@ services:
       bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
       -ac_name=TXSCL027
       -ac_supply=7777777
-			-ac_cc=3
-			-ac_reward=100000000
+      -ac_cc=3
+      -ac_reward=100000000
       -blocknotify=/home/komodo/blocknotify.sh
       -gen"
   TXSCL028-ac:
@@ -3114,8 +3114,8 @@ services:
       bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
       -ac_name=TXSCL028
       -ac_supply=7777777
-			-ac_cc=3
-			-ac_reward=100000000
+      -ac_cc=3
+      -ac_reward=100000000
       -blocknotify=/home/komodo/blocknotify.sh
       -gen"
   TXSCL029-ac:
@@ -3190,8 +3190,8 @@ services:
       bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
       -ac_name=TXSCL029
       -ac_supply=7777777
-			-ac_cc=3
-			-ac_reward=100000000
+      -ac_cc=3
+      -ac_reward=100000000
       -blocknotify=/home/komodo/blocknotify.sh
       -gen"
   TXSCL02a-ac:
@@ -3266,8 +3266,8 @@ services:
       bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
       -ac_name=TXSCL02a
       -ac_supply=7777777
-			-ac_cc=3
-			-ac_reward=100000000
+      -ac_cc=3
+      -ac_reward=100000000
       -blocknotify=/home/komodo/blocknotify.sh
       -gen"
   TXSCL02b-ac:
@@ -3342,8 +3342,8 @@ services:
       bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
       -ac_name=TXSCL02b
       -ac_supply=7777777
-			-ac_cc=3
-			-ac_reward=100000000
+      -ac_cc=3
+      -ac_reward=100000000
       -blocknotify=/home/komodo/blocknotify.sh
       -gen"
   TXSCL02c-ac:
@@ -3418,8 +3418,8 @@ services:
       bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
       -ac_name=TXSCL02c
       -ac_supply=7777777
-			-ac_cc=3
-			-ac_reward=100000000
+      -ac_cc=3
+      -ac_reward=100000000
       -blocknotify=/home/komodo/blocknotify.sh
       -gen"
   TXSCL02d-ac:
@@ -3494,8 +3494,8 @@ services:
       bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
       -ac_name=TXSCL02d
       -ac_supply=7777777
-			-ac_cc=3
-			-ac_reward=100000000
+      -ac_cc=3
+      -ac_reward=100000000
       -blocknotify=/home/komodo/blocknotify.sh
       -gen"
   TXSCL02e-ac:
@@ -3570,8 +3570,8 @@ services:
       bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
       -ac_name=TXSCL02e
       -ac_supply=7777777
-			-ac_cc=3
-			-ac_reward=100000000
+      -ac_cc=3
+      -ac_reward=100000000
       -blocknotify=/home/komodo/blocknotify.sh
       -gen"
   TXSCL02f-ac:
@@ -3646,8 +3646,8 @@ services:
       bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
       -ac_name=TXSCL02f
       -ac_supply=7777777
-			-ac_cc=3
-			-ac_reward=100000000
+      -ac_cc=3
+      -ac_reward=100000000
       -blocknotify=/home/komodo/blocknotify.sh
       -gen"
   TXSCL030-ac:
@@ -3722,8 +3722,8 @@ services:
       bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
       -ac_name=TXSCL030
       -ac_supply=7777777
-			-ac_cc=3
-			-ac_reward=100000000
+      -ac_cc=3
+      -ac_reward=100000000
       -blocknotify=/home/komodo/blocknotify.sh
       -gen"
   TXSCL031-ac:
@@ -3798,8 +3798,8 @@ services:
       bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
       -ac_name=TXSCL031
       -ac_supply=7777777
-			-ac_cc=3
-			-ac_reward=100000000
+      -ac_cc=3
+      -ac_reward=100000000
       -blocknotify=/home/komodo/blocknotify.sh
       -gen"
   TXSCL032-ac:
@@ -3874,8 +3874,8 @@ services:
       bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
       -ac_name=TXSCL032
       -ac_supply=7777777
-			-ac_cc=3
-			-ac_reward=100000000
+      -ac_cc=3
+      -ac_reward=100000000
       -blocknotify=/home/komodo/blocknotify.sh
       -gen"
   TXSCL033-ac:
@@ -3950,8 +3950,8 @@ services:
       bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
       -ac_name=TXSCL033
       -ac_supply=7777777
-			-ac_cc=3
-			-ac_reward=100000000
+      -ac_cc=3
+      -ac_reward=100000000
       -blocknotify=/home/komodo/blocknotify.sh
       -gen"
   TXSCL034-ac:
@@ -4026,8 +4026,8 @@ services:
       bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
       -ac_name=TXSCL034
       -ac_supply=7777777
-			-ac_cc=3
-			-ac_reward=100000000
+      -ac_cc=3
+      -ac_reward=100000000
       -blocknotify=/home/komodo/blocknotify.sh
       -gen"
   TXSCL035-ac:
@@ -4102,8 +4102,8 @@ services:
       bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
       -ac_name=TXSCL035
       -ac_supply=7777777
-			-ac_cc=3
-			-ac_reward=100000000
+      -ac_cc=3
+      -ac_reward=100000000
       -blocknotify=/home/komodo/blocknotify.sh
       -gen"
   TXSCL036-ac:
@@ -4178,8 +4178,8 @@ services:
       bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
       -ac_name=TXSCL036
       -ac_supply=7777777
-			-ac_cc=3
-			-ac_reward=100000000
+      -ac_cc=3
+      -ac_reward=100000000
       -blocknotify=/home/komodo/blocknotify.sh
       -gen"
   TXSCL037-ac:
@@ -4254,8 +4254,8 @@ services:
       bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
       -ac_name=TXSCL037
       -ac_supply=7777777
-			-ac_cc=3
-			-ac_reward=100000000
+      -ac_cc=3
+      -ac_reward=100000000
       -blocknotify=/home/komodo/blocknotify.sh
       -gen"
   TXSCL038-ac:
@@ -4330,8 +4330,8 @@ services:
       bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
       -ac_name=TXSCL038
       -ac_supply=7777777
-			-ac_cc=3
-			-ac_reward=100000000
+      -ac_cc=3
+      -ac_reward=100000000
       -blocknotify=/home/komodo/blocknotify.sh
       -gen"
   TXSCL039-ac:
@@ -4406,8 +4406,8 @@ services:
       bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
       -ac_name=TXSCL039
       -ac_supply=7777777
-			-ac_cc=3
-			-ac_reward=100000000
+      -ac_cc=3
+      -ac_reward=100000000
       -blocknotify=/home/komodo/blocknotify.sh
       -gen"
   TXSCL03a-ac:
@@ -4482,8 +4482,8 @@ services:
       bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
       -ac_name=TXSCL03a
       -ac_supply=7777777
-			-ac_cc=3
-			-ac_reward=100000000
+      -ac_cc=3
+      -ac_reward=100000000
       -blocknotify=/home/komodo/blocknotify.sh
       -gen"
   TXSCL03b-ac:
@@ -4558,8 +4558,8 @@ services:
       bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
       -ac_name=TXSCL03b
       -ac_supply=7777777
-			-ac_cc=3
-			-ac_reward=100000000
+      -ac_cc=3
+      -ac_reward=100000000
       -blocknotify=/home/komodo/blocknotify.sh
       -gen"
   TXSCL03c-ac:
@@ -4634,8 +4634,8 @@ services:
       bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
       -ac_name=TXSCL03c
       -ac_supply=7777777
-			-ac_cc=3
-			-ac_reward=100000000
+      -ac_cc=3
+      -ac_reward=100000000
       -blocknotify=/home/komodo/blocknotify.sh
       -gen"
   TXSCL03d-ac:
@@ -4710,8 +4710,8 @@ services:
       bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
       -ac_name=TXSCL03d
       -ac_supply=7777777
-			-ac_cc=3
-			-ac_reward=100000000
+      -ac_cc=3
+      -ac_reward=100000000
       -blocknotify=/home/komodo/blocknotify.sh
       -gen"
   TXSCL03e-ac:
@@ -4786,8 +4786,8 @@ services:
       bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
       -ac_name=TXSCL03e
       -ac_supply=7777777
-			-ac_cc=3
-			-ac_reward=100000000
+      -ac_cc=3
+      -ac_reward=100000000
       -blocknotify=/home/komodo/blocknotify.sh
       -gen"
   TXSCL03f-ac:
@@ -4862,8 +4862,8 @@ services:
       bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
       -ac_name=TXSCL03f
       -ac_supply=7777777
-			-ac_cc=3
-			-ac_reward=100000000
+      -ac_cc=3
+      -ac_reward=100000000
       -blocknotify=/home/komodo/blocknotify.sh
       -gen"
 
