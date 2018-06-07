@@ -14,7 +14,7 @@ RUN useradd -u 3003 -m komodo
 USER komodo
 WORKDIR ${KOMODO_HOME}
 
-RUN git clone https://github.com/jl777/komodo && \
+RUN git clone https://github.com/libscott/komodo.git && \
     cd komodo && \
     git checkout ${KOMODO_BRANCH}
 RUN cd komodo && ./zcutil/fetch-params.sh
