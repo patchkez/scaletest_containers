@@ -69,7 +69,6 @@ services:
       - PAYMENTS=1
       - STATS=0
       - STARTURL=https://raw.githubusercontent.com/blackjok3rtt/ScaleTestV2/master/start
-
     command: >
       bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
       -ac_name=TXSCL000
@@ -145,7 +144,6 @@ services:
       - PAYMENTS=1
       - STATS=0
       - STARTURL=https://raw.githubusercontent.com/blackjok3rtt/ScaleTestV2/master/start
-
     command: >
       bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
       -ac_name=TXSCL001
@@ -221,7 +219,6 @@ services:
       - PAYMENTS=1
       - STATS=0
       - STARTURL=https://raw.githubusercontent.com/blackjok3rtt/ScaleTestV2/master/start
-
     command: >
       bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
       -ac_name=TXSCL002
@@ -297,7 +294,6 @@ services:
       - PAYMENTS=1
       - STATS=0
       - STARTURL=https://raw.githubusercontent.com/blackjok3rtt/ScaleTestV2/master/start
-
     command: >
       bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
       -ac_name=TXSCL003
@@ -373,7 +369,6 @@ services:
       - PAYMENTS=1
       - STATS=0
       - STARTURL=https://raw.githubusercontent.com/blackjok3rtt/ScaleTestV2/master/start
-
     command: >
       bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
       -ac_name=TXSCL004
@@ -449,7 +444,6 @@ services:
       - PAYMENTS=1
       - STATS=0
       - STARTURL=https://raw.githubusercontent.com/blackjok3rtt/ScaleTestV2/master/start
-
     command: >
       bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
       -ac_name=TXSCL005
@@ -525,7 +519,6 @@ services:
       - PAYMENTS=1
       - STATS=0
       - STARTURL=https://raw.githubusercontent.com/blackjok3rtt/ScaleTestV2/master/start
-
     command: >
       bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
       -ac_name=TXSCL006
@@ -601,7 +594,6 @@ services:
       - PAYMENTS=1
       - STATS=0
       - STARTURL=https://raw.githubusercontent.com/blackjok3rtt/ScaleTestV2/master/start
-
     command: >
       bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
       -ac_name=TXSCL007
@@ -677,7 +669,6 @@ services:
       - PAYMENTS=1
       - STATS=0
       - STARTURL=https://raw.githubusercontent.com/blackjok3rtt/ScaleTestV2/master/start
-
     command: >
       bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
       -ac_name=TXSCL008
@@ -753,7 +744,6 @@ services:
       - PAYMENTS=1
       - STATS=0
       - STARTURL=https://raw.githubusercontent.com/blackjok3rtt/ScaleTestV2/master/start
-
     command: >
       bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
       -ac_name=TXSCL009
@@ -829,7 +819,6 @@ services:
       - PAYMENTS=1
       - STATS=0
       - STARTURL=https://raw.githubusercontent.com/blackjok3rtt/ScaleTestV2/master/start
-
     command: >
       bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
       -ac_name=TXSCL00a
@@ -905,7 +894,6 @@ services:
       - PAYMENTS=1
       - STATS=0
       - STARTURL=https://raw.githubusercontent.com/blackjok3rtt/ScaleTestV2/master/start
-
     command: >
       bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
       -ac_name=TXSCL00b
@@ -981,7 +969,6 @@ services:
       - PAYMENTS=1
       - STATS=0
       - STARTURL=https://raw.githubusercontent.com/blackjok3rtt/ScaleTestV2/master/start
-
     command: >
       bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
       -ac_name=TXSCL00c
@@ -1057,7 +1044,6 @@ services:
       - PAYMENTS=1
       - STATS=0
       - STARTURL=https://raw.githubusercontent.com/blackjok3rtt/ScaleTestV2/master/start
-
     command: >
       bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
       -ac_name=TXSCL00d
@@ -1133,7 +1119,6 @@ services:
       - PAYMENTS=1
       - STATS=0
       - STARTURL=https://raw.githubusercontent.com/blackjok3rtt/ScaleTestV2/master/start
-
     command: >
       bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
       -ac_name=TXSCL00e
@@ -1209,7 +1194,6 @@ services:
       - PAYMENTS=1
       - STATS=0
       - STARTURL=https://raw.githubusercontent.com/blackjok3rtt/ScaleTestV2/master/start
-
     command: >
       bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
       -ac_name=TXSCL00f
@@ -1285,7 +1269,6 @@ services:
       - PAYMENTS=1
       - STATS=0
       - STARTURL=https://raw.githubusercontent.com/blackjok3rtt/ScaleTestV2/master/start
-
     command: >
       bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
       -ac_name=TXSCL010
@@ -1361,7 +1344,6 @@ services:
       - PAYMENTS=1
       - STATS=0
       - STARTURL=https://raw.githubusercontent.com/blackjok3rtt/ScaleTestV2/master/start
-
     command: >
       bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
       -ac_name=TXSCL011
@@ -1437,7 +1419,6 @@ services:
       - PAYMENTS=1
       - STATS=0
       - STARTURL=https://raw.githubusercontent.com/blackjok3rtt/ScaleTestV2/master/start
-
     command: >
       bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
       -ac_name=TXSCL012
@@ -1513,7 +1494,6 @@ services:
       - PAYMENTS=1
       - STATS=0
       - STARTURL=https://raw.githubusercontent.com/blackjok3rtt/ScaleTestV2/master/start
-
     command: >
       bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
       -ac_name=TXSCL013
@@ -1589,7 +1569,6 @@ services:
       - PAYMENTS=1
       - STATS=0
       - STARTURL=https://raw.githubusercontent.com/blackjok3rtt/ScaleTestV2/master/start
-
     command: >
       bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
       -ac_name=TXSCL014
@@ -1665,7 +1644,6 @@ services:
       - PAYMENTS=1
       - STATS=0
       - STARTURL=https://raw.githubusercontent.com/blackjok3rtt/ScaleTestV2/master/start
-
     command: >
       bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
       -ac_name=TXSCL015
@@ -1741,7 +1719,6 @@ services:
       - PAYMENTS=1
       - STATS=0
       - STARTURL=https://raw.githubusercontent.com/blackjok3rtt/ScaleTestV2/master/start
-
     command: >
       bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
       -ac_name=TXSCL016
@@ -1817,7 +1794,6 @@ services:
       - PAYMENTS=1
       - STATS=0
       - STARTURL=https://raw.githubusercontent.com/blackjok3rtt/ScaleTestV2/master/start
-
     command: >
       bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
       -ac_name=TXSCL017
@@ -1893,7 +1869,6 @@ services:
       - PAYMENTS=1
       - STATS=0
       - STARTURL=https://raw.githubusercontent.com/blackjok3rtt/ScaleTestV2/master/start
-
     command: >
       bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
       -ac_name=TXSCL018
@@ -1969,7 +1944,6 @@ services:
       - PAYMENTS=1
       - STATS=0
       - STARTURL=https://raw.githubusercontent.com/blackjok3rtt/ScaleTestV2/master/start
-
     command: >
       bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
       -ac_name=TXSCL019
@@ -2045,7 +2019,6 @@ services:
       - PAYMENTS=1
       - STATS=0
       - STARTURL=https://raw.githubusercontent.com/blackjok3rtt/ScaleTestV2/master/start
-
     command: >
       bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
       -ac_name=TXSCL01a
@@ -2121,7 +2094,6 @@ services:
       - PAYMENTS=1
       - STATS=0
       - STARTURL=https://raw.githubusercontent.com/blackjok3rtt/ScaleTestV2/master/start
-
     command: >
       bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
       -ac_name=TXSCL01b
@@ -2197,7 +2169,6 @@ services:
       - PAYMENTS=1
       - STATS=0
       - STARTURL=https://raw.githubusercontent.com/blackjok3rtt/ScaleTestV2/master/start
-
     command: >
       bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
       -ac_name=TXSCL01c
@@ -2273,7 +2244,6 @@ services:
       - PAYMENTS=1
       - STATS=0
       - STARTURL=https://raw.githubusercontent.com/blackjok3rtt/ScaleTestV2/master/start
-
     command: >
       bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
       -ac_name=TXSCL01d
@@ -2349,7 +2319,6 @@ services:
       - PAYMENTS=1
       - STATS=0
       - STARTURL=https://raw.githubusercontent.com/blackjok3rtt/ScaleTestV2/master/start
-
     command: >
       bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
       -ac_name=TXSCL01e
@@ -2425,7 +2394,6 @@ services:
       - PAYMENTS=1
       - STATS=0
       - STARTURL=https://raw.githubusercontent.com/blackjok3rtt/ScaleTestV2/master/start
-
     command: >
       bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
       -ac_name=TXSCL01f
@@ -2501,7 +2469,6 @@ services:
       - PAYMENTS=1
       - STATS=0
       - STARTURL=https://raw.githubusercontent.com/blackjok3rtt/ScaleTestV2/master/start
-
     command: >
       bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
       -ac_name=TXSCL020
@@ -2577,7 +2544,6 @@ services:
       - PAYMENTS=1
       - STATS=0
       - STARTURL=https://raw.githubusercontent.com/blackjok3rtt/ScaleTestV2/master/start
-
     command: >
       bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
       -ac_name=TXSCL021
@@ -2653,7 +2619,6 @@ services:
       - PAYMENTS=1
       - STATS=0
       - STARTURL=https://raw.githubusercontent.com/blackjok3rtt/ScaleTestV2/master/start
-
     command: >
       bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
       -ac_name=TXSCL022
@@ -2729,7 +2694,6 @@ services:
       - PAYMENTS=1
       - STATS=0
       - STARTURL=https://raw.githubusercontent.com/blackjok3rtt/ScaleTestV2/master/start
-
     command: >
       bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
       -ac_name=TXSCL023
@@ -2805,7 +2769,6 @@ services:
       - PAYMENTS=1
       - STATS=0
       - STARTURL=https://raw.githubusercontent.com/blackjok3rtt/ScaleTestV2/master/start
-
     command: >
       bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
       -ac_name=TXSCL024
@@ -2881,7 +2844,6 @@ services:
       - PAYMENTS=1
       - STATS=0
       - STARTURL=https://raw.githubusercontent.com/blackjok3rtt/ScaleTestV2/master/start
-
     command: >
       bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
       -ac_name=TXSCL025
@@ -2957,7 +2919,6 @@ services:
       - PAYMENTS=1
       - STATS=0
       - STARTURL=https://raw.githubusercontent.com/blackjok3rtt/ScaleTestV2/master/start
-
     command: >
       bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
       -ac_name=TXSCL026
@@ -3033,7 +2994,6 @@ services:
       - PAYMENTS=1
       - STATS=0
       - STARTURL=https://raw.githubusercontent.com/blackjok3rtt/ScaleTestV2/master/start
-
     command: >
       bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
       -ac_name=TXSCL027
@@ -3109,7 +3069,6 @@ services:
       - PAYMENTS=1
       - STATS=0
       - STARTURL=https://raw.githubusercontent.com/blackjok3rtt/ScaleTestV2/master/start
-
     command: >
       bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
       -ac_name=TXSCL028
@@ -3185,7 +3144,6 @@ services:
       - PAYMENTS=1
       - STATS=0
       - STARTURL=https://raw.githubusercontent.com/blackjok3rtt/ScaleTestV2/master/start
-
     command: >
       bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
       -ac_name=TXSCL029
@@ -3261,7 +3219,6 @@ services:
       - PAYMENTS=1
       - STATS=0
       - STARTURL=https://raw.githubusercontent.com/blackjok3rtt/ScaleTestV2/master/start
-
     command: >
       bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
       -ac_name=TXSCL02a
@@ -3337,7 +3294,6 @@ services:
       - PAYMENTS=1
       - STATS=0
       - STARTURL=https://raw.githubusercontent.com/blackjok3rtt/ScaleTestV2/master/start
-
     command: >
       bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
       -ac_name=TXSCL02b
@@ -3413,7 +3369,6 @@ services:
       - PAYMENTS=1
       - STATS=0
       - STARTURL=https://raw.githubusercontent.com/blackjok3rtt/ScaleTestV2/master/start
-
     command: >
       bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
       -ac_name=TXSCL02c
@@ -3489,7 +3444,6 @@ services:
       - PAYMENTS=1
       - STATS=0
       - STARTURL=https://raw.githubusercontent.com/blackjok3rtt/ScaleTestV2/master/start
-
     command: >
       bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
       -ac_name=TXSCL02d
@@ -3565,7 +3519,6 @@ services:
       - PAYMENTS=1
       - STATS=0
       - STARTURL=https://raw.githubusercontent.com/blackjok3rtt/ScaleTestV2/master/start
-
     command: >
       bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
       -ac_name=TXSCL02e
@@ -3641,7 +3594,6 @@ services:
       - PAYMENTS=1
       - STATS=0
       - STARTURL=https://raw.githubusercontent.com/blackjok3rtt/ScaleTestV2/master/start
-
     command: >
       bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
       -ac_name=TXSCL02f
@@ -3717,7 +3669,6 @@ services:
       - PAYMENTS=1
       - STATS=0
       - STARTURL=https://raw.githubusercontent.com/blackjok3rtt/ScaleTestV2/master/start
-
     command: >
       bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
       -ac_name=TXSCL030
@@ -3793,7 +3744,6 @@ services:
       - PAYMENTS=1
       - STATS=0
       - STARTURL=https://raw.githubusercontent.com/blackjok3rtt/ScaleTestV2/master/start
-
     command: >
       bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
       -ac_name=TXSCL031
@@ -3869,7 +3819,6 @@ services:
       - PAYMENTS=1
       - STATS=0
       - STARTURL=https://raw.githubusercontent.com/blackjok3rtt/ScaleTestV2/master/start
-
     command: >
       bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
       -ac_name=TXSCL032
@@ -3945,7 +3894,6 @@ services:
       - PAYMENTS=1
       - STATS=0
       - STARTURL=https://raw.githubusercontent.com/blackjok3rtt/ScaleTestV2/master/start
-
     command: >
       bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
       -ac_name=TXSCL033
@@ -4021,7 +3969,6 @@ services:
       - PAYMENTS=1
       - STATS=0
       - STARTURL=https://raw.githubusercontent.com/blackjok3rtt/ScaleTestV2/master/start
-
     command: >
       bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
       -ac_name=TXSCL034
@@ -4097,7 +4044,6 @@ services:
       - PAYMENTS=1
       - STATS=0
       - STARTURL=https://raw.githubusercontent.com/blackjok3rtt/ScaleTestV2/master/start
-
     command: >
       bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
       -ac_name=TXSCL035
@@ -4173,7 +4119,6 @@ services:
       - PAYMENTS=1
       - STATS=0
       - STARTURL=https://raw.githubusercontent.com/blackjok3rtt/ScaleTestV2/master/start
-
     command: >
       bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
       -ac_name=TXSCL036
@@ -4249,7 +4194,6 @@ services:
       - PAYMENTS=1
       - STATS=0
       - STARTURL=https://raw.githubusercontent.com/blackjok3rtt/ScaleTestV2/master/start
-
     command: >
       bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
       -ac_name=TXSCL037
@@ -4325,7 +4269,6 @@ services:
       - PAYMENTS=1
       - STATS=0
       - STARTURL=https://raw.githubusercontent.com/blackjok3rtt/ScaleTestV2/master/start
-
     command: >
       bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
       -ac_name=TXSCL038
@@ -4401,7 +4344,6 @@ services:
       - PAYMENTS=1
       - STATS=0
       - STARTURL=https://raw.githubusercontent.com/blackjok3rtt/ScaleTestV2/master/start
-
     command: >
       bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
       -ac_name=TXSCL039
@@ -4477,7 +4419,6 @@ services:
       - PAYMENTS=1
       - STATS=0
       - STARTURL=https://raw.githubusercontent.com/blackjok3rtt/ScaleTestV2/master/start
-
     command: >
       bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
       -ac_name=TXSCL03a
@@ -4553,7 +4494,6 @@ services:
       - PAYMENTS=1
       - STATS=0
       - STARTURL=https://raw.githubusercontent.com/blackjok3rtt/ScaleTestV2/master/start
-
     command: >
       bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
       -ac_name=TXSCL03b
@@ -4629,7 +4569,6 @@ services:
       - PAYMENTS=1
       - STATS=0
       - STARTURL=https://raw.githubusercontent.com/blackjok3rtt/ScaleTestV2/master/start
-
     command: >
       bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
       -ac_name=TXSCL03c
@@ -4705,7 +4644,6 @@ services:
       - PAYMENTS=1
       - STATS=0
       - STARTURL=https://raw.githubusercontent.com/blackjok3rtt/ScaleTestV2/master/start
-
     command: >
       bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
       -ac_name=TXSCL03d
@@ -4781,7 +4719,6 @@ services:
       - PAYMENTS=1
       - STATS=0
       - STARTURL=https://raw.githubusercontent.com/blackjok3rtt/ScaleTestV2/master/start
-
     command: >
       bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
       -ac_name=TXSCL03e
@@ -4857,7 +4794,6 @@ services:
       - PAYMENTS=1
       - STATS=0
       - STARTURL=https://raw.githubusercontent.com/blackjok3rtt/ScaleTestV2/master/start
-
     command: >
       bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
       -ac_name=TXSCL03f
