@@ -6,8 +6,8 @@ services:
     build:
       context: ./komodod
       args:
-        KOMODO_BRANCH: dev
-    image: scaletest_komodod_dev
+        KOMODO_BRANCH: momo
+    image: scaletest_komodod_momo
     networks:
       - komodo_scale
     volumes:
@@ -42,8 +42,8 @@ services:
     build:
       context: ./komodod
       args:
-        KOMODO_BRANCH: dev
-    image: scaletest_komodod_dev
+        KOMODO_BRANCH: momo
+    image: scaletest_komodod_momo
     restart: on-failure
     networks:
       - komodo_scale
