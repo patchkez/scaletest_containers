@@ -62,6 +62,7 @@ services:
       - ASSET_RPC_PORT=33103
       - ASSET_NAME=TXSCL000
       - AMOUNT=2000
+      - ASSET_P2P_PORT=33102
       - PASSPHRASE=testpassphraseforsmk702test2
       - ADDRESS=RHqp4GyNQHmnFizs8T1A4sJmEuHLCMTRtQ
       - PRIVATE_KEY=Ut1Xx8tAePPxJgTkEVAwj3ZhRvBZ7gY5gJ5ob4QAPiCDcyMJEYgH
@@ -137,6 +138,7 @@ services:
       - ASSET_RPC_PORT=46069
       - ASSET_NAME=TXSCL001
       - AMOUNT=2000
+      - ASSET_P2P_PORT=46068
       - PASSPHRASE=testpassphraseforsmk702test2
       - ADDRESS=RHqp4GyNQHmnFizs8T1A4sJmEuHLCMTRtQ
       - PRIVATE_KEY=Ut1Xx8tAePPxJgTkEVAwj3ZhRvBZ7gY5gJ5ob4QAPiCDcyMJEYgH
@@ -212,6 +214,7 @@ services:
       - ASSET_RPC_PORT=47211
       - ASSET_NAME=TXSCL002
       - AMOUNT=2000
+      - ASSET_P2P_PORT=47210
       - PASSPHRASE=testpassphraseforsmk702test2
       - ADDRESS=RHqp4GyNQHmnFizs8T1A4sJmEuHLCMTRtQ
       - PRIVATE_KEY=Ut1Xx8tAePPxJgTkEVAwj3ZhRvBZ7gY5gJ5ob4QAPiCDcyMJEYgH
@@ -287,6 +290,7 @@ services:
       - ASSET_RPC_PORT=62073
       - ASSET_NAME=TXSCL003
       - AMOUNT=2000
+      - ASSET_P2P_PORT=62072
       - PASSPHRASE=testpassphraseforsmk702test2
       - ADDRESS=RHqp4GyNQHmnFizs8T1A4sJmEuHLCMTRtQ
       - PRIVATE_KEY=Ut1Xx8tAePPxJgTkEVAwj3ZhRvBZ7gY5gJ5ob4QAPiCDcyMJEYgH
@@ -362,6 +366,7 @@ services:
       - ASSET_RPC_PORT=16932
       - ASSET_NAME=TXSCL004
       - AMOUNT=2000
+      - ASSET_P2P_PORT=16931
       - PASSPHRASE=testpassphraseforsmk702test2
       - ADDRESS=RHqp4GyNQHmnFizs8T1A4sJmEuHLCMTRtQ
       - PRIVATE_KEY=Ut1Xx8tAePPxJgTkEVAwj3ZhRvBZ7gY5gJ5ob4QAPiCDcyMJEYgH
@@ -437,6 +442,7 @@ services:
       - ASSET_RPC_PORT=37774
       - ASSET_NAME=TXSCL005
       - AMOUNT=2000
+      - ASSET_P2P_PORT=37773
       - PASSPHRASE=testpassphraseforsmk702test2
       - ADDRESS=RHqp4GyNQHmnFizs8T1A4sJmEuHLCMTRtQ
       - PRIVATE_KEY=Ut1Xx8tAePPxJgTkEVAwj3ZhRvBZ7gY5gJ5ob4QAPiCDcyMJEYgH
@@ -512,6 +518,7 @@ services:
       - ASSET_RPC_PORT=38564
       - ASSET_NAME=TXSCL006
       - AMOUNT=2000
+      - ASSET_P2P_PORT=38563
       - PASSPHRASE=testpassphraseforsmk702test2
       - ADDRESS=RHqp4GyNQHmnFizs8T1A4sJmEuHLCMTRtQ
       - PRIVATE_KEY=Ut1Xx8tAePPxJgTkEVAwj3ZhRvBZ7gY5gJ5ob4QAPiCDcyMJEYgH
@@ -587,6 +594,7 @@ services:
       - ASSET_RPC_PORT=44106
       - ASSET_NAME=TXSCL007
       - AMOUNT=2000
+      - ASSET_P2P_PORT=44105
       - PASSPHRASE=testpassphraseforsmk702test2
       - ADDRESS=RHqp4GyNQHmnFizs8T1A4sJmEuHLCMTRtQ
       - PRIVATE_KEY=Ut1Xx8tAePPxJgTkEVAwj3ZhRvBZ7gY5gJ5ob4QAPiCDcyMJEYgH
@@ -662,6 +670,7 @@ services:
       - ASSET_RPC_PORT=34453
       - ASSET_NAME=TXSCL008
       - AMOUNT=2000
+      - ASSET_P2P_PORT=34452
       - PASSPHRASE=testpassphraseforsmk702test2
       - ADDRESS=RHqp4GyNQHmnFizs8T1A4sJmEuHLCMTRtQ
       - PRIVATE_KEY=Ut1Xx8tAePPxJgTkEVAwj3ZhRvBZ7gY5gJ5ob4QAPiCDcyMJEYgH
@@ -737,6 +746,7 @@ services:
       - ASSET_RPC_PORT=43163
       - ASSET_NAME=TXSCL009
       - AMOUNT=2000
+      - ASSET_P2P_PORT=43162
       - PASSPHRASE=testpassphraseforsmk702test2
       - ADDRESS=RHqp4GyNQHmnFizs8T1A4sJmEuHLCMTRtQ
       - PRIVATE_KEY=Ut1Xx8tAePPxJgTkEVAwj3ZhRvBZ7gY5gJ5ob4QAPiCDcyMJEYgH
@@ -812,6 +822,7 @@ services:
       - ASSET_RPC_PORT=44557
       - ASSET_NAME=TXSCL00a
       - AMOUNT=2000
+      - ASSET_P2P_PORT=44556
       - PASSPHRASE=testpassphraseforsmk702test2
       - ADDRESS=RHqp4GyNQHmnFizs8T1A4sJmEuHLCMTRtQ
       - PRIVATE_KEY=Ut1Xx8tAePPxJgTkEVAwj3ZhRvBZ7gY5gJ5ob4QAPiCDcyMJEYgH
@@ -887,6 +898,7 @@ services:
       - ASSET_RPC_PORT=50319
       - ASSET_NAME=TXSCL00b
       - AMOUNT=2000
+      - ASSET_P2P_PORT=50318
       - PASSPHRASE=testpassphraseforsmk702test2
       - ADDRESS=RHqp4GyNQHmnFizs8T1A4sJmEuHLCMTRtQ
       - PRIVATE_KEY=Ut1Xx8tAePPxJgTkEVAwj3ZhRvBZ7gY5gJ5ob4QAPiCDcyMJEYgH
@@ -962,6 +974,7 @@ services:
       - ASSET_RPC_PORT=42733
       - ASSET_NAME=TXSCL00c
       - AMOUNT=2000
+      - ASSET_P2P_PORT=42732
       - PASSPHRASE=testpassphraseforsmk702test2
       - ADDRESS=RHqp4GyNQHmnFizs8T1A4sJmEuHLCMTRtQ
       - PRIVATE_KEY=Ut1Xx8tAePPxJgTkEVAwj3ZhRvBZ7gY5gJ5ob4QAPiCDcyMJEYgH
@@ -1037,6 +1050,7 @@ services:
       - ASSET_RPC_PORT=32700
       - ASSET_NAME=TXSCL00d
       - AMOUNT=2000
+      - ASSET_P2P_PORT=32699
       - PASSPHRASE=testpassphraseforsmk702test2
       - ADDRESS=RHqp4GyNQHmnFizs8T1A4sJmEuHLCMTRtQ
       - PRIVATE_KEY=Ut1Xx8tAePPxJgTkEVAwj3ZhRvBZ7gY5gJ5ob4QAPiCDcyMJEYgH
@@ -1112,6 +1126,7 @@ services:
       - ASSET_RPC_PORT=35866
       - ASSET_NAME=TXSCL00e
       - AMOUNT=2000
+      - ASSET_P2P_PORT=35865
       - PASSPHRASE=testpassphraseforsmk702test2
       - ADDRESS=RHqp4GyNQHmnFizs8T1A4sJmEuHLCMTRtQ
       - PRIVATE_KEY=Ut1Xx8tAePPxJgTkEVAwj3ZhRvBZ7gY5gJ5ob4QAPiCDcyMJEYgH
@@ -1187,6 +1202,7 @@ services:
       - ASSET_RPC_PORT=41948
       - ASSET_NAME=TXSCL00f
       - AMOUNT=2000
+      - ASSET_P2P_PORT=41947
       - PASSPHRASE=testpassphraseforsmk702test2
       - ADDRESS=RHqp4GyNQHmnFizs8T1A4sJmEuHLCMTRtQ
       - PRIVATE_KEY=Ut1Xx8tAePPxJgTkEVAwj3ZhRvBZ7gY5gJ5ob4QAPiCDcyMJEYgH
@@ -1262,6 +1278,7 @@ services:
       - ASSET_RPC_PORT=21972
       - ASSET_NAME=TXSCL010
       - AMOUNT=2000
+      - ASSET_P2P_PORT=21971
       - PASSPHRASE=testpassphraseforsmk702test2
       - ADDRESS=RHqp4GyNQHmnFizs8T1A4sJmEuHLCMTRtQ
       - PRIVATE_KEY=Ut1Xx8tAePPxJgTkEVAwj3ZhRvBZ7gY5gJ5ob4QAPiCDcyMJEYgH
@@ -1337,6 +1354,7 @@ services:
       - ASSET_RPC_PORT=38358
       - ASSET_NAME=TXSCL011
       - AMOUNT=2000
+      - ASSET_P2P_PORT=38357
       - PASSPHRASE=testpassphraseforsmk702test2
       - ADDRESS=RHqp4GyNQHmnFizs8T1A4sJmEuHLCMTRtQ
       - PRIVATE_KEY=Ut1Xx8tAePPxJgTkEVAwj3ZhRvBZ7gY5gJ5ob4QAPiCDcyMJEYgH
@@ -1412,6 +1430,7 @@ services:
       - ASSET_RPC_PORT=54476
       - ASSET_NAME=TXSCL012
       - AMOUNT=2000
+      - ASSET_P2P_PORT=54475
       - PASSPHRASE=testpassphraseforsmk702test2
       - ADDRESS=RHqp4GyNQHmnFizs8T1A4sJmEuHLCMTRtQ
       - PRIVATE_KEY=Ut1Xx8tAePPxJgTkEVAwj3ZhRvBZ7gY5gJ5ob4QAPiCDcyMJEYgH
@@ -1487,6 +1506,7 @@ services:
       - ASSET_RPC_PORT=60202
       - ASSET_NAME=TXSCL013
       - AMOUNT=2000
+      - ASSET_P2P_PORT=60201
       - PASSPHRASE=testpassphraseforsmk702test2
       - ADDRESS=RHqp4GyNQHmnFizs8T1A4sJmEuHLCMTRtQ
       - PRIVATE_KEY=Ut1Xx8tAePPxJgTkEVAwj3ZhRvBZ7gY5gJ5ob4QAPiCDcyMJEYgH
@@ -1562,6 +1582,7 @@ services:
       - ASSET_RPC_PORT=20719
       - ASSET_NAME=TXSCL014
       - AMOUNT=2000
+      - ASSET_P2P_PORT=20718
       - PASSPHRASE=testpassphraseforsmk702test2
       - ADDRESS=RHqp4GyNQHmnFizs8T1A4sJmEuHLCMTRtQ
       - PRIVATE_KEY=Ut1Xx8tAePPxJgTkEVAwj3ZhRvBZ7gY5gJ5ob4QAPiCDcyMJEYgH
@@ -1637,6 +1658,7 @@ services:
       - ASSET_RPC_PORT=46489
       - ASSET_NAME=TXSCL015
       - AMOUNT=2000
+      - ASSET_P2P_PORT=46488
       - PASSPHRASE=testpassphraseforsmk702test2
       - ADDRESS=RHqp4GyNQHmnFizs8T1A4sJmEuHLCMTRtQ
       - PRIVATE_KEY=Ut1Xx8tAePPxJgTkEVAwj3ZhRvBZ7gY5gJ5ob4QAPiCDcyMJEYgH
@@ -1712,6 +1734,7 @@ services:
       - ASSET_RPC_PORT=29399
       - ASSET_NAME=TXSCL016
       - AMOUNT=2000
+      - ASSET_P2P_PORT=29398
       - PASSPHRASE=testpassphraseforsmk702test2
       - ADDRESS=RHqp4GyNQHmnFizs8T1A4sJmEuHLCMTRtQ
       - PRIVATE_KEY=Ut1Xx8tAePPxJgTkEVAwj3ZhRvBZ7gY5gJ5ob4QAPiCDcyMJEYgH
@@ -1787,6 +1810,7 @@ services:
       - ASSET_RPC_PORT=27313
       - ASSET_NAME=TXSCL017
       - AMOUNT=2000
+      - ASSET_P2P_PORT=27312
       - PASSPHRASE=testpassphraseforsmk702test2
       - ADDRESS=RHqp4GyNQHmnFizs8T1A4sJmEuHLCMTRtQ
       - PRIVATE_KEY=Ut1Xx8tAePPxJgTkEVAwj3ZhRvBZ7gY5gJ5ob4QAPiCDcyMJEYgH
@@ -1862,6 +1886,7 @@ services:
       - ASSET_RPC_PORT=25122
       - ASSET_NAME=TXSCL018
       - AMOUNT=2000
+      - ASSET_P2P_PORT=25121
       - PASSPHRASE=testpassphraseforsmk702test2
       - ADDRESS=RHqp4GyNQHmnFizs8T1A4sJmEuHLCMTRtQ
       - PRIVATE_KEY=Ut1Xx8tAePPxJgTkEVAwj3ZhRvBZ7gY5gJ5ob4QAPiCDcyMJEYgH
@@ -1937,6 +1962,7 @@ services:
       - ASSET_RPC_PORT=22608
       - ASSET_NAME=TXSCL019
       - AMOUNT=2000
+      - ASSET_P2P_PORT=22607
       - PASSPHRASE=testpassphraseforsmk702test2
       - ADDRESS=RHqp4GyNQHmnFizs8T1A4sJmEuHLCMTRtQ
       - PRIVATE_KEY=Ut1Xx8tAePPxJgTkEVAwj3ZhRvBZ7gY5gJ5ob4QAPiCDcyMJEYgH
@@ -2012,6 +2038,7 @@ services:
       - ASSET_RPC_PORT=43394
       - ASSET_NAME=TXSCL01a
       - AMOUNT=2000
+      - ASSET_P2P_PORT=43393
       - PASSPHRASE=testpassphraseforsmk702test2
       - ADDRESS=RHqp4GyNQHmnFizs8T1A4sJmEuHLCMTRtQ
       - PRIVATE_KEY=Ut1Xx8tAePPxJgTkEVAwj3ZhRvBZ7gY5gJ5ob4QAPiCDcyMJEYgH
@@ -2087,6 +2114,7 @@ services:
       - ASSET_RPC_PORT=22004
       - ASSET_NAME=TXSCL01b
       - AMOUNT=2000
+      - ASSET_P2P_PORT=22003
       - PASSPHRASE=testpassphraseforsmk702test2
       - ADDRESS=RHqp4GyNQHmnFizs8T1A4sJmEuHLCMTRtQ
       - PRIVATE_KEY=Ut1Xx8tAePPxJgTkEVAwj3ZhRvBZ7gY5gJ5ob4QAPiCDcyMJEYgH
@@ -2162,6 +2190,7 @@ services:
       - ASSET_RPC_PORT=52462
       - ASSET_NAME=TXSCL01c
       - AMOUNT=2000
+      - ASSET_P2P_PORT=52461
       - PASSPHRASE=testpassphraseforsmk702test2
       - ADDRESS=RHqp4GyNQHmnFizs8T1A4sJmEuHLCMTRtQ
       - PRIVATE_KEY=Ut1Xx8tAePPxJgTkEVAwj3ZhRvBZ7gY5gJ5ob4QAPiCDcyMJEYgH
@@ -2237,6 +2266,7 @@ services:
       - ASSET_RPC_PORT=24591
       - ASSET_NAME=TXSCL01d
       - AMOUNT=2000
+      - ASSET_P2P_PORT=24590
       - PASSPHRASE=testpassphraseforsmk702test2
       - ADDRESS=RHqp4GyNQHmnFizs8T1A4sJmEuHLCMTRtQ
       - PRIVATE_KEY=Ut1Xx8tAePPxJgTkEVAwj3ZhRvBZ7gY5gJ5ob4QAPiCDcyMJEYgH
@@ -2312,6 +2342,7 @@ services:
       - ASSET_RPC_PORT=18273
       - ASSET_NAME=TXSCL01e
       - AMOUNT=2000
+      - ASSET_P2P_PORT=18272
       - PASSPHRASE=testpassphraseforsmk702test2
       - ADDRESS=RHqp4GyNQHmnFizs8T1A4sJmEuHLCMTRtQ
       - PRIVATE_KEY=Ut1Xx8tAePPxJgTkEVAwj3ZhRvBZ7gY5gJ5ob4QAPiCDcyMJEYgH
@@ -2387,6 +2418,7 @@ services:
       - ASSET_RPC_PORT=30059
       - ASSET_NAME=TXSCL01f
       - AMOUNT=2000
+      - ASSET_P2P_PORT=30058
       - PASSPHRASE=testpassphraseforsmk702test2
       - ADDRESS=RHqp4GyNQHmnFizs8T1A4sJmEuHLCMTRtQ
       - PRIVATE_KEY=Ut1Xx8tAePPxJgTkEVAwj3ZhRvBZ7gY5gJ5ob4QAPiCDcyMJEYgH
@@ -2462,6 +2494,7 @@ services:
       - ASSET_RPC_PORT=16401
       - ASSET_NAME=TXSCL020
       - AMOUNT=2000
+      - ASSET_P2P_PORT=16400
       - PASSPHRASE=testpassphraseforsmk702test2
       - ADDRESS=RHqp4GyNQHmnFizs8T1A4sJmEuHLCMTRtQ
       - PRIVATE_KEY=Ut1Xx8tAePPxJgTkEVAwj3ZhRvBZ7gY5gJ5ob4QAPiCDcyMJEYgH
@@ -2537,6 +2570,7 @@ services:
       - ASSET_RPC_PORT=35983
       - ASSET_NAME=TXSCL021
       - AMOUNT=2000
+      - ASSET_P2P_PORT=35982
       - PASSPHRASE=testpassphraseforsmk702test2
       - ADDRESS=RHqp4GyNQHmnFizs8T1A4sJmEuHLCMTRtQ
       - PRIVATE_KEY=Ut1Xx8tAePPxJgTkEVAwj3ZhRvBZ7gY5gJ5ob4QAPiCDcyMJEYgH
@@ -2612,6 +2646,7 @@ services:
       - ASSET_RPC_PORT=64057
       - ASSET_NAME=TXSCL022
       - AMOUNT=2000
+      - ASSET_P2P_PORT=64056
       - PASSPHRASE=testpassphraseforsmk702test2
       - ADDRESS=RHqp4GyNQHmnFizs8T1A4sJmEuHLCMTRtQ
       - PRIVATE_KEY=Ut1Xx8tAePPxJgTkEVAwj3ZhRvBZ7gY5gJ5ob4QAPiCDcyMJEYgH
@@ -2687,6 +2722,7 @@ services:
       - ASSET_RPC_PORT=34475
       - ASSET_NAME=TXSCL023
       - AMOUNT=2000
+      - ASSET_P2P_PORT=34474
       - PASSPHRASE=testpassphraseforsmk702test2
       - ADDRESS=RHqp4GyNQHmnFizs8T1A4sJmEuHLCMTRtQ
       - PRIVATE_KEY=Ut1Xx8tAePPxJgTkEVAwj3ZhRvBZ7gY5gJ5ob4QAPiCDcyMJEYgH
@@ -2762,6 +2798,7 @@ services:
       - ASSET_RPC_PORT=53270
       - ASSET_NAME=TXSCL024
       - AMOUNT=2000
+      - ASSET_P2P_PORT=53269
       - PASSPHRASE=testpassphraseforsmk702test2
       - ADDRESS=RHqp4GyNQHmnFizs8T1A4sJmEuHLCMTRtQ
       - PRIVATE_KEY=Ut1Xx8tAePPxJgTkEVAwj3ZhRvBZ7gY5gJ5ob4QAPiCDcyMJEYgH
@@ -2837,6 +2874,7 @@ services:
       - ASSET_RPC_PORT=17076
       - ASSET_NAME=TXSCL025
       - AMOUNT=2000
+      - ASSET_P2P_PORT=17075
       - PASSPHRASE=testpassphraseforsmk702test2
       - ADDRESS=RHqp4GyNQHmnFizs8T1A4sJmEuHLCMTRtQ
       - PRIVATE_KEY=Ut1Xx8tAePPxJgTkEVAwj3ZhRvBZ7gY5gJ5ob4QAPiCDcyMJEYgH
@@ -2912,6 +2950,7 @@ services:
       - ASSET_RPC_PORT=28762
       - ASSET_NAME=TXSCL026
       - AMOUNT=2000
+      - ASSET_P2P_PORT=28761
       - PASSPHRASE=testpassphraseforsmk702test2
       - ADDRESS=RHqp4GyNQHmnFizs8T1A4sJmEuHLCMTRtQ
       - PRIVATE_KEY=Ut1Xx8tAePPxJgTkEVAwj3ZhRvBZ7gY5gJ5ob4QAPiCDcyMJEYgH
@@ -2987,6 +3026,7 @@ services:
       - ASSET_RPC_PORT=53512
       - ASSET_NAME=TXSCL027
       - AMOUNT=2000
+      - ASSET_P2P_PORT=53511
       - PASSPHRASE=testpassphraseforsmk702test2
       - ADDRESS=RHqp4GyNQHmnFizs8T1A4sJmEuHLCMTRtQ
       - PRIVATE_KEY=Ut1Xx8tAePPxJgTkEVAwj3ZhRvBZ7gY5gJ5ob4QAPiCDcyMJEYgH
@@ -3062,6 +3102,7 @@ services:
       - ASSET_RPC_PORT=50611
       - ASSET_NAME=TXSCL028
       - AMOUNT=2000
+      - ASSET_P2P_PORT=50610
       - PASSPHRASE=testpassphraseforsmk702test2
       - ADDRESS=RHqp4GyNQHmnFizs8T1A4sJmEuHLCMTRtQ
       - PRIVATE_KEY=Ut1Xx8tAePPxJgTkEVAwj3ZhRvBZ7gY5gJ5ob4QAPiCDcyMJEYgH
@@ -3137,6 +3178,7 @@ services:
       - ASSET_RPC_PORT=62913
       - ASSET_NAME=TXSCL029
       - AMOUNT=2000
+      - ASSET_P2P_PORT=62912
       - PASSPHRASE=testpassphraseforsmk702test2
       - ADDRESS=RHqp4GyNQHmnFizs8T1A4sJmEuHLCMTRtQ
       - PRIVATE_KEY=Ut1Xx8tAePPxJgTkEVAwj3ZhRvBZ7gY5gJ5ob4QAPiCDcyMJEYgH
@@ -3212,6 +3254,7 @@ services:
       - ASSET_RPC_PORT=17507
       - ASSET_NAME=TXSCL02a
       - AMOUNT=2000
+      - ASSET_P2P_PORT=17506
       - PASSPHRASE=testpassphraseforsmk702test2
       - ADDRESS=RHqp4GyNQHmnFizs8T1A4sJmEuHLCMTRtQ
       - PRIVATE_KEY=Ut1Xx8tAePPxJgTkEVAwj3ZhRvBZ7gY5gJ5ob4QAPiCDcyMJEYgH
@@ -3287,6 +3330,7 @@ services:
       - ASSET_RPC_PORT=33653
       - ASSET_NAME=TXSCL02b
       - AMOUNT=2000
+      - ASSET_P2P_PORT=33652
       - PASSPHRASE=testpassphraseforsmk702test2
       - ADDRESS=RHqp4GyNQHmnFizs8T1A4sJmEuHLCMTRtQ
       - PRIVATE_KEY=Ut1Xx8tAePPxJgTkEVAwj3ZhRvBZ7gY5gJ5ob4QAPiCDcyMJEYgH
@@ -3362,6 +3406,7 @@ services:
       - ASSET_RPC_PORT=59003
       - ASSET_NAME=TXSCL02c
       - AMOUNT=2000
+      - ASSET_P2P_PORT=59002
       - PASSPHRASE=testpassphraseforsmk702test2
       - ADDRESS=RHqp4GyNQHmnFizs8T1A4sJmEuHLCMTRtQ
       - PRIVATE_KEY=Ut1Xx8tAePPxJgTkEVAwj3ZhRvBZ7gY5gJ5ob4QAPiCDcyMJEYgH
@@ -3437,6 +3482,7 @@ services:
       - ASSET_RPC_PORT=62774
       - ASSET_NAME=TXSCL02d
       - AMOUNT=2000
+      - ASSET_P2P_PORT=62773
       - PASSPHRASE=testpassphraseforsmk702test2
       - ADDRESS=RHqp4GyNQHmnFizs8T1A4sJmEuHLCMTRtQ
       - PRIVATE_KEY=Ut1Xx8tAePPxJgTkEVAwj3ZhRvBZ7gY5gJ5ob4QAPiCDcyMJEYgH
@@ -3512,6 +3558,7 @@ services:
       - ASSET_RPC_PORT=28504
       - ASSET_NAME=TXSCL02e
       - AMOUNT=2000
+      - ASSET_P2P_PORT=28503
       - PASSPHRASE=testpassphraseforsmk702test2
       - ADDRESS=RHqp4GyNQHmnFizs8T1A4sJmEuHLCMTRtQ
       - PRIVATE_KEY=Ut1Xx8tAePPxJgTkEVAwj3ZhRvBZ7gY5gJ5ob4QAPiCDcyMJEYgH
@@ -3587,6 +3634,7 @@ services:
       - ASSET_RPC_PORT=61006
       - ASSET_NAME=TXSCL02f
       - AMOUNT=2000
+      - ASSET_P2P_PORT=61005
       - PASSPHRASE=testpassphraseforsmk702test2
       - ADDRESS=RHqp4GyNQHmnFizs8T1A4sJmEuHLCMTRtQ
       - PRIVATE_KEY=Ut1Xx8tAePPxJgTkEVAwj3ZhRvBZ7gY5gJ5ob4QAPiCDcyMJEYgH
@@ -3662,6 +3710,7 @@ services:
       - ASSET_RPC_PORT=24234
       - ASSET_NAME=TXSCL030
       - AMOUNT=2000
+      - ASSET_P2P_PORT=24233
       - PASSPHRASE=testpassphraseforsmk702test2
       - ADDRESS=RHqp4GyNQHmnFizs8T1A4sJmEuHLCMTRtQ
       - PRIVATE_KEY=Ut1Xx8tAePPxJgTkEVAwj3ZhRvBZ7gY5gJ5ob4QAPiCDcyMJEYgH
@@ -3737,6 +3786,7 @@ services:
       - ASSET_RPC_PORT=22504
       - ASSET_NAME=TXSCL031
       - AMOUNT=2000
+      - ASSET_P2P_PORT=22503
       - PASSPHRASE=testpassphraseforsmk702test2
       - ADDRESS=RHqp4GyNQHmnFizs8T1A4sJmEuHLCMTRtQ
       - PRIVATE_KEY=Ut1Xx8tAePPxJgTkEVAwj3ZhRvBZ7gY5gJ5ob4QAPiCDcyMJEYgH
@@ -3812,6 +3862,7 @@ services:
       - ASSET_RPC_PORT=28230
       - ASSET_NAME=TXSCL032
       - AMOUNT=2000
+      - ASSET_P2P_PORT=28229
       - PASSPHRASE=testpassphraseforsmk702test2
       - ADDRESS=RHqp4GyNQHmnFizs8T1A4sJmEuHLCMTRtQ
       - PRIVATE_KEY=Ut1Xx8tAePPxJgTkEVAwj3ZhRvBZ7gY5gJ5ob4QAPiCDcyMJEYgH
@@ -3887,6 +3938,7 @@ services:
       - ASSET_RPC_PORT=39392
       - ASSET_NAME=TXSCL033
       - AMOUNT=2000
+      - ASSET_P2P_PORT=39391
       - PASSPHRASE=testpassphraseforsmk702test2
       - ADDRESS=RHqp4GyNQHmnFizs8T1A4sJmEuHLCMTRtQ
       - PRIVATE_KEY=Ut1Xx8tAePPxJgTkEVAwj3ZhRvBZ7gY5gJ5ob4QAPiCDcyMJEYgH
@@ -3962,6 +4014,7 @@ services:
       - ASSET_RPC_PORT=26521
       - ASSET_NAME=TXSCL034
       - AMOUNT=2000
+      - ASSET_P2P_PORT=26520
       - PASSPHRASE=testpassphraseforsmk702test2
       - ADDRESS=RHqp4GyNQHmnFizs8T1A4sJmEuHLCMTRtQ
       - PRIVATE_KEY=Ut1Xx8tAePPxJgTkEVAwj3ZhRvBZ7gY5gJ5ob4QAPiCDcyMJEYgH
@@ -4037,6 +4090,7 @@ services:
       - ASSET_RPC_PORT=20023
       - ASSET_NAME=TXSCL035
       - AMOUNT=2000
+      - ASSET_P2P_PORT=20022
       - PASSPHRASE=testpassphraseforsmk702test2
       - ADDRESS=RHqp4GyNQHmnFizs8T1A4sJmEuHLCMTRtQ
       - PRIVATE_KEY=Ut1Xx8tAePPxJgTkEVAwj3ZhRvBZ7gY5gJ5ob4QAPiCDcyMJEYgH
@@ -4112,6 +4166,7 @@ services:
       - ASSET_RPC_PORT=26005
       - ASSET_NAME=TXSCL036
       - AMOUNT=2000
+      - ASSET_P2P_PORT=26004
       - PASSPHRASE=testpassphraseforsmk702test2
       - ADDRESS=RHqp4GyNQHmnFizs8T1A4sJmEuHLCMTRtQ
       - PRIVATE_KEY=Ut1Xx8tAePPxJgTkEVAwj3ZhRvBZ7gY5gJ5ob4QAPiCDcyMJEYgH
@@ -4187,6 +4242,7 @@ services:
       - ASSET_RPC_PORT=43507
       - ASSET_NAME=TXSCL037
       - AMOUNT=2000
+      - ASSET_P2P_PORT=43506
       - PASSPHRASE=testpassphraseforsmk702test2
       - ADDRESS=RHqp4GyNQHmnFizs8T1A4sJmEuHLCMTRtQ
       - PRIVATE_KEY=Ut1Xx8tAePPxJgTkEVAwj3ZhRvBZ7gY5gJ5ob4QAPiCDcyMJEYgH
@@ -4262,6 +4318,7 @@ services:
       - ASSET_RPC_PORT=17760
       - ASSET_NAME=TXSCL038
       - AMOUNT=2000
+      - ASSET_P2P_PORT=17759
       - PASSPHRASE=testpassphraseforsmk702test2
       - ADDRESS=RHqp4GyNQHmnFizs8T1A4sJmEuHLCMTRtQ
       - PRIVATE_KEY=Ut1Xx8tAePPxJgTkEVAwj3ZhRvBZ7gY5gJ5ob4QAPiCDcyMJEYgH
@@ -4337,6 +4394,7 @@ services:
       - ASSET_RPC_PORT=52682
       - ASSET_NAME=TXSCL039
       - AMOUNT=2000
+      - ASSET_P2P_PORT=52681
       - PASSPHRASE=testpassphraseforsmk702test2
       - ADDRESS=RHqp4GyNQHmnFizs8T1A4sJmEuHLCMTRtQ
       - PRIVATE_KEY=Ut1Xx8tAePPxJgTkEVAwj3ZhRvBZ7gY5gJ5ob4QAPiCDcyMJEYgH
@@ -4412,6 +4470,7 @@ services:
       - ASSET_RPC_PORT=39864
       - ASSET_NAME=TXSCL03a
       - AMOUNT=2000
+      - ASSET_P2P_PORT=39863
       - PASSPHRASE=testpassphraseforsmk702test2
       - ADDRESS=RHqp4GyNQHmnFizs8T1A4sJmEuHLCMTRtQ
       - PRIVATE_KEY=Ut1Xx8tAePPxJgTkEVAwj3ZhRvBZ7gY5gJ5ob4QAPiCDcyMJEYgH
@@ -4487,6 +4546,7 @@ services:
       - ASSET_RPC_PORT=41034
       - ASSET_NAME=TXSCL03b
       - AMOUNT=2000
+      - ASSET_P2P_PORT=41033
       - PASSPHRASE=testpassphraseforsmk702test2
       - ADDRESS=RHqp4GyNQHmnFizs8T1A4sJmEuHLCMTRtQ
       - PRIVATE_KEY=Ut1Xx8tAePPxJgTkEVAwj3ZhRvBZ7gY5gJ5ob4QAPiCDcyMJEYgH
@@ -4562,6 +4622,7 @@ services:
       - ASSET_RPC_PORT=46232
       - ASSET_NAME=TXSCL03c
       - AMOUNT=2000
+      - ASSET_P2P_PORT=46231
       - PASSPHRASE=testpassphraseforsmk702test2
       - ADDRESS=RHqp4GyNQHmnFizs8T1A4sJmEuHLCMTRtQ
       - PRIVATE_KEY=Ut1Xx8tAePPxJgTkEVAwj3ZhRvBZ7gY5gJ5ob4QAPiCDcyMJEYgH
@@ -4637,6 +4698,7 @@ services:
       - ASSET_RPC_PORT=44341
       - ASSET_NAME=TXSCL03d
       - AMOUNT=2000
+      - ASSET_P2P_PORT=44340
       - PASSPHRASE=testpassphraseforsmk702test2
       - ADDRESS=RHqp4GyNQHmnFizs8T1A4sJmEuHLCMTRtQ
       - PRIVATE_KEY=Ut1Xx8tAePPxJgTkEVAwj3ZhRvBZ7gY5gJ5ob4QAPiCDcyMJEYgH
@@ -4712,6 +4774,7 @@ services:
       - ASSET_RPC_PORT=34431
       - ASSET_NAME=TXSCL03e
       - AMOUNT=2000
+      - ASSET_P2P_PORT=34430
       - PASSPHRASE=testpassphraseforsmk702test2
       - ADDRESS=RHqp4GyNQHmnFizs8T1A4sJmEuHLCMTRtQ
       - PRIVATE_KEY=Ut1Xx8tAePPxJgTkEVAwj3ZhRvBZ7gY5gJ5ob4QAPiCDcyMJEYgH
@@ -4787,6 +4850,7 @@ services:
       - ASSET_RPC_PORT=35313
       - ASSET_NAME=TXSCL03f
       - AMOUNT=2000
+      - ASSET_P2P_PORT=35312
       - PASSPHRASE=testpassphraseforsmk702test2
       - ADDRESS=RHqp4GyNQHmnFizs8T1A4sJmEuHLCMTRtQ
       - PRIVATE_KEY=Ut1Xx8tAePPxJgTkEVAwj3ZhRvBZ7gY5gJ5ob4QAPiCDcyMJEYgH
