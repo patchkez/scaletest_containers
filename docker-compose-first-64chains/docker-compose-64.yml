@@ -31,7 +31,7 @@ services:
       - BLOCKNOTIFYURL=https://njeitldkqc.execute-api.ap-southeast-2.amazonaws.com/v0/blocknotify
 
     command: >
-      bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
+      bash -c "komodod -pubkey=037332211b0739afa3a854035616a7c94b9f0b179e088cca7fd6d7068be4ff56c7
       -ac_name=TXSCL000
       -ac_supply=7777777
       -ac_cc=3
@@ -71,7 +71,7 @@ services:
       - STATS=0
       - STARTURL=https://ylnlg4iac3.execute-api.us-east-1.amazonaws.com/dev/activation
     command: >
-      bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
+      bash -c "komodod -pubkey=037332211b0739afa3a854035616a7c94b9f0b179e088cca7fd6d7068be4ff56c7
       -ac_name=TXSCL000
       -ac_supply=7777777
       -ac_cc=3
@@ -107,7 +107,7 @@ services:
       - BLOCKNOTIFYURL=https://njeitldkqc.execute-api.ap-southeast-2.amazonaws.com/v0/blocknotify
 
     command: >
-      bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
+      bash -c "komodod -pubkey=037332211b0739afa3a854035616a7c94b9f0b179e088cca7fd6d7068be4ff56c7
       -ac_name=TXSCL001
       -ac_supply=7777777
       -ac_cc=3
@@ -147,7 +147,7 @@ services:
       - STATS=0
       - STARTURL=https://ylnlg4iac3.execute-api.us-east-1.amazonaws.com/dev/activation
     command: >
-      bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
+      bash -c "komodod -pubkey=037332211b0739afa3a854035616a7c94b9f0b179e088cca7fd6d7068be4ff56c7
       -ac_name=TXSCL001
       -ac_supply=7777777
       -ac_cc=3
@@ -183,7 +183,7 @@ services:
       - BLOCKNOTIFYURL=https://njeitldkqc.execute-api.ap-southeast-2.amazonaws.com/v0/blocknotify
 
     command: >
-      bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
+      bash -c "komodod -pubkey=037332211b0739afa3a854035616a7c94b9f0b179e088cca7fd6d7068be4ff56c7
       -ac_name=TXSCL002
       -ac_supply=7777777
       -ac_cc=3
@@ -223,7 +223,7 @@ services:
       - STATS=0
       - STARTURL=https://ylnlg4iac3.execute-api.us-east-1.amazonaws.com/dev/activation
     command: >
-      bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
+      bash -c "komodod -pubkey=037332211b0739afa3a854035616a7c94b9f0b179e088cca7fd6d7068be4ff56c7
       -ac_name=TXSCL002
       -ac_supply=7777777
       -ac_cc=3
@@ -259,7 +259,7 @@ services:
       - BLOCKNOTIFYURL=https://njeitldkqc.execute-api.ap-southeast-2.amazonaws.com/v0/blocknotify
 
     command: >
-      bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
+      bash -c "komodod -pubkey=037332211b0739afa3a854035616a7c94b9f0b179e088cca7fd6d7068be4ff56c7
       -ac_name=TXSCL003
       -ac_supply=7777777
       -ac_cc=3
@@ -299,7 +299,7 @@ services:
       - STATS=0
       - STARTURL=https://ylnlg4iac3.execute-api.us-east-1.amazonaws.com/dev/activation
     command: >
-      bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
+      bash -c "komodod -pubkey=037332211b0739afa3a854035616a7c94b9f0b179e088cca7fd6d7068be4ff56c7
       -ac_name=TXSCL003
       -ac_supply=7777777
       -ac_cc=3
@@ -335,7 +335,7 @@ services:
       - BLOCKNOTIFYURL=https://njeitldkqc.execute-api.ap-southeast-2.amazonaws.com/v0/blocknotify
 
     command: >
-      bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
+      bash -c "komodod -pubkey=037332211b0739afa3a854035616a7c94b9f0b179e088cca7fd6d7068be4ff56c7
       -ac_name=TXSCL004
       -ac_supply=7777777
       -ac_cc=3
@@ -375,7 +375,7 @@ services:
       - STATS=0
       - STARTURL=https://ylnlg4iac3.execute-api.us-east-1.amazonaws.com/dev/activation
     command: >
-      bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
+      bash -c "komodod -pubkey=037332211b0739afa3a854035616a7c94b9f0b179e088cca7fd6d7068be4ff56c7
       -ac_name=TXSCL004
       -ac_supply=7777777
       -ac_cc=3
@@ -411,7 +411,7 @@ services:
       - BLOCKNOTIFYURL=https://njeitldkqc.execute-api.ap-southeast-2.amazonaws.com/v0/blocknotify
 
     command: >
-      bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
+      bash -c "komodod -pubkey=037332211b0739afa3a854035616a7c94b9f0b179e088cca7fd6d7068be4ff56c7
       -ac_name=TXSCL005
       -ac_supply=7777777
       -ac_cc=3
@@ -451,7 +451,7 @@ services:
       - STATS=0
       - STARTURL=https://ylnlg4iac3.execute-api.us-east-1.amazonaws.com/dev/activation
     command: >
-      bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
+      bash -c "komodod -pubkey=037332211b0739afa3a854035616a7c94b9f0b179e088cca7fd6d7068be4ff56c7
       -ac_name=TXSCL005
       -ac_supply=7777777
       -ac_cc=3
@@ -487,7 +487,7 @@ services:
       - BLOCKNOTIFYURL=https://njeitldkqc.execute-api.ap-southeast-2.amazonaws.com/v0/blocknotify
 
     command: >
-      bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
+      bash -c "komodod -pubkey=037332211b0739afa3a854035616a7c94b9f0b179e088cca7fd6d7068be4ff56c7
       -ac_name=TXSCL006
       -ac_supply=7777777
       -ac_cc=3
@@ -527,7 +527,7 @@ services:
       - STATS=0
       - STARTURL=https://ylnlg4iac3.execute-api.us-east-1.amazonaws.com/dev/activation
     command: >
-      bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
+      bash -c "komodod -pubkey=037332211b0739afa3a854035616a7c94b9f0b179e088cca7fd6d7068be4ff56c7
       -ac_name=TXSCL006
       -ac_supply=7777777
       -ac_cc=3
@@ -563,7 +563,7 @@ services:
       - BLOCKNOTIFYURL=https://njeitldkqc.execute-api.ap-southeast-2.amazonaws.com/v0/blocknotify
 
     command: >
-      bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
+      bash -c "komodod -pubkey=037332211b0739afa3a854035616a7c94b9f0b179e088cca7fd6d7068be4ff56c7
       -ac_name=TXSCL007
       -ac_supply=7777777
       -ac_cc=3
@@ -603,7 +603,7 @@ services:
       - STATS=0
       - STARTURL=https://ylnlg4iac3.execute-api.us-east-1.amazonaws.com/dev/activation
     command: >
-      bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
+      bash -c "komodod -pubkey=037332211b0739afa3a854035616a7c94b9f0b179e088cca7fd6d7068be4ff56c7
       -ac_name=TXSCL007
       -ac_supply=7777777
       -ac_cc=3
@@ -639,7 +639,7 @@ services:
       - BLOCKNOTIFYURL=https://njeitldkqc.execute-api.ap-southeast-2.amazonaws.com/v0/blocknotify
 
     command: >
-      bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
+      bash -c "komodod -pubkey=037332211b0739afa3a854035616a7c94b9f0b179e088cca7fd6d7068be4ff56c7
       -ac_name=TXSCL008
       -ac_supply=7777777
       -ac_cc=3
@@ -679,7 +679,7 @@ services:
       - STATS=0
       - STARTURL=https://ylnlg4iac3.execute-api.us-east-1.amazonaws.com/dev/activation
     command: >
-      bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
+      bash -c "komodod -pubkey=037332211b0739afa3a854035616a7c94b9f0b179e088cca7fd6d7068be4ff56c7
       -ac_name=TXSCL008
       -ac_supply=7777777
       -ac_cc=3
@@ -715,7 +715,7 @@ services:
       - BLOCKNOTIFYURL=https://njeitldkqc.execute-api.ap-southeast-2.amazonaws.com/v0/blocknotify
 
     command: >
-      bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
+      bash -c "komodod -pubkey=037332211b0739afa3a854035616a7c94b9f0b179e088cca7fd6d7068be4ff56c7
       -ac_name=TXSCL009
       -ac_supply=7777777
       -ac_cc=3
@@ -755,7 +755,7 @@ services:
       - STATS=0
       - STARTURL=https://ylnlg4iac3.execute-api.us-east-1.amazonaws.com/dev/activation
     command: >
-      bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
+      bash -c "komodod -pubkey=037332211b0739afa3a854035616a7c94b9f0b179e088cca7fd6d7068be4ff56c7
       -ac_name=TXSCL009
       -ac_supply=7777777
       -ac_cc=3
@@ -791,7 +791,7 @@ services:
       - BLOCKNOTIFYURL=https://njeitldkqc.execute-api.ap-southeast-2.amazonaws.com/v0/blocknotify
 
     command: >
-      bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
+      bash -c "komodod -pubkey=037332211b0739afa3a854035616a7c94b9f0b179e088cca7fd6d7068be4ff56c7
       -ac_name=TXSCL00a
       -ac_supply=7777777
       -ac_cc=3
@@ -831,7 +831,7 @@ services:
       - STATS=0
       - STARTURL=https://ylnlg4iac3.execute-api.us-east-1.amazonaws.com/dev/activation
     command: >
-      bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
+      bash -c "komodod -pubkey=037332211b0739afa3a854035616a7c94b9f0b179e088cca7fd6d7068be4ff56c7
       -ac_name=TXSCL00a
       -ac_supply=7777777
       -ac_cc=3
@@ -867,7 +867,7 @@ services:
       - BLOCKNOTIFYURL=https://njeitldkqc.execute-api.ap-southeast-2.amazonaws.com/v0/blocknotify
 
     command: >
-      bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
+      bash -c "komodod -pubkey=037332211b0739afa3a854035616a7c94b9f0b179e088cca7fd6d7068be4ff56c7
       -ac_name=TXSCL00b
       -ac_supply=7777777
       -ac_cc=3
@@ -907,7 +907,7 @@ services:
       - STATS=0
       - STARTURL=https://ylnlg4iac3.execute-api.us-east-1.amazonaws.com/dev/activation
     command: >
-      bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
+      bash -c "komodod -pubkey=037332211b0739afa3a854035616a7c94b9f0b179e088cca7fd6d7068be4ff56c7
       -ac_name=TXSCL00b
       -ac_supply=7777777
       -ac_cc=3
@@ -943,7 +943,7 @@ services:
       - BLOCKNOTIFYURL=https://njeitldkqc.execute-api.ap-southeast-2.amazonaws.com/v0/blocknotify
 
     command: >
-      bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
+      bash -c "komodod -pubkey=037332211b0739afa3a854035616a7c94b9f0b179e088cca7fd6d7068be4ff56c7
       -ac_name=TXSCL00c
       -ac_supply=7777777
       -ac_cc=3
@@ -983,7 +983,7 @@ services:
       - STATS=0
       - STARTURL=https://ylnlg4iac3.execute-api.us-east-1.amazonaws.com/dev/activation
     command: >
-      bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
+      bash -c "komodod -pubkey=037332211b0739afa3a854035616a7c94b9f0b179e088cca7fd6d7068be4ff56c7
       -ac_name=TXSCL00c
       -ac_supply=7777777
       -ac_cc=3
@@ -1019,7 +1019,7 @@ services:
       - BLOCKNOTIFYURL=https://njeitldkqc.execute-api.ap-southeast-2.amazonaws.com/v0/blocknotify
 
     command: >
-      bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
+      bash -c "komodod -pubkey=037332211b0739afa3a854035616a7c94b9f0b179e088cca7fd6d7068be4ff56c7
       -ac_name=TXSCL00d
       -ac_supply=7777777
       -ac_cc=3
@@ -1059,7 +1059,7 @@ services:
       - STATS=0
       - STARTURL=https://ylnlg4iac3.execute-api.us-east-1.amazonaws.com/dev/activation
     command: >
-      bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
+      bash -c "komodod -pubkey=037332211b0739afa3a854035616a7c94b9f0b179e088cca7fd6d7068be4ff56c7
       -ac_name=TXSCL00d
       -ac_supply=7777777
       -ac_cc=3
@@ -1095,7 +1095,7 @@ services:
       - BLOCKNOTIFYURL=https://njeitldkqc.execute-api.ap-southeast-2.amazonaws.com/v0/blocknotify
 
     command: >
-      bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
+      bash -c "komodod -pubkey=037332211b0739afa3a854035616a7c94b9f0b179e088cca7fd6d7068be4ff56c7
       -ac_name=TXSCL00e
       -ac_supply=7777777
       -ac_cc=3
@@ -1135,7 +1135,7 @@ services:
       - STATS=0
       - STARTURL=https://ylnlg4iac3.execute-api.us-east-1.amazonaws.com/dev/activation
     command: >
-      bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
+      bash -c "komodod -pubkey=037332211b0739afa3a854035616a7c94b9f0b179e088cca7fd6d7068be4ff56c7
       -ac_name=TXSCL00e
       -ac_supply=7777777
       -ac_cc=3
@@ -1171,7 +1171,7 @@ services:
       - BLOCKNOTIFYURL=https://njeitldkqc.execute-api.ap-southeast-2.amazonaws.com/v0/blocknotify
 
     command: >
-      bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
+      bash -c "komodod -pubkey=037332211b0739afa3a854035616a7c94b9f0b179e088cca7fd6d7068be4ff56c7
       -ac_name=TXSCL00f
       -ac_supply=7777777
       -ac_cc=3
@@ -1211,7 +1211,7 @@ services:
       - STATS=0
       - STARTURL=https://ylnlg4iac3.execute-api.us-east-1.amazonaws.com/dev/activation
     command: >
-      bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
+      bash -c "komodod -pubkey=037332211b0739afa3a854035616a7c94b9f0b179e088cca7fd6d7068be4ff56c7
       -ac_name=TXSCL00f
       -ac_supply=7777777
       -ac_cc=3
@@ -1247,7 +1247,7 @@ services:
       - BLOCKNOTIFYURL=https://njeitldkqc.execute-api.ap-southeast-2.amazonaws.com/v0/blocknotify
 
     command: >
-      bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
+      bash -c "komodod -pubkey=037332211b0739afa3a854035616a7c94b9f0b179e088cca7fd6d7068be4ff56c7
       -ac_name=TXSCL010
       -ac_supply=7777777
       -ac_cc=3
@@ -1287,7 +1287,7 @@ services:
       - STATS=0
       - STARTURL=https://ylnlg4iac3.execute-api.us-east-1.amazonaws.com/dev/activation
     command: >
-      bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
+      bash -c "komodod -pubkey=037332211b0739afa3a854035616a7c94b9f0b179e088cca7fd6d7068be4ff56c7
       -ac_name=TXSCL010
       -ac_supply=7777777
       -ac_cc=3
@@ -1323,7 +1323,7 @@ services:
       - BLOCKNOTIFYURL=https://njeitldkqc.execute-api.ap-southeast-2.amazonaws.com/v0/blocknotify
 
     command: >
-      bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
+      bash -c "komodod -pubkey=037332211b0739afa3a854035616a7c94b9f0b179e088cca7fd6d7068be4ff56c7
       -ac_name=TXSCL011
       -ac_supply=7777777
       -ac_cc=3
@@ -1363,7 +1363,7 @@ services:
       - STATS=0
       - STARTURL=https://ylnlg4iac3.execute-api.us-east-1.amazonaws.com/dev/activation
     command: >
-      bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
+      bash -c "komodod -pubkey=037332211b0739afa3a854035616a7c94b9f0b179e088cca7fd6d7068be4ff56c7
       -ac_name=TXSCL011
       -ac_supply=7777777
       -ac_cc=3
@@ -1399,7 +1399,7 @@ services:
       - BLOCKNOTIFYURL=https://njeitldkqc.execute-api.ap-southeast-2.amazonaws.com/v0/blocknotify
 
     command: >
-      bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
+      bash -c "komodod -pubkey=037332211b0739afa3a854035616a7c94b9f0b179e088cca7fd6d7068be4ff56c7
       -ac_name=TXSCL012
       -ac_supply=7777777
       -ac_cc=3
@@ -1439,7 +1439,7 @@ services:
       - STATS=0
       - STARTURL=https://ylnlg4iac3.execute-api.us-east-1.amazonaws.com/dev/activation
     command: >
-      bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
+      bash -c "komodod -pubkey=037332211b0739afa3a854035616a7c94b9f0b179e088cca7fd6d7068be4ff56c7
       -ac_name=TXSCL012
       -ac_supply=7777777
       -ac_cc=3
@@ -1475,7 +1475,7 @@ services:
       - BLOCKNOTIFYURL=https://njeitldkqc.execute-api.ap-southeast-2.amazonaws.com/v0/blocknotify
 
     command: >
-      bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
+      bash -c "komodod -pubkey=037332211b0739afa3a854035616a7c94b9f0b179e088cca7fd6d7068be4ff56c7
       -ac_name=TXSCL013
       -ac_supply=7777777
       -ac_cc=3
@@ -1515,7 +1515,7 @@ services:
       - STATS=0
       - STARTURL=https://ylnlg4iac3.execute-api.us-east-1.amazonaws.com/dev/activation
     command: >
-      bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
+      bash -c "komodod -pubkey=037332211b0739afa3a854035616a7c94b9f0b179e088cca7fd6d7068be4ff56c7
       -ac_name=TXSCL013
       -ac_supply=7777777
       -ac_cc=3
@@ -1551,7 +1551,7 @@ services:
       - BLOCKNOTIFYURL=https://njeitldkqc.execute-api.ap-southeast-2.amazonaws.com/v0/blocknotify
 
     command: >
-      bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
+      bash -c "komodod -pubkey=037332211b0739afa3a854035616a7c94b9f0b179e088cca7fd6d7068be4ff56c7
       -ac_name=TXSCL014
       -ac_supply=7777777
       -ac_cc=3
@@ -1591,7 +1591,7 @@ services:
       - STATS=0
       - STARTURL=https://ylnlg4iac3.execute-api.us-east-1.amazonaws.com/dev/activation
     command: >
-      bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
+      bash -c "komodod -pubkey=037332211b0739afa3a854035616a7c94b9f0b179e088cca7fd6d7068be4ff56c7
       -ac_name=TXSCL014
       -ac_supply=7777777
       -ac_cc=3
@@ -1627,7 +1627,7 @@ services:
       - BLOCKNOTIFYURL=https://njeitldkqc.execute-api.ap-southeast-2.amazonaws.com/v0/blocknotify
 
     command: >
-      bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
+      bash -c "komodod -pubkey=037332211b0739afa3a854035616a7c94b9f0b179e088cca7fd6d7068be4ff56c7
       -ac_name=TXSCL015
       -ac_supply=7777777
       -ac_cc=3
@@ -1667,7 +1667,7 @@ services:
       - STATS=0
       - STARTURL=https://ylnlg4iac3.execute-api.us-east-1.amazonaws.com/dev/activation
     command: >
-      bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
+      bash -c "komodod -pubkey=037332211b0739afa3a854035616a7c94b9f0b179e088cca7fd6d7068be4ff56c7
       -ac_name=TXSCL015
       -ac_supply=7777777
       -ac_cc=3
@@ -1703,7 +1703,7 @@ services:
       - BLOCKNOTIFYURL=https://njeitldkqc.execute-api.ap-southeast-2.amazonaws.com/v0/blocknotify
 
     command: >
-      bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
+      bash -c "komodod -pubkey=037332211b0739afa3a854035616a7c94b9f0b179e088cca7fd6d7068be4ff56c7
       -ac_name=TXSCL016
       -ac_supply=7777777
       -ac_cc=3
@@ -1743,7 +1743,7 @@ services:
       - STATS=0
       - STARTURL=https://ylnlg4iac3.execute-api.us-east-1.amazonaws.com/dev/activation
     command: >
-      bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
+      bash -c "komodod -pubkey=037332211b0739afa3a854035616a7c94b9f0b179e088cca7fd6d7068be4ff56c7
       -ac_name=TXSCL016
       -ac_supply=7777777
       -ac_cc=3
@@ -1779,7 +1779,7 @@ services:
       - BLOCKNOTIFYURL=https://njeitldkqc.execute-api.ap-southeast-2.amazonaws.com/v0/blocknotify
 
     command: >
-      bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
+      bash -c "komodod -pubkey=037332211b0739afa3a854035616a7c94b9f0b179e088cca7fd6d7068be4ff56c7
       -ac_name=TXSCL017
       -ac_supply=7777777
       -ac_cc=3
@@ -1819,7 +1819,7 @@ services:
       - STATS=0
       - STARTURL=https://ylnlg4iac3.execute-api.us-east-1.amazonaws.com/dev/activation
     command: >
-      bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
+      bash -c "komodod -pubkey=037332211b0739afa3a854035616a7c94b9f0b179e088cca7fd6d7068be4ff56c7
       -ac_name=TXSCL017
       -ac_supply=7777777
       -ac_cc=3
@@ -1855,7 +1855,7 @@ services:
       - BLOCKNOTIFYURL=https://njeitldkqc.execute-api.ap-southeast-2.amazonaws.com/v0/blocknotify
 
     command: >
-      bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
+      bash -c "komodod -pubkey=037332211b0739afa3a854035616a7c94b9f0b179e088cca7fd6d7068be4ff56c7
       -ac_name=TXSCL018
       -ac_supply=7777777
       -ac_cc=3
@@ -1895,7 +1895,7 @@ services:
       - STATS=0
       - STARTURL=https://ylnlg4iac3.execute-api.us-east-1.amazonaws.com/dev/activation
     command: >
-      bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
+      bash -c "komodod -pubkey=037332211b0739afa3a854035616a7c94b9f0b179e088cca7fd6d7068be4ff56c7
       -ac_name=TXSCL018
       -ac_supply=7777777
       -ac_cc=3
@@ -1931,7 +1931,7 @@ services:
       - BLOCKNOTIFYURL=https://njeitldkqc.execute-api.ap-southeast-2.amazonaws.com/v0/blocknotify
 
     command: >
-      bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
+      bash -c "komodod -pubkey=037332211b0739afa3a854035616a7c94b9f0b179e088cca7fd6d7068be4ff56c7
       -ac_name=TXSCL019
       -ac_supply=7777777
       -ac_cc=3
@@ -1971,7 +1971,7 @@ services:
       - STATS=0
       - STARTURL=https://ylnlg4iac3.execute-api.us-east-1.amazonaws.com/dev/activation
     command: >
-      bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
+      bash -c "komodod -pubkey=037332211b0739afa3a854035616a7c94b9f0b179e088cca7fd6d7068be4ff56c7
       -ac_name=TXSCL019
       -ac_supply=7777777
       -ac_cc=3
@@ -2007,7 +2007,7 @@ services:
       - BLOCKNOTIFYURL=https://njeitldkqc.execute-api.ap-southeast-2.amazonaws.com/v0/blocknotify
 
     command: >
-      bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
+      bash -c "komodod -pubkey=037332211b0739afa3a854035616a7c94b9f0b179e088cca7fd6d7068be4ff56c7
       -ac_name=TXSCL01a
       -ac_supply=7777777
       -ac_cc=3
@@ -2047,7 +2047,7 @@ services:
       - STATS=0
       - STARTURL=https://ylnlg4iac3.execute-api.us-east-1.amazonaws.com/dev/activation
     command: >
-      bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
+      bash -c "komodod -pubkey=037332211b0739afa3a854035616a7c94b9f0b179e088cca7fd6d7068be4ff56c7
       -ac_name=TXSCL01a
       -ac_supply=7777777
       -ac_cc=3
@@ -2083,7 +2083,7 @@ services:
       - BLOCKNOTIFYURL=https://njeitldkqc.execute-api.ap-southeast-2.amazonaws.com/v0/blocknotify
 
     command: >
-      bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
+      bash -c "komodod -pubkey=037332211b0739afa3a854035616a7c94b9f0b179e088cca7fd6d7068be4ff56c7
       -ac_name=TXSCL01b
       -ac_supply=7777777
       -ac_cc=3
@@ -2123,7 +2123,7 @@ services:
       - STATS=0
       - STARTURL=https://ylnlg4iac3.execute-api.us-east-1.amazonaws.com/dev/activation
     command: >
-      bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
+      bash -c "komodod -pubkey=037332211b0739afa3a854035616a7c94b9f0b179e088cca7fd6d7068be4ff56c7
       -ac_name=TXSCL01b
       -ac_supply=7777777
       -ac_cc=3
@@ -2159,7 +2159,7 @@ services:
       - BLOCKNOTIFYURL=https://njeitldkqc.execute-api.ap-southeast-2.amazonaws.com/v0/blocknotify
 
     command: >
-      bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
+      bash -c "komodod -pubkey=037332211b0739afa3a854035616a7c94b9f0b179e088cca7fd6d7068be4ff56c7
       -ac_name=TXSCL01c
       -ac_supply=7777777
       -ac_cc=3
@@ -2199,7 +2199,7 @@ services:
       - STATS=0
       - STARTURL=https://ylnlg4iac3.execute-api.us-east-1.amazonaws.com/dev/activation
     command: >
-      bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
+      bash -c "komodod -pubkey=037332211b0739afa3a854035616a7c94b9f0b179e088cca7fd6d7068be4ff56c7
       -ac_name=TXSCL01c
       -ac_supply=7777777
       -ac_cc=3
@@ -2235,7 +2235,7 @@ services:
       - BLOCKNOTIFYURL=https://njeitldkqc.execute-api.ap-southeast-2.amazonaws.com/v0/blocknotify
 
     command: >
-      bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
+      bash -c "komodod -pubkey=037332211b0739afa3a854035616a7c94b9f0b179e088cca7fd6d7068be4ff56c7
       -ac_name=TXSCL01d
       -ac_supply=7777777
       -ac_cc=3
@@ -2275,7 +2275,7 @@ services:
       - STATS=0
       - STARTURL=https://ylnlg4iac3.execute-api.us-east-1.amazonaws.com/dev/activation
     command: >
-      bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
+      bash -c "komodod -pubkey=037332211b0739afa3a854035616a7c94b9f0b179e088cca7fd6d7068be4ff56c7
       -ac_name=TXSCL01d
       -ac_supply=7777777
       -ac_cc=3
@@ -2311,7 +2311,7 @@ services:
       - BLOCKNOTIFYURL=https://njeitldkqc.execute-api.ap-southeast-2.amazonaws.com/v0/blocknotify
 
     command: >
-      bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
+      bash -c "komodod -pubkey=037332211b0739afa3a854035616a7c94b9f0b179e088cca7fd6d7068be4ff56c7
       -ac_name=TXSCL01e
       -ac_supply=7777777
       -ac_cc=3
@@ -2351,7 +2351,7 @@ services:
       - STATS=0
       - STARTURL=https://ylnlg4iac3.execute-api.us-east-1.amazonaws.com/dev/activation
     command: >
-      bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
+      bash -c "komodod -pubkey=037332211b0739afa3a854035616a7c94b9f0b179e088cca7fd6d7068be4ff56c7
       -ac_name=TXSCL01e
       -ac_supply=7777777
       -ac_cc=3
@@ -2387,7 +2387,7 @@ services:
       - BLOCKNOTIFYURL=https://njeitldkqc.execute-api.ap-southeast-2.amazonaws.com/v0/blocknotify
 
     command: >
-      bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
+      bash -c "komodod -pubkey=037332211b0739afa3a854035616a7c94b9f0b179e088cca7fd6d7068be4ff56c7
       -ac_name=TXSCL01f
       -ac_supply=7777777
       -ac_cc=3
@@ -2427,7 +2427,7 @@ services:
       - STATS=0
       - STARTURL=https://ylnlg4iac3.execute-api.us-east-1.amazonaws.com/dev/activation
     command: >
-      bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
+      bash -c "komodod -pubkey=037332211b0739afa3a854035616a7c94b9f0b179e088cca7fd6d7068be4ff56c7
       -ac_name=TXSCL01f
       -ac_supply=7777777
       -ac_cc=3
@@ -2463,7 +2463,7 @@ services:
       - BLOCKNOTIFYURL=https://njeitldkqc.execute-api.ap-southeast-2.amazonaws.com/v0/blocknotify
 
     command: >
-      bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
+      bash -c "komodod -pubkey=037332211b0739afa3a854035616a7c94b9f0b179e088cca7fd6d7068be4ff56c7
       -ac_name=TXSCL020
       -ac_supply=7777777
       -ac_cc=3
@@ -2503,7 +2503,7 @@ services:
       - STATS=0
       - STARTURL=https://ylnlg4iac3.execute-api.us-east-1.amazonaws.com/dev/activation
     command: >
-      bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
+      bash -c "komodod -pubkey=037332211b0739afa3a854035616a7c94b9f0b179e088cca7fd6d7068be4ff56c7
       -ac_name=TXSCL020
       -ac_supply=7777777
       -ac_cc=3
@@ -2539,7 +2539,7 @@ services:
       - BLOCKNOTIFYURL=https://njeitldkqc.execute-api.ap-southeast-2.amazonaws.com/v0/blocknotify
 
     command: >
-      bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
+      bash -c "komodod -pubkey=037332211b0739afa3a854035616a7c94b9f0b179e088cca7fd6d7068be4ff56c7
       -ac_name=TXSCL021
       -ac_supply=7777777
       -ac_cc=3
@@ -2579,7 +2579,7 @@ services:
       - STATS=0
       - STARTURL=https://ylnlg4iac3.execute-api.us-east-1.amazonaws.com/dev/activation
     command: >
-      bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
+      bash -c "komodod -pubkey=037332211b0739afa3a854035616a7c94b9f0b179e088cca7fd6d7068be4ff56c7
       -ac_name=TXSCL021
       -ac_supply=7777777
       -ac_cc=3
@@ -2615,7 +2615,7 @@ services:
       - BLOCKNOTIFYURL=https://njeitldkqc.execute-api.ap-southeast-2.amazonaws.com/v0/blocknotify
 
     command: >
-      bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
+      bash -c "komodod -pubkey=037332211b0739afa3a854035616a7c94b9f0b179e088cca7fd6d7068be4ff56c7
       -ac_name=TXSCL022
       -ac_supply=7777777
       -ac_cc=3
@@ -2655,7 +2655,7 @@ services:
       - STATS=0
       - STARTURL=https://ylnlg4iac3.execute-api.us-east-1.amazonaws.com/dev/activation
     command: >
-      bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
+      bash -c "komodod -pubkey=037332211b0739afa3a854035616a7c94b9f0b179e088cca7fd6d7068be4ff56c7
       -ac_name=TXSCL022
       -ac_supply=7777777
       -ac_cc=3
@@ -2691,7 +2691,7 @@ services:
       - BLOCKNOTIFYURL=https://njeitldkqc.execute-api.ap-southeast-2.amazonaws.com/v0/blocknotify
 
     command: >
-      bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
+      bash -c "komodod -pubkey=037332211b0739afa3a854035616a7c94b9f0b179e088cca7fd6d7068be4ff56c7
       -ac_name=TXSCL023
       -ac_supply=7777777
       -ac_cc=3
@@ -2731,7 +2731,7 @@ services:
       - STATS=0
       - STARTURL=https://ylnlg4iac3.execute-api.us-east-1.amazonaws.com/dev/activation
     command: >
-      bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
+      bash -c "komodod -pubkey=037332211b0739afa3a854035616a7c94b9f0b179e088cca7fd6d7068be4ff56c7
       -ac_name=TXSCL023
       -ac_supply=7777777
       -ac_cc=3
@@ -2767,7 +2767,7 @@ services:
       - BLOCKNOTIFYURL=https://njeitldkqc.execute-api.ap-southeast-2.amazonaws.com/v0/blocknotify
 
     command: >
-      bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
+      bash -c "komodod -pubkey=037332211b0739afa3a854035616a7c94b9f0b179e088cca7fd6d7068be4ff56c7
       -ac_name=TXSCL024
       -ac_supply=7777777
       -ac_cc=3
@@ -2807,7 +2807,7 @@ services:
       - STATS=0
       - STARTURL=https://ylnlg4iac3.execute-api.us-east-1.amazonaws.com/dev/activation
     command: >
-      bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
+      bash -c "komodod -pubkey=037332211b0739afa3a854035616a7c94b9f0b179e088cca7fd6d7068be4ff56c7
       -ac_name=TXSCL024
       -ac_supply=7777777
       -ac_cc=3
@@ -2843,7 +2843,7 @@ services:
       - BLOCKNOTIFYURL=https://njeitldkqc.execute-api.ap-southeast-2.amazonaws.com/v0/blocknotify
 
     command: >
-      bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
+      bash -c "komodod -pubkey=037332211b0739afa3a854035616a7c94b9f0b179e088cca7fd6d7068be4ff56c7
       -ac_name=TXSCL025
       -ac_supply=7777777
       -ac_cc=3
@@ -2883,7 +2883,7 @@ services:
       - STATS=0
       - STARTURL=https://ylnlg4iac3.execute-api.us-east-1.amazonaws.com/dev/activation
     command: >
-      bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
+      bash -c "komodod -pubkey=037332211b0739afa3a854035616a7c94b9f0b179e088cca7fd6d7068be4ff56c7
       -ac_name=TXSCL025
       -ac_supply=7777777
       -ac_cc=3
@@ -2919,7 +2919,7 @@ services:
       - BLOCKNOTIFYURL=https://njeitldkqc.execute-api.ap-southeast-2.amazonaws.com/v0/blocknotify
 
     command: >
-      bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
+      bash -c "komodod -pubkey=037332211b0739afa3a854035616a7c94b9f0b179e088cca7fd6d7068be4ff56c7
       -ac_name=TXSCL026
       -ac_supply=7777777
       -ac_cc=3
@@ -2959,7 +2959,7 @@ services:
       - STATS=0
       - STARTURL=https://ylnlg4iac3.execute-api.us-east-1.amazonaws.com/dev/activation
     command: >
-      bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
+      bash -c "komodod -pubkey=037332211b0739afa3a854035616a7c94b9f0b179e088cca7fd6d7068be4ff56c7
       -ac_name=TXSCL026
       -ac_supply=7777777
       -ac_cc=3
@@ -2995,7 +2995,7 @@ services:
       - BLOCKNOTIFYURL=https://njeitldkqc.execute-api.ap-southeast-2.amazonaws.com/v0/blocknotify
 
     command: >
-      bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
+      bash -c "komodod -pubkey=037332211b0739afa3a854035616a7c94b9f0b179e088cca7fd6d7068be4ff56c7
       -ac_name=TXSCL027
       -ac_supply=7777777
       -ac_cc=3
@@ -3035,7 +3035,7 @@ services:
       - STATS=0
       - STARTURL=https://ylnlg4iac3.execute-api.us-east-1.amazonaws.com/dev/activation
     command: >
-      bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
+      bash -c "komodod -pubkey=037332211b0739afa3a854035616a7c94b9f0b179e088cca7fd6d7068be4ff56c7
       -ac_name=TXSCL027
       -ac_supply=7777777
       -ac_cc=3
@@ -3071,7 +3071,7 @@ services:
       - BLOCKNOTIFYURL=https://njeitldkqc.execute-api.ap-southeast-2.amazonaws.com/v0/blocknotify
 
     command: >
-      bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
+      bash -c "komodod -pubkey=037332211b0739afa3a854035616a7c94b9f0b179e088cca7fd6d7068be4ff56c7
       -ac_name=TXSCL028
       -ac_supply=7777777
       -ac_cc=3
@@ -3111,7 +3111,7 @@ services:
       - STATS=0
       - STARTURL=https://ylnlg4iac3.execute-api.us-east-1.amazonaws.com/dev/activation
     command: >
-      bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
+      bash -c "komodod -pubkey=037332211b0739afa3a854035616a7c94b9f0b179e088cca7fd6d7068be4ff56c7
       -ac_name=TXSCL028
       -ac_supply=7777777
       -ac_cc=3
@@ -3147,7 +3147,7 @@ services:
       - BLOCKNOTIFYURL=https://njeitldkqc.execute-api.ap-southeast-2.amazonaws.com/v0/blocknotify
 
     command: >
-      bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
+      bash -c "komodod -pubkey=037332211b0739afa3a854035616a7c94b9f0b179e088cca7fd6d7068be4ff56c7
       -ac_name=TXSCL029
       -ac_supply=7777777
       -ac_cc=3
@@ -3187,7 +3187,7 @@ services:
       - STATS=0
       - STARTURL=https://ylnlg4iac3.execute-api.us-east-1.amazonaws.com/dev/activation
     command: >
-      bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
+      bash -c "komodod -pubkey=037332211b0739afa3a854035616a7c94b9f0b179e088cca7fd6d7068be4ff56c7
       -ac_name=TXSCL029
       -ac_supply=7777777
       -ac_cc=3
@@ -3223,7 +3223,7 @@ services:
       - BLOCKNOTIFYURL=https://njeitldkqc.execute-api.ap-southeast-2.amazonaws.com/v0/blocknotify
 
     command: >
-      bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
+      bash -c "komodod -pubkey=037332211b0739afa3a854035616a7c94b9f0b179e088cca7fd6d7068be4ff56c7
       -ac_name=TXSCL02a
       -ac_supply=7777777
       -ac_cc=3
@@ -3263,7 +3263,7 @@ services:
       - STATS=0
       - STARTURL=https://ylnlg4iac3.execute-api.us-east-1.amazonaws.com/dev/activation
     command: >
-      bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
+      bash -c "komodod -pubkey=037332211b0739afa3a854035616a7c94b9f0b179e088cca7fd6d7068be4ff56c7
       -ac_name=TXSCL02a
       -ac_supply=7777777
       -ac_cc=3
@@ -3299,7 +3299,7 @@ services:
       - BLOCKNOTIFYURL=https://njeitldkqc.execute-api.ap-southeast-2.amazonaws.com/v0/blocknotify
 
     command: >
-      bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
+      bash -c "komodod -pubkey=037332211b0739afa3a854035616a7c94b9f0b179e088cca7fd6d7068be4ff56c7
       -ac_name=TXSCL02b
       -ac_supply=7777777
       -ac_cc=3
@@ -3339,7 +3339,7 @@ services:
       - STATS=0
       - STARTURL=https://ylnlg4iac3.execute-api.us-east-1.amazonaws.com/dev/activation
     command: >
-      bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
+      bash -c "komodod -pubkey=037332211b0739afa3a854035616a7c94b9f0b179e088cca7fd6d7068be4ff56c7
       -ac_name=TXSCL02b
       -ac_supply=7777777
       -ac_cc=3
@@ -3375,7 +3375,7 @@ services:
       - BLOCKNOTIFYURL=https://njeitldkqc.execute-api.ap-southeast-2.amazonaws.com/v0/blocknotify
 
     command: >
-      bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
+      bash -c "komodod -pubkey=037332211b0739afa3a854035616a7c94b9f0b179e088cca7fd6d7068be4ff56c7
       -ac_name=TXSCL02c
       -ac_supply=7777777
       -ac_cc=3
@@ -3415,7 +3415,7 @@ services:
       - STATS=0
       - STARTURL=https://ylnlg4iac3.execute-api.us-east-1.amazonaws.com/dev/activation
     command: >
-      bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
+      bash -c "komodod -pubkey=037332211b0739afa3a854035616a7c94b9f0b179e088cca7fd6d7068be4ff56c7
       -ac_name=TXSCL02c
       -ac_supply=7777777
       -ac_cc=3
@@ -3451,7 +3451,7 @@ services:
       - BLOCKNOTIFYURL=https://njeitldkqc.execute-api.ap-southeast-2.amazonaws.com/v0/blocknotify
 
     command: >
-      bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
+      bash -c "komodod -pubkey=037332211b0739afa3a854035616a7c94b9f0b179e088cca7fd6d7068be4ff56c7
       -ac_name=TXSCL02d
       -ac_supply=7777777
       -ac_cc=3
@@ -3491,7 +3491,7 @@ services:
       - STATS=0
       - STARTURL=https://ylnlg4iac3.execute-api.us-east-1.amazonaws.com/dev/activation
     command: >
-      bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
+      bash -c "komodod -pubkey=037332211b0739afa3a854035616a7c94b9f0b179e088cca7fd6d7068be4ff56c7
       -ac_name=TXSCL02d
       -ac_supply=7777777
       -ac_cc=3
@@ -3527,7 +3527,7 @@ services:
       - BLOCKNOTIFYURL=https://njeitldkqc.execute-api.ap-southeast-2.amazonaws.com/v0/blocknotify
 
     command: >
-      bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
+      bash -c "komodod -pubkey=037332211b0739afa3a854035616a7c94b9f0b179e088cca7fd6d7068be4ff56c7
       -ac_name=TXSCL02e
       -ac_supply=7777777
       -ac_cc=3
@@ -3567,7 +3567,7 @@ services:
       - STATS=0
       - STARTURL=https://ylnlg4iac3.execute-api.us-east-1.amazonaws.com/dev/activation
     command: >
-      bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
+      bash -c "komodod -pubkey=037332211b0739afa3a854035616a7c94b9f0b179e088cca7fd6d7068be4ff56c7
       -ac_name=TXSCL02e
       -ac_supply=7777777
       -ac_cc=3
@@ -3603,7 +3603,7 @@ services:
       - BLOCKNOTIFYURL=https://njeitldkqc.execute-api.ap-southeast-2.amazonaws.com/v0/blocknotify
 
     command: >
-      bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
+      bash -c "komodod -pubkey=037332211b0739afa3a854035616a7c94b9f0b179e088cca7fd6d7068be4ff56c7
       -ac_name=TXSCL02f
       -ac_supply=7777777
       -ac_cc=3
@@ -3643,7 +3643,7 @@ services:
       - STATS=0
       - STARTURL=https://ylnlg4iac3.execute-api.us-east-1.amazonaws.com/dev/activation
     command: >
-      bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
+      bash -c "komodod -pubkey=037332211b0739afa3a854035616a7c94b9f0b179e088cca7fd6d7068be4ff56c7
       -ac_name=TXSCL02f
       -ac_supply=7777777
       -ac_cc=3
@@ -3679,7 +3679,7 @@ services:
       - BLOCKNOTIFYURL=https://njeitldkqc.execute-api.ap-southeast-2.amazonaws.com/v0/blocknotify
 
     command: >
-      bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
+      bash -c "komodod -pubkey=037332211b0739afa3a854035616a7c94b9f0b179e088cca7fd6d7068be4ff56c7
       -ac_name=TXSCL030
       -ac_supply=7777777
       -ac_cc=3
@@ -3719,7 +3719,7 @@ services:
       - STATS=0
       - STARTURL=https://ylnlg4iac3.execute-api.us-east-1.amazonaws.com/dev/activation
     command: >
-      bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
+      bash -c "komodod -pubkey=037332211b0739afa3a854035616a7c94b9f0b179e088cca7fd6d7068be4ff56c7
       -ac_name=TXSCL030
       -ac_supply=7777777
       -ac_cc=3
@@ -3755,7 +3755,7 @@ services:
       - BLOCKNOTIFYURL=https://njeitldkqc.execute-api.ap-southeast-2.amazonaws.com/v0/blocknotify
 
     command: >
-      bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
+      bash -c "komodod -pubkey=037332211b0739afa3a854035616a7c94b9f0b179e088cca7fd6d7068be4ff56c7
       -ac_name=TXSCL031
       -ac_supply=7777777
       -ac_cc=3
@@ -3795,7 +3795,7 @@ services:
       - STATS=0
       - STARTURL=https://ylnlg4iac3.execute-api.us-east-1.amazonaws.com/dev/activation
     command: >
-      bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
+      bash -c "komodod -pubkey=037332211b0739afa3a854035616a7c94b9f0b179e088cca7fd6d7068be4ff56c7
       -ac_name=TXSCL031
       -ac_supply=7777777
       -ac_cc=3
@@ -3831,7 +3831,7 @@ services:
       - BLOCKNOTIFYURL=https://njeitldkqc.execute-api.ap-southeast-2.amazonaws.com/v0/blocknotify
 
     command: >
-      bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
+      bash -c "komodod -pubkey=037332211b0739afa3a854035616a7c94b9f0b179e088cca7fd6d7068be4ff56c7
       -ac_name=TXSCL032
       -ac_supply=7777777
       -ac_cc=3
@@ -3871,7 +3871,7 @@ services:
       - STATS=0
       - STARTURL=https://ylnlg4iac3.execute-api.us-east-1.amazonaws.com/dev/activation
     command: >
-      bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
+      bash -c "komodod -pubkey=037332211b0739afa3a854035616a7c94b9f0b179e088cca7fd6d7068be4ff56c7
       -ac_name=TXSCL032
       -ac_supply=7777777
       -ac_cc=3
@@ -3907,7 +3907,7 @@ services:
       - BLOCKNOTIFYURL=https://njeitldkqc.execute-api.ap-southeast-2.amazonaws.com/v0/blocknotify
 
     command: >
-      bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
+      bash -c "komodod -pubkey=037332211b0739afa3a854035616a7c94b9f0b179e088cca7fd6d7068be4ff56c7
       -ac_name=TXSCL033
       -ac_supply=7777777
       -ac_cc=3
@@ -3947,7 +3947,7 @@ services:
       - STATS=0
       - STARTURL=https://ylnlg4iac3.execute-api.us-east-1.amazonaws.com/dev/activation
     command: >
-      bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
+      bash -c "komodod -pubkey=037332211b0739afa3a854035616a7c94b9f0b179e088cca7fd6d7068be4ff56c7
       -ac_name=TXSCL033
       -ac_supply=7777777
       -ac_cc=3
@@ -3983,7 +3983,7 @@ services:
       - BLOCKNOTIFYURL=https://njeitldkqc.execute-api.ap-southeast-2.amazonaws.com/v0/blocknotify
 
     command: >
-      bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
+      bash -c "komodod -pubkey=037332211b0739afa3a854035616a7c94b9f0b179e088cca7fd6d7068be4ff56c7
       -ac_name=TXSCL034
       -ac_supply=7777777
       -ac_cc=3
@@ -4023,7 +4023,7 @@ services:
       - STATS=0
       - STARTURL=https://ylnlg4iac3.execute-api.us-east-1.amazonaws.com/dev/activation
     command: >
-      bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
+      bash -c "komodod -pubkey=037332211b0739afa3a854035616a7c94b9f0b179e088cca7fd6d7068be4ff56c7
       -ac_name=TXSCL034
       -ac_supply=7777777
       -ac_cc=3
@@ -4059,7 +4059,7 @@ services:
       - BLOCKNOTIFYURL=https://njeitldkqc.execute-api.ap-southeast-2.amazonaws.com/v0/blocknotify
 
     command: >
-      bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
+      bash -c "komodod -pubkey=037332211b0739afa3a854035616a7c94b9f0b179e088cca7fd6d7068be4ff56c7
       -ac_name=TXSCL035
       -ac_supply=7777777
       -ac_cc=3
@@ -4099,7 +4099,7 @@ services:
       - STATS=0
       - STARTURL=https://ylnlg4iac3.execute-api.us-east-1.amazonaws.com/dev/activation
     command: >
-      bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
+      bash -c "komodod -pubkey=037332211b0739afa3a854035616a7c94b9f0b179e088cca7fd6d7068be4ff56c7
       -ac_name=TXSCL035
       -ac_supply=7777777
       -ac_cc=3
@@ -4135,7 +4135,7 @@ services:
       - BLOCKNOTIFYURL=https://njeitldkqc.execute-api.ap-southeast-2.amazonaws.com/v0/blocknotify
 
     command: >
-      bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
+      bash -c "komodod -pubkey=037332211b0739afa3a854035616a7c94b9f0b179e088cca7fd6d7068be4ff56c7
       -ac_name=TXSCL036
       -ac_supply=7777777
       -ac_cc=3
@@ -4175,7 +4175,7 @@ services:
       - STATS=0
       - STARTURL=https://ylnlg4iac3.execute-api.us-east-1.amazonaws.com/dev/activation
     command: >
-      bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
+      bash -c "komodod -pubkey=037332211b0739afa3a854035616a7c94b9f0b179e088cca7fd6d7068be4ff56c7
       -ac_name=TXSCL036
       -ac_supply=7777777
       -ac_cc=3
@@ -4211,7 +4211,7 @@ services:
       - BLOCKNOTIFYURL=https://njeitldkqc.execute-api.ap-southeast-2.amazonaws.com/v0/blocknotify
 
     command: >
-      bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
+      bash -c "komodod -pubkey=037332211b0739afa3a854035616a7c94b9f0b179e088cca7fd6d7068be4ff56c7
       -ac_name=TXSCL037
       -ac_supply=7777777
       -ac_cc=3
@@ -4251,7 +4251,7 @@ services:
       - STATS=0
       - STARTURL=https://ylnlg4iac3.execute-api.us-east-1.amazonaws.com/dev/activation
     command: >
-      bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
+      bash -c "komodod -pubkey=037332211b0739afa3a854035616a7c94b9f0b179e088cca7fd6d7068be4ff56c7
       -ac_name=TXSCL037
       -ac_supply=7777777
       -ac_cc=3
@@ -4287,7 +4287,7 @@ services:
       - BLOCKNOTIFYURL=https://njeitldkqc.execute-api.ap-southeast-2.amazonaws.com/v0/blocknotify
 
     command: >
-      bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
+      bash -c "komodod -pubkey=037332211b0739afa3a854035616a7c94b9f0b179e088cca7fd6d7068be4ff56c7
       -ac_name=TXSCL038
       -ac_supply=7777777
       -ac_cc=3
@@ -4327,7 +4327,7 @@ services:
       - STATS=0
       - STARTURL=https://ylnlg4iac3.execute-api.us-east-1.amazonaws.com/dev/activation
     command: >
-      bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
+      bash -c "komodod -pubkey=037332211b0739afa3a854035616a7c94b9f0b179e088cca7fd6d7068be4ff56c7
       -ac_name=TXSCL038
       -ac_supply=7777777
       -ac_cc=3
@@ -4363,7 +4363,7 @@ services:
       - BLOCKNOTIFYURL=https://njeitldkqc.execute-api.ap-southeast-2.amazonaws.com/v0/blocknotify
 
     command: >
-      bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
+      bash -c "komodod -pubkey=037332211b0739afa3a854035616a7c94b9f0b179e088cca7fd6d7068be4ff56c7
       -ac_name=TXSCL039
       -ac_supply=7777777
       -ac_cc=3
@@ -4403,7 +4403,7 @@ services:
       - STATS=0
       - STARTURL=https://ylnlg4iac3.execute-api.us-east-1.amazonaws.com/dev/activation
     command: >
-      bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
+      bash -c "komodod -pubkey=037332211b0739afa3a854035616a7c94b9f0b179e088cca7fd6d7068be4ff56c7
       -ac_name=TXSCL039
       -ac_supply=7777777
       -ac_cc=3
@@ -4439,7 +4439,7 @@ services:
       - BLOCKNOTIFYURL=https://njeitldkqc.execute-api.ap-southeast-2.amazonaws.com/v0/blocknotify
 
     command: >
-      bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
+      bash -c "komodod -pubkey=037332211b0739afa3a854035616a7c94b9f0b179e088cca7fd6d7068be4ff56c7
       -ac_name=TXSCL03a
       -ac_supply=7777777
       -ac_cc=3
@@ -4479,7 +4479,7 @@ services:
       - STATS=0
       - STARTURL=https://ylnlg4iac3.execute-api.us-east-1.amazonaws.com/dev/activation
     command: >
-      bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
+      bash -c "komodod -pubkey=037332211b0739afa3a854035616a7c94b9f0b179e088cca7fd6d7068be4ff56c7
       -ac_name=TXSCL03a
       -ac_supply=7777777
       -ac_cc=3
@@ -4515,7 +4515,7 @@ services:
       - BLOCKNOTIFYURL=https://njeitldkqc.execute-api.ap-southeast-2.amazonaws.com/v0/blocknotify
 
     command: >
-      bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
+      bash -c "komodod -pubkey=037332211b0739afa3a854035616a7c94b9f0b179e088cca7fd6d7068be4ff56c7
       -ac_name=TXSCL03b
       -ac_supply=7777777
       -ac_cc=3
@@ -4555,7 +4555,7 @@ services:
       - STATS=0
       - STARTURL=https://ylnlg4iac3.execute-api.us-east-1.amazonaws.com/dev/activation
     command: >
-      bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
+      bash -c "komodod -pubkey=037332211b0739afa3a854035616a7c94b9f0b179e088cca7fd6d7068be4ff56c7
       -ac_name=TXSCL03b
       -ac_supply=7777777
       -ac_cc=3
@@ -4591,7 +4591,7 @@ services:
       - BLOCKNOTIFYURL=https://njeitldkqc.execute-api.ap-southeast-2.amazonaws.com/v0/blocknotify
 
     command: >
-      bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
+      bash -c "komodod -pubkey=037332211b0739afa3a854035616a7c94b9f0b179e088cca7fd6d7068be4ff56c7
       -ac_name=TXSCL03c
       -ac_supply=7777777
       -ac_cc=3
@@ -4631,7 +4631,7 @@ services:
       - STATS=0
       - STARTURL=https://ylnlg4iac3.execute-api.us-east-1.amazonaws.com/dev/activation
     command: >
-      bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
+      bash -c "komodod -pubkey=037332211b0739afa3a854035616a7c94b9f0b179e088cca7fd6d7068be4ff56c7
       -ac_name=TXSCL03c
       -ac_supply=7777777
       -ac_cc=3
@@ -4667,7 +4667,7 @@ services:
       - BLOCKNOTIFYURL=https://njeitldkqc.execute-api.ap-southeast-2.amazonaws.com/v0/blocknotify
 
     command: >
-      bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
+      bash -c "komodod -pubkey=037332211b0739afa3a854035616a7c94b9f0b179e088cca7fd6d7068be4ff56c7
       -ac_name=TXSCL03d
       -ac_supply=7777777
       -ac_cc=3
@@ -4707,7 +4707,7 @@ services:
       - STATS=0
       - STARTURL=https://ylnlg4iac3.execute-api.us-east-1.amazonaws.com/dev/activation
     command: >
-      bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
+      bash -c "komodod -pubkey=037332211b0739afa3a854035616a7c94b9f0b179e088cca7fd6d7068be4ff56c7
       -ac_name=TXSCL03d
       -ac_supply=7777777
       -ac_cc=3
@@ -4743,7 +4743,7 @@ services:
       - BLOCKNOTIFYURL=https://njeitldkqc.execute-api.ap-southeast-2.amazonaws.com/v0/blocknotify
 
     command: >
-      bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
+      bash -c "komodod -pubkey=037332211b0739afa3a854035616a7c94b9f0b179e088cca7fd6d7068be4ff56c7
       -ac_name=TXSCL03e
       -ac_supply=7777777
       -ac_cc=3
@@ -4783,7 +4783,7 @@ services:
       - STATS=0
       - STARTURL=https://ylnlg4iac3.execute-api.us-east-1.amazonaws.com/dev/activation
     command: >
-      bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
+      bash -c "komodod -pubkey=037332211b0739afa3a854035616a7c94b9f0b179e088cca7fd6d7068be4ff56c7
       -ac_name=TXSCL03e
       -ac_supply=7777777
       -ac_cc=3
@@ -4819,7 +4819,7 @@ services:
       - BLOCKNOTIFYURL=https://njeitldkqc.execute-api.ap-southeast-2.amazonaws.com/v0/blocknotify
 
     command: >
-      bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
+      bash -c "komodod -pubkey=037332211b0739afa3a854035616a7c94b9f0b179e088cca7fd6d7068be4ff56c7
       -ac_name=TXSCL03f
       -ac_supply=7777777
       -ac_cc=3
@@ -4859,7 +4859,7 @@ services:
       - STATS=0
       - STARTURL=https://ylnlg4iac3.execute-api.us-east-1.amazonaws.com/dev/activation
     command: >
-      bash -c "komodod -pubkey=0296270f394140640f8fa15684fc11255371abb6b9f253416ea2734e34607799c4
+      bash -c "komodod -pubkey=037332211b0739afa3a854035616a7c94b9f0b179e088cca7fd6d7068be4ff56c7
       -ac_name=TXSCL03f
       -ac_supply=7777777
       -ac_cc=3
