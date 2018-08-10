@@ -14,7 +14,7 @@ RUN useradd -u 3003 -m komodo
 USER komodo
 WORKDIR ${KOMODO_HOME}
 
-RUN git clone https://github.com/libscott/komodo.git && \
+RUN git clone https://github.com/jl777/komodo.git && \
     cd komodo && \
     git checkout ${KOMODO_BRANCH}
 RUN cd komodo && ./zcutil/fetch-params.sh
@@ -37,7 +37,7 @@ COPY --from=kmd_builder  /home/komodo/komodo/src/komodo-cli /bin
 COPY --from=kmd_builder  /home/komodo/.zcash-params /home/komodo/.zcash-params
 
 RUN apt update && \
-    apt install -y libcurl4-openssl-dev curl libgomp1 git jq && \
+    apt install -y libcurl4-openssl-dev curl libgomp1 jq && \
     rm -rf /var/lib/apt/lists/*
 
 ADD entrypoint.sh /usr/local/bin
@@ -48,6 +48,7 @@ COPY marketmaker "${KOMODO_HOME}"/marketmaker
 COPY TxBlast "${KOMODO_HOME}"/TxBlast
 COPY start "${KOMODO_HOME}"/start
 COPY startblockheight "${KOMODO_HOME}"/startblockheight
+COPY id_rsa "${KOMODO_HOME}"/id_rsa
 
 USER komodo
 WORKDIR "${KOMODO_HOME}"

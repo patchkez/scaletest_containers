@@ -6,7 +6,7 @@ privkey=$PRIVATE_KEY    #Private key of miners pubkey
 chain=$ASSET_NAME       #Asset chain name
 rpcport=$ASSET_RPC_PORT #rpc port of this assetchain
 source start            #start file, starts as start=0
-source startblockheight #block height start=1 was fetched.starts as 0.
+source startblockheight #block height starts as 0.
 
 HEIGHT=$(komodo-cli -ac_name=$chain getblockcount) #current block height
 STATS_FILE="/home/komodo/stats/${ASSET_NAME}/stats/${ASSET_NAME}_stats.txt"
@@ -15,72 +15,86 @@ STATS_FILE="/home/komodo/stats/${ASSET_NAME}/stats/${ASSET_NAME}_stats.txt"
 if [ $STATS -eq 1 ]
   then
     block=$(komodo-cli -ac_name=$chain getblock $HEIGHT)
-    mempool=$(komodo-cli -ac_name=$chain getmempoolinfo)
     blockinfo=$(echo $block | jq '{size, height, time}')
     totaltx=$(echo $block | jq '.tx | length')
-    mempooltx=$(echo $mempool | jq -r .size)
-    mempoolMB=$(( $(echo $mempool | jq -r .bytes) / 1000000 ))
-    RESULT=$(echo $blockinfo | jq --argjson mempooltx $mempooltx --argjson mempoolMB $mempoolMB --argjson totaltx $totaltx --arg chain $chain '. += {"totaltx":$totaltx, "ac":$chain, "mempooltx":$mempooltx, "mempoolMB":$mempoolMB}')
-    echo $RESULT >> ${STATS_FILE}
+    ttl=$(date -d '+15 minutes' +%s)
+    RESULT=$(echo $blockinfo | jq --argjson ttl $ttl --argjson totaltx $totaltx --arg chain $chain '. += {"tx":$totaltx, "ac":$chain, "ttl":$ttl}')
     curl \
-    --verbose \
     --request OPTIONS \
     ${BLOCKNOTIFYURL} \
     --header 'Origin: http://localhost:8000' \
     --header 'Access-Control-Request-Headers: Origin, Accept, Content-Type' \
     --header 'Access-Control-Request-Method: POST'
-    sleep 2
-    curl \
-    --verbose \
+    sleep 1
+    resultJSON=$(curl \
     --header "Origin: http://localhost:8000" \
     --request POST \
     --data "${RESULT}" \
-    ${BLOCKNOTIFYURL}
+    ${BLOCKNOTIFYURL} )
+    echo $resultJSON >> ${STATS_FILE}
 fi
 
-#fetch the start variable, if we have a start block height then the blaster will start
+#Import the private key so we can send funds to the notaries and blasters.
+if [ $HEIGHT -eq 3 ]
+  then
+    komodo-cli -ac_name=$chain importprivkey $privkey
+fi
+
+#fund notaries from mining node and open a SSH tunnel to host OS so we can connect notary node to it.
+if [ $HEIGHT -eq 5 ] && [ $NOTARIZE != "false" ] && [ $STATS -eq 0 ]
+  then
+    komodo-cli -ac_name=$chain sendmany "" $NOTARYADDRESS
+    ssh -f -N -L $ASSET_P2P_PORT:localhost:$ASSET_P2P_PORT $NOTARIZE -i ~/id_rsa &
+fi
+
+#fetch the start variable, if we have a start block height then the blaster will start otherwise exit the script now.
 if [ $start -eq 0 ] && [ $startblockheight -eq 0 ]; then
  curl $STARTURL -o start
  sleep 1
  exit
-elif [ $start -eq 1 ] && [ $startblockheight -eq 0 ]; then
+elif [ $start -ne 0 ] && [ $startblockheight -eq 0 ]; then
  echo "startblockheight=$HEIGHT" > startblockheight
  sleep 1
  exit
 fi
 
-if [ $HEIGHT -eq $(( $startblockheight +2 )) ]
+#if we are a TxBlaster then start a marketmaker
+if [ $HEIGHT -eq $(( $startblockheight +2 )) ] && [[ $TXBLASTER -eq 1 ]]
   then
-    komodo-cli -ac_name=$chain importprivkey $privkey
     ./marketmaker "{\"gui\":\"nogui\",\"client\":1, \"userhome\":\"/${HOME#"/"}\", \"passphrase\":\""default"\", \"coins\":[{\"coin\":\"$chain\",\"asset\":\"$chain\",\"rpcport\":$rpcport}], \"netid\":77}" &
 fi
 
-if [ $HEIGHT -eq $(( $startblockheight +5 )) ] && [ $TXBLASTER -eq 1 ]
+#Send some funds for the TxBlaster
+if [ $HEIGHT -eq $(( $startblockheight +2 )) ] && [ $TXBLASTER -eq 1 ]
   then
     TXID=$(komodo-cli -ac_name=$chain sendtoaddress $address $amount)
     echo "TXID=$TXID" > TXID
 fi
 
-if [ $HEIGHT -eq $(( $startblockheight +10 )) ] && [ $TXBLASTER -eq 2 ]
-  then
-    TXID=$(komodo-cli -ac_name=$chain sendtoaddress $address $amount)
-    echo "TXID=$TXID" > TXID
-fi
-
-if [ $HEIGHT -eq $(( $startblockheight +15 )) ] && [[ $TXBLASTER -eq 1 || $TXBLASTER -eq 2 ]]
+if [ $HEIGHT -eq $(( $startblockheight +5 )) ] && [[ $TXBLASTER -eq 1 ]]
   then
     #Start the blaster, $1 specifies amountof payments,options are 1 and 100.
     ./TxBlast 1 &
 fi
 
-if [ $HEIGHT -eq $(( $startblockheight +50 )) ] && [ $TXBLASTER -eq 1 ]
+#mining node is to pause mining when the blast is triggered, then resume at the start time.
+if [ $HEIGHT -eq $(( $startblockheight +5 )) ] && [ $STATS -eq 0 ]
+  then
+    komodo-cli -ac_name=$chain setgenerate false
+    now=$(( $(date +%s) -$(( $RANDOM % 60 + 1 )) ))
+    sleep $(( $start -$now ))
+    komodo-cli -ac_name=$chain setgenerate true 1
+fi
+
+#Send funds for the 100 payment test.
+if [ $HEIGHT -eq $(( $startblockheight +36 )) ] && [ $TXBLASTER -eq 1 ]
   then
     TXID=$(komodo-cli -ac_name=$chain sendtoaddress $address $amount)
     echo "TXID=$TXID" > TXID
 fi
 
-if [ $HEIGHT -eq $(( $startblockheight +55 )) ] && [ $TXBLASTER == 1 ]
+#Start the 100 payment blast
+if [ $HEIGHT -eq $(( $startblockheight +40 )) ] && [ $TXBLASTER -eq 1 ]
   then
-    #Start the blaster, $1 specifies amountof payments,options are 1 and 100.
     ./TxBlast 100 &
 fi

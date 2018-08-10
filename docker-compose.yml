@@ -1,78 +1,70 @@
 # vim: ts=2 sw=2 et
+# { "assetname": "TXSCL040", "p2p": 29114, "rpc": 29115, "supply": 7777777, "ac_cc": 1001, "ac_reward": 100000000, "notarize": false }
+# this is the first chain with notarize : false - these will be launched from this repo, in kubernetes. I have to do the first 64 from mine, in an EC2, to notarize them. the setup is a little diffrent there.
+
 version: '3.6'
 
 services:
-  txscl220-ac:
+  TXSCL040-ac:
     build:
       context: ./komodod
       args:
-        KOMODO_BRANCH: momo
-    image: scaletest_komodod_momo
+        KOMODO_BRANCH: dev
+    image: scaletest_komodod_dev
     networks:
       - komodo_scale
     volumes:
-        - komodo-data:/home/komodo/stats
+       - komodo-data:/home/komodo/stats
     environment:
-      - ASSET_RPC_USER=kmdrpcus3R
-      - ASSET_RPC_PASSWORD=RPcp4ZZw0rD
-      - ASSET_RPC_WORKQUEUE=64
-      - ASSET_BIND=127.0.0.1
-      - ASSET_RPC_BIND=0.0.0.0
-      - ASSET_RPC_ALLOWIP=0.0.0.0/0
-      - ASSET_RPC_PORT=32200
-      - ASSET_NAME=TXSCL220
-      - AMOUNT=2000
+      - ASSET_RPC_PORT=29115
+      - ASSET_NAME=TXSCL040
+      - AMOUNT=20000
       - PASSPHRASE=testpassphraseforsmk702test
       - ADDRESS=RSNWwEWTTFH13LzWVp4EoPscKNxsT5bazt
       - PRIVATE_KEY=Ut1Xx8tAePPxJgTkEVAwj3ZhRvBZ7gY5gJ5ob4QAPiCDcyMJEYgH
       - TXBLASTER=1
+      - NOTARIZE=false
       - STATS=1
-      - STARTURL=https://ylnlg4iac3.execute-api.us-east-1.amazonaws.com/dev/activation
-      - BLOCKNOTIFYURL=https://njeitldkqc.execute-api.ap-southeast-2.amazonaws.com/v0/blocknotify
+      - STARTURL=https://4qcnktspmb.execute-api.us-east-1.amazonaws.com/dev/activation
+      - BLOCKNOTIFYURL=https://v7f30u8t0d.execute-api.us-east-1.amazonaws.com/v0/blocknotify
+
     command: >
       bash -c "komodod -pubkey=037332211b0739afa3a854035616a7c94b9f0b179e088cca7fd6d7068be4ff56c7
-      -ac_name=TXSCL220
-      -ac_supply=77000000
-      -ac_cc=1
+      -ac_name=TXSCL040
+      -ac_supply=7777777
+      -ac_cc=1001
       -ac_reward=100000000
       -blocknotify=/home/komodo/blocknotify.sh
-      -connect=txscl220-miner"
+      -connect=TXSCL000-miner"
 
-  txscl220-miner:
+# You need to limit the mining node to 1/3 of a cpu core. In my EC2 I use cpulimit command with a script to limit them. Docker has this built in, it will beed to be added here some place.
+  TXSCL040-miner:
     build:
       context: ./komodod
       args:
-        KOMODO_BRANCH: momo
-    image: scaletest_komodod_momo
+        KOMODO_BRANCH: dev
+    image: scaletest_komodod_dev
     restart: on-failure
     networks:
       - komodo_scale
     ports:
-        - "32199:32199"
+      - "29114:29114"
     volumes:
-        - komodo-data:/home/komodo/.komodo
+       - komodo-data:/home/komodo/.komodo
     environment:
-      - ASSET_RPC_USER=kmdrpcus3R
-      - ASSET_RPC_PASSWORD=RPcp4ZZw0rD
-      - ASSET_RPC_WORKQUEUE=64
-      - ASSET_BIND=0.0.0.0
-      - ASSET_RPC_BIND=0.0.0.0
-      - ASSET_RPC_ALLOWIP=0.0.0.0/0
-      - ASSET_RPC_PORT=32200
-      - ASSET_NAME=TXSCL220
-      - AMOUNT=2000
-      - PASSPHRASE=testpassphraseforsmk702test2
-      - ADDRESS=RHqp4GyNQHmnFizs8T1A4sJmEuHLCMTRtQ
+      - ASSET_RPC_PORT=29115
+      - ASSET_NAME=TXSCL040
+      - AMOUNT=20000
       - PRIVATE_KEY=Ut1Xx8tAePPxJgTkEVAwj3ZhRvBZ7gY5gJ5ob4QAPiCDcyMJEYgH
-      - TXBLASTER=2
-      - PAYMENTS=1
-      - STATS=0
-      - STARTURL=https://ylnlg4iac3.execute-api.us-east-1.amazonaws.com/dev/activation
+      - TXBLASTER=0
+      - NOTARIZE=false
+      - STARTURL=https://4qcnktspmb.execute-api.us-east-1.amazonaws.com/dev/activation
+
     command: >
       bash -c "komodod -pubkey=037332211b0739afa3a854035616a7c94b9f0b179e088cca7fd6d7068be4ff56c7
-      -ac_name=TXSCL220
-      -ac_supply=77000000
-      -ac_cc=1
+      -ac_name=TXSCL040
+      -ac_supply=7777777
+      -ac_cc=1001
       -ac_reward=100000000
       -blocknotify=/home/komodo/blocknotify.sh
       -gen"
