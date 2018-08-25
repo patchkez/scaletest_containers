@@ -1,0 +1,157 @@
+# apiVersion: v1
+# kind: Service
+# metadata:
+#   annotations:
+#     kompose.cmd: kompose convert -f docker-compose-assets-test.yml
+#     kompose.version: 1.1.0 (36652f6)
+#   creationTimestamp: null
+#   labels:
+#     io.kompose.service: TXSCL040
+#   name: txscl040
+# spec:
+#   ports:
+#   - name: "29114"
+#     port: 29114
+#     targetPort: 29114
+#   - name: "29115"
+#     port: 29115
+#     targetPort: 29115
+#   selector:
+#     io.kompose.service: TXSCL040
+# status:
+#   loadBalancer: {}
+---
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  annotations:
+    kompose.cmd: kompose convert -f docker-compose-assets-test.yml
+    kompose.version: 1.1.0 (36652f6)
+  creationTimestamp: null
+  labels:
+    #io.kompose.service: TXSCL040
+    io.kompose.service: {{ assetchain.assetname }}
+  # name: txscl040-ac
+  name: {{ assetchain.assetname | lower }}-ac
+spec:
+  replicas: 1
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        io.kompose.service: {{ assetchain.assetname }}
+    spec:
+      containers:
+      - name: {{ assetchain.assetname | lower }}-ac
+        args:
+        - bash
+        - -c
+        - komodod -pubkey=037332211b0739afa3a854035616a7c94b9f0b179e088cca7fd6d7068be4ff56c7
+          -ac_name={{ assetchain.assetname }} -ac_supply={{ assetchain.supply }} -ac_cc={{ assetchain.ac_cc }} -ac_reward={{ assetchain.ac_reward}}
+          -blocknotify=/home/komodo/blocknotify.sh
+          -connect={{ assetchain.assetname | lower }}-miner
+        env:
+        - name: ASSET_RPC_PORT
+          value: "{{ assetchain.rpc }}"
+        - name: ASSET_NAME
+          value: {{ assetchain.assetname }}
+        - name: AMOUNT
+          value: "20000"
+        - name: PASSPHRASE
+          value: testpassphraseforsmk702test
+        - name: ADDRESS
+          value: RSNWwEWTTFH13LzWVp4EoPscKNxsT5bazt
+        - name: PRIVATE_KEY
+          value: Ut1Xx8tAePPxJgTkEVAwj3ZhRvBZ7gY5gJ5ob4QAPiCDcyMJEYgH
+        - name: TXBLASTER
+          value: "1"
+        - name: NOTARIZE
+          value: "false"
+        - name: STATS
+          value: "1"
+        - name: STARTURL
+          value: https://4qcnktspmb.execute-api.us-east-1.amazonaws.com/dev/activation
+        - name: BLOCKNOTIFYURL
+          value: https://v7f30u8t0d.execute-api.us-east-1.amazonaws.com/v0/blocknotify
+        image: kmdplatform/scaletest_containers:latest
+        # ports:
+        # - containerPort: 29114
+        # - containerPort: 29115
+        resources:
+          limits:
+            cpu: 200m
+          requests:
+            cpu: 200m
+        volumeMounts:
+          - name: efs-pvc
+            mountPath: "/mnt"
+      restartPolicy: Always
+      volumes:
+      - name: efs-pvc
+        persistentVolumeClaim:
+          claimName: efs
+status: {}
+---
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  annotations:
+    kompose.cmd: kompose convert -f docker-compose-assets-test.yml
+    kompose.version: 1.1.0 (36652f6)
+  creationTimestamp: null
+  labels:
+    io.kompose.service: {{ assetchain.assetname }}
+  name: {{ assetchain.assetname | lower }}-miner
+spec:
+  replicas: 1
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        io.kompose.service: {{ assetchain.assetname }}
+    spec:
+      containers:
+      - name: {{ assetchain.assetname | lower }}-miner
+        args:
+        - bash
+        - -c
+        - komodod -pubkey=037332211b0739afa3a854035616a7c94b9f0b179e088cca7fd6d7068be4ff56c7
+          -ac_name={{ assetchain.assetname }} -ac_supply={{ assetchain.supply }} -ac_cc={{ assetchain.ac_cc }} -ac_reward={{ assetchain.ac_reward }}
+          -blocknotify=/home/komodo/blocknotify.sh
+          -gen
+        env:
+        - name: ASSET_RPC_PORT
+          value: "{{ assetchain.rpc }}"
+        - name: ASSET_NAME
+          value: {{ assetchain.assetname }}
+        - name: AMOUNT
+          value: "20000"
+        - name: PRIVATE_KEY
+          value: Ut1Xx8tAePPxJgTkEVAwj3ZhRvBZ7gY5gJ5ob4QAPiCDcyMJEYgH
+        - name: TXBLASTER
+          value: "0"
+        - name: NOTARIZE
+          value: "false"
+        - name: STARTURL
+          value: https://4qcnktspmb.execute-api.us-east-1.amazonaws.com/dev/activation
+        # image: kmdplatform/scaletest_komodod_dev
+        image: kmdplatform/scaletest_containers:latest
+        ports:
+        - containerPort: {{ assetchain.rpc }}
+        - containerPort: {{ assetchain.p2p }}
+        resources:
+          limits:
+            cpu: 330m
+          requests:
+            cpu: 330m
+        volumeMounts:
+          - name: efs-pvc
+            mountPath: "/mnt"
+      restartPolicy: Always
+      volumes:
+        - name: efs-pvc
+          persistentVolumeClaim:
+            claimName: efs
+status: {}
