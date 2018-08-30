@@ -1,0 +1,84 @@
+# vim: ts=2 sw=2 et
+version: '3.6'
+
+services:
+  {% for asset in items %}
+  {% if notarize == asset.notarize %}
+  {{ asset.assetname }}-ac:
+    build:
+      context: ./komodod
+      args:
+        KOMODO_BRANCH: dev
+    image: {{ image_name }}
+    networks:
+      - komodo_scale
+    volumes:
+       - komodo-data:/home/komodo/stats
+    environment:
+      - ASSET_RPC_PORT={{ asset.rpc }}
+      - ASSET_NAME={{ asset.assetname }}
+      - AMOUNT=20000
+      - PASSPHRASE=testpassphraseforsmk702test
+      - ADDRESS=RSNWwEWTTFH13LzWVp4EoPscKNxsT5bazt
+      - PRIVATE_KEY=Ut1Xx8tAePPxJgTkEVAwj3ZhRvBZ7gY5gJ5ob4QAPiCDcyMJEYgH
+      - TXBLASTER=1
+      - NOTARIZE=ubuntu@18.214.120.24
+      - STATS=1
+      - STARTURL=https://4qcnktspmb.execute-api.us-east-1.amazonaws.com/dev/activation
+      - BLOCKNOTIFYURL=https://v7f30u8t0d.execute-api.us-east-1.amazonaws.com/v0/blocknotify
+
+    command: >
+      bash -c "komodod -pubkey=037332211b0739afa3a854035616a7c94b9f0b179e088cca7fd6d7068be4ff56c7
+      -ac_name={{ asset.assetname }}
+      -ac_supply={{ asset.supply }}
+      -ac_cc={{ asset.ac_cc }}
+      -ac_reward={{ asset.ac_reward}}
+      -blocknotify=/home/komodo/blocknotify.sh
+      -connect={{ asset.assetname }}-miner"
+
+  {{ asset.assetname }}-miner:
+    build:
+      context: ./komodod
+      args:
+        KOMODO_BRANCH: dev
+    image: {{ image_name }}
+    restart: on-failure
+    networks:
+      - komodo_scale
+    ports:
+      {% if asset.p2p %}
+      - "{{ asset.p2p }}:{{ asset.p2p }}"
+      {% endif %}
+    volumes:
+       - komodo-data:/home/komodo/.komodo
+    environment:
+      - ASSET_RPC_PORT={{ asset.rpc }}
+      - ASSET_NAME={{ asset.assetname }}
+      - AMOUNT=20000
+      - ASSET_P2P_PORT={{ asset.p2p }}
+      - PRIVATE_KEY=Ut1Xx8tAePPxJgTkEVAwj3ZhRvBZ7gY5gJ5ob4QAPiCDcyMJEYgH
+      - TXBLASTER=0
+      - NOTARYADDRESS={"RAWvgHudfw8M18J7be2DaiCzxMVwZcjKcE":10,"RWz5JWNLGXkGgGZQgoPoYNKMWrKXt9bYW7":10,"R9SwzdrjEE77bK6hQojZNmF7rddCAk2YqN":10,"RW4Kik52pxM41n8AazqpBF5koX5UW7yJeh":10}
+      - STATS=0
+      - STARTURL=https://4qcnktspmb.execute-api.us-east-1.amazonaws.com/dev/activation
+
+    command: >
+      bash -c "komodod -pubkey=037332211b0739afa3a854035616a7c94b9f0b179e088cca7fd6d7068be4ff56c7
+      -ac_name={{ asset.assetname }}
+      -ac_supply={{ asset.supply }}
+      -ac_cc={{ asset.ac_cc }}
+      -ac_reward={{ asset.ac_reward}}
+      -blocknotify=/home/komodo/blocknotify.sh
+      -gen"
+  {% endif %}
+  {% endfor %}
+
+volumes:
+  komodo-data:
+    driver_opts:
+      type: none
+      device: ${KOMODO_DATA}
+      o: bind
+
+networks:
+  komodo_scale:
