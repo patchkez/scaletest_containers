@@ -82,8 +82,38 @@ Options:
 ```
 
 ## How to generate Kubernetes yaml files
+Display available options:
+```
+✗ dokomodo generate_k8n_template --help
+Downloading preparsed https://raw.githubusercontent.com/patchkez/SuperNET/separate_json_data_dev_cherrypick/iguana/coins/tmp_cleanup/assetchains_data.yml as assetchains_data.yaml
+Usage: dokomodo generate_k8n_template [OPTIONS]
+
+  TODO
+
+Options:
+  -a, --asset TEXT     name of assetchain in capital     letters e.g. SUPERNET
+  -i, --image TEXT     name of image used for assetchains,     it must match
+                       image name you use for komodod e.g.
+                       kmdplatform_komodod_dev or     kmdplatform_komodod
+                       [required]
+  -n, --notarize       notarize chain,     set to True or False  [required]
+  -c, --count INTEGER  generate X chains,     set to True or False
+  --help               Show this message and exit.
 
 ```
-dokomodo generate_k8n_template -i dock_image -n
+Image is docker image which can be found prebuilt on dockerhub.
+Generate yamls for chains which has 'notarize' flag set:
 ```
-When -n argument is passed, yaml for first chains which has 'notarize' flag will be generated. Without it, rest of chains will be use d as input.
+dokomodo generate_k8n_template -i kmdplatform/scaletest_containers:latest -n
+```
+When -n argument is passed, yaml for first 64 chains which has 'notarize' flag set will be generated. Without it, rest of chains will be used as input.
+
+Generate 64 chains starting from index 65 (notarized chains will be excluded):
+```
+dokomodo generate_k8n_template -i kmdplatform/scaletest_containers:latest -c 64
+```
+
+Generate first 256 chains (first 64 chains have notarize flag set):
+```
+dokomodo generate_k8n_template -i kmdplatform/scaletest_containers:latest -n -c 256
+```

@@ -335,9 +335,10 @@ def generate_docker_compose_for_mylo(ctx, asset, image, notarize):
     it must match image name you use for komodod e.g. kmdplatform_komodod_dev or \
     kmdplatform_komodod')
 @click.option('-n', '--notarize', required=True, is_flag=True, help='notarize chain, \
-    set to True or False')
+        set to True or False')
+@click.option('-c', '--count', type=int, help='generate yaml files for X chains')
 @pass_config
-def generate_k8n_template(ctx, asset, image, notarize):
+def generate_k8n_template(ctx, asset, image, notarize, count):
     """ TODO """
 
     json_file = path.local(config_dir).join('scale_assetchains.json')
@@ -349,9 +350,14 @@ def generate_k8n_template(ctx, asset, image, notarize):
     dirname = "./"
 
     new_data = list(filter(lambda x: x['notarize'] is notarize, data))
-    click.echo('New list {}'.format(new_data))
+    if count:
+        new_data2 = [assetchains for index, assetchains in enumerate(new_data) if
+            (index + 1) <= count]
+    else:
+        new_data2 = new_data
 
-    for assetchains in new_data:
+    click.echo('New list {}'.format(new_data2))
+    for assetchains in new_data2:
         filename = 'aws_k8n_' + assetchains['assetname'] + '.yml'
         click.echo('Writing new docker compose file into: {}'.format(filename))
         templatized_config = template.render(assetchain=assetchains, image_name=image)
